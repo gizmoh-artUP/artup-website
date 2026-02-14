@@ -294,7 +294,8 @@ const ArtUPWebsite = () => {
 
   // Navigation Component
   const Navigation = () => (
-    <nav className="fixed w-full z-50 border-b" style={{ 
+    <nav className="fixed w-full border-b" style={{ 
+      zIndex: 9999,
       backgroundColor: 'rgba(255, 255, 255, 0.8)',
       backdropFilter: 'blur(10px)',
       borderBottomColor: 'rgba(0, 0, 0, 0.3)',
@@ -662,8 +663,8 @@ const ArtUPWebsite = () => {
             {featuredArtists.map((artist, idx) => (
               <div
                 key={artist.id}
-                className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 hover:opacity-95 ${
-                  idx === currentSlide ? 'opacity-100 scale-100' : 'opacity-0 scale-95'
+                className={`absolute inset-0 flex items-center justify-center transition-all duration-1000 ${
+                  idx === currentSlide ? 'opacity-100 scale-100 hover:opacity-95' : 'opacity-0 scale-95'
                 }`}
               >
                 {/* Artwork Background */}
