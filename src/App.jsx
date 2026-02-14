@@ -1291,7 +1291,7 @@ const ArtUPWebsite = () => {
                 </div>
 
                 {/* Video Embed - gleiche Höhe wie Portrait */}
-                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black h-80 md:h-auto" style={{ height: 'auto', minHeight: '400px', ...({ md: { height: '100%' } }) }}>
+                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black h-80 md:h-auto" style={{ height: 'auto', minHeight: '400px' }}>
                   {artist.videoUrl ? (
                     <iframe
                       width="100%"
@@ -1299,9 +1299,11 @@ const ArtUPWebsite = () => {
                       src={artist.videoUrl}
                       title="Artist Video"
                       frameBorder="0"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                      style={{ display: 'block' }}
+                      sandbox="allow-same-origin allow-scripts allow-presentation allow-popups"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                      allowFullScreen={true}
+                      loading="lazy"
+                      style={{ display: 'block', minHeight: '400px', width: '100%' }}
                     ></iframe>
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
