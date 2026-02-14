@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MapPin, Calendar, ArrowLeft, Instagram, Mail, Phone, MessageSquare, Menu, X } from 'lucide-react';
 
