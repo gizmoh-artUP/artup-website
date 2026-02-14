@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MapPin, Calendar, ArrowLeft, Instagram, Mail, Phone, MessageSquare, Menu, X } from 'lucide-react';
 import textsJSON from './texts.json';
+import artistsJSON from './artists.json';
 
 const ArtUPWebsite = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -28,196 +29,8 @@ const ArtUPWebsite = () => {
   };
 
   // Alle 18 Künstler
-  const allArtists = [
-    {
-      id: 1,
-      name: 'BUJA',
-      style: 'Street Art',
-      shortBio: 'Urban aesthetics meet contemporary expression.',
-      fullBio: 'BUJA transforms cityscapes into vibrant dialogues between artist and community. With over a decade in street art, their work challenges perceptions of public space and creative expression.',
-      description: 'Urban aesthetics meet contemporary expression. BUJA transforms cityscapes into vibrant dialogue.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL',
-      images: [
-        'ARTWORK_1_URL',
-        'ARTWORK_2_URL',
-        'ARTWORK_3_URL'
-      ],
-      slideImage: 'BUJA_SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 2,
-      name: 'Nina Bussjäger',
-      style: 'Klassische Malerei',
-      shortBio: 'Timeless elegance in every brushstroke.',
-      fullBio: 'Nina Bussjäger brings classical painting techniques into the contemporary realm. Her works explore the intersection of tradition and modernity, creating pieces that speak to both heritage and innovation.',
-      description: 'Timeless elegance in every brushstroke. Traditional mastery with a contemporary vision.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 3,
-      name: 'Timothy Starratt',
-      style: 'Abstrakt',
-      shortBio: 'Pure form and color dancing in space.',
-      fullBio: 'Timothy\'s abstract works strip down to the essence of visual language. Color, form, and composition become vehicles for emotional expression, creating immersive visual experiences.',
-      description: 'Pure form and color dancing in space. Abstraction as a language beyond representation.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 4,
-      name: 'Gizmoh',
-      style: 'Illustrative Poetry',
-      shortBio: 'Where illustration meets narrative.',
-      fullBio: 'Gizmoh creates visual stories that blur the lines between illustration and fine art. Each piece is a poetic narrative rendered in exquisite detail and imagination.',
-      description: 'Where illustration meets narrative. Visual stories that whisper and sing.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 5,
-      name: 'Elena Rossi',
-      style: 'Figurativ',
-      shortBio: 'Human emotion through figurative expression.',
-      fullBio: 'Elena captures the complexity of human emotion and connection through figurative painting. Her portraits and figure studies reveal the inner landscape of the human experience.',
-      description: 'Human emotion through figurative expression.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 6,
-      name: 'Marcus Chen',
-      style: 'Digital Art',
-      shortBio: 'Bridging analog and digital realms.',
-      fullBio: 'Marcus Chen explores the intersection of traditional artistic principles and cutting-edge digital technology, creating works that challenge our perception of medium and authenticity.',
-      description: 'Bridging analog and digital realms.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 7,
-      name: 'Sofía García',
-      style: 'Conceptual Art',
-      shortBio: 'Ideas made tangible through concept.',
-      fullBio: 'Sofía\'s conceptual practice examines social structures and cultural narratives. Her installations and interventions provoke thought and dialogue.',
-      description: 'Ideas made tangible through concept.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 8,
-      name: 'James Wilson',
-      style: 'Mixed Media',
-      shortBio: 'Layering materials, meanings, and textures.',
-      fullBio: 'James combines traditional and unconventional materials to create richly textured works that invite tactile and visual exploration.',
-      description: 'Layering materials, meanings, and textures.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 9,
-      name: 'Yuki Tanaka',
-      style: 'Minimalism',
-      shortBio: 'Silence speaks louder than words.',
-      fullBio: 'Yuki\'s minimalist approach distills visual language to its purest form, allowing viewers to find their own meaning in reduction and negative space.',
-      description: 'Silence speaks louder than words.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 10,
-      name: 'Amara Okonkwo',
-      style: 'Contemporary Sculpture',
-      shortBio: 'Form, space, and presence in three dimensions.',
-      fullBio: 'Amara creates sculptures that dialogue with their environment and viewers, exploring themes of identity, belonging, and human connection.',
-      description: 'Form, space, and presence in three dimensions.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 11,
-      name: 'Laura Vega',
-      style: 'Landscape Painting',
-      shortBio: 'Nature reimagined through artistic vision.',
-      fullBio: 'Laura captures landscapes as emotional territories. Her paintings transcend realistic depiction to reveal the inner essence of place and atmosphere.',
-      description: 'Nature reimagined through artistic vision.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 12,
-      name: 'Klaus Mueller',
-      style: 'Photography',
-      shortBio: 'Moments crystallized in light and shadow.',
-      fullBio: 'Klaus\'s photographic work explores the poetic potential of everyday moments, transforming the mundane into the extraordinary through light and composition.',
-      description: 'Moments crystallized in light and shadow.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 13,
-      name: 'Zara Al-Rashid',
-      style: 'Textile & Installation',
-      shortBio: 'Woven stories and spatial interventions.',
-      fullBio: 'Zara combines traditional textile techniques with contemporary installation practices, creating immersive environments that celebrate cultural narratives.',
-      description: 'Woven stories and spatial interventions.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 14,
-      name: 'Adrien Laurent',
-      style: 'Experimental Painting',
-      shortBio: 'Pushing the boundaries of paint and canvas.',
-      fullBio: 'Adrien\'s experimental approach challenges conventional painting techniques, employing unconventional materials and methods to expand artistic possibilities.',
-      description: 'Pushing the boundaries of paint and canvas.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 15,
-      name: 'Priya Sharma',
-      style: 'Video Art',
-      shortBio: 'Time and motion as artistic medium.',
-      fullBio: 'Priya works with video and moving image to explore narratives of identity, technology, and human experience in the digital age.',
-      description: 'Time and motion as artistic medium.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 16,
-      name: 'Omar Hassan',
-      style: 'Calligraphy & Drawing',
-      shortBio: 'Ancient forms meet contemporary expression.',
-      fullBio: 'Omar fuses traditional calligraphic techniques with contemporary drawing practices, creating works that honor heritage while pushing artistic boundaries.',
-      description: 'Ancient forms meet contemporary expression.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 17,
-      name: 'Isabelle Moreau',
-      style: 'Collage & Assemblage',
-      shortBio: 'Found objects, new meanings.',
-      fullBio: 'Isabelle transforms discarded materials into compelling artistic statements, revealing hidden beauty and meaning in the overlooked and forgotten.',
-      description: 'Found objects, new meanings.',
-      color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    },
-    {
-      id: 18,
-      name: 'David Park',
-      style: 'Printmaking',
-      shortBio: 'Precision, layers, and artistic vision.',
-      fullBio: 'David\'s printmaking practice explores the meditative process of mark-making and layering, creating works of remarkable subtlety and depth.',
-      description: 'Precision, layers, and artistic vision.',
-      color: '#FFC500',
-      slideImage: 'SLIDESHOW_IMAGE_URL'
-    }
-  ];
+  const allArtists = artistsJSON.artists;
 
-  // Sponsoren-Logos
   const sponsors = [
     { id: 1, name: 'Sponsor One', logo: 'SPONSOR_LOGO_1_URL' },
     { id: 2, name: 'Sponsor Two', logo: 'SPONSOR_LOGO_2_URL' },
@@ -1426,16 +1239,11 @@ const ArtUPWebsite = () => {
                       className="w-full h-full"
                       style={{
                         backgroundColor: artist.color,
-                        backgroundImage: 'url(ARTIST_PORTRAIT_URL)',
+                        backgroundImage: `url(${artist.portraitImage})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                       }}
                     />
-                    {!artist.color.includes('http') && (
-                      <div className="flex items-center justify-center h-full">
-                        <p className="text-sm font-black" style={{ fontFamily: 'Courier New, monospace' }}>PORTRAIT</p>
-                      </div>
-                    )}
                   </div>
                 </div>
 
@@ -1444,7 +1252,7 @@ const ArtUPWebsite = () => {
                   <div
                     className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center"
                     style={{
-                      backgroundImage: 'url(VIDEO_THUMBNAIL_URL)',
+                      backgroundImage: `url(${artist.videoThumbnail})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
@@ -1463,20 +1271,19 @@ const ArtUPWebsite = () => {
 
               {/* Artworks Grid - 3 pieces */}
               <div className="grid md:grid-cols-3 gap-6">
-                {[1, 2, 3].map((item) => (
-                  <div key={item} className="border-4 border-black overflow-hidden bg-gray-100 h-64 flex items-center justify-center group cursor-pointer hover:shadow-xl transition-all">
+                {artist.artworks && artist.artworks.map((artwork, idx) => (
+                  <div key={idx} className="border-4 border-black overflow-hidden bg-gray-100 h-64 flex items-center justify-center group cursor-pointer hover:shadow-xl transition-all">
                     <div
                       className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center relative group"
                       style={{
-                        backgroundColor: item === 2 ? artist.color : undefined,
-                        backgroundImage: `url(ARTWORK_${item}_URL)`,
+                        backgroundImage: `url(${artwork})`,
                         backgroundSize: 'cover',
                         backgroundPosition: 'center'
                       }}
                     >
                       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-all" />
                       <p className="text-sm font-black text-gray-600 group-hover:text-white transition-colors" style={{ fontFamily: 'Courier New, monospace' }}>
-                        ARTWORK {item}
+                        ARTWORK {idx + 1}
                       </p>
                     </div>
                   </div>
