@@ -89,11 +89,47 @@ const ArtUPWebsite = () => {
   };
 
   const navigateTo = (page, artist = null) => {
-    if (artist) setSelectedArtistDetail(artist);
+    if (artist) {
+      setSelectedArtistDetail(artist);
+      // Update URL mit Künstlernamen
+      const artistSlug = artist.name.toLowerCase().replace(/\s+/g, '-');
+      window.history.pushState(null, '', `/artist/${artistSlug}`);
+    } else {
+      window.history.pushState(null, '', `/${page === 'home' ? '' : page}`);
+    }
     setCurrentPage(page);
     setMobileMenuOpen(false);
     window.scrollTo(0, 0);
   };
+
+  // URL änderungen beim Laden erkennen
+  useEffect(() => {
+    const handlePopState = () => {
+      const path = window.location.pathname;
+      
+      if (path === '/' || path === '') {
+        setCurrentPage('home');
+      } else if (path.startsWith('/artist/')) {
+        const artistSlug = path.replace('/artist/', '').toLowerCase();
+        const artist = allArtists.find(a => a.name.toLowerCase().replace(/\s+/g, '-') === artistSlug);
+        if (artist) {
+          setSelectedArtistDetail(artist);
+          setCurrentPage('artist-detail');
+        }
+      } else {
+        const page = path.replace('/', '');
+        setCurrentPage(page);
+      }
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    
+    // Beim ersten Load URL checken
+    handlePopState();
+
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, [allArtists]);
 
   // Countdown Component
   const CountdownSection = () => {

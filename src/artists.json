@@ -14,7 +14,7 @@
         "https://www.buja-art.com/wp-content/uploads/2024/11/BUJA-happy-ending-180x120-klein.jpg",
         "https://www.buja-art.com/wp-content/uploads/2024/11/BUJA-a-mexican-fairy-tale-160x100-klein-ps.jpg"
       ],
-      "website": "https://www.buja-art.de",
+      "website": "https://www.buja-art.com/",
       "instagram": "https://www.instagram.com/buja_streetart",
       "facebook": null
     },
@@ -24,9 +24,9 @@
       "textKey": "nina",
       "color": "#FFC500",
       "slideImage": "NINA_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "NINA_PORTRAIT_URL",
+      "portraitImage": "https://kunst-eckrich.de/wp-content/uploads/2018/07/Nina-Bussj%C3%A4ger.jpg",
       "videoThumbnail": "NINA_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://www.youtube.com/embed/jNQXAC9IVRw",
+      "videoUrl": "https://www.youtube.com/watch?v=9ZITmU3FiEU",
       "artworks": [
         "NINA_ARTWORK_1_URL",
         "NINA_ARTWORK_2_URL",
@@ -42,9 +42,9 @@
       "textKey": "timothy",
       "color": "#FF1461",
       "slideImage": "TIMOTHY_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "TIMOTHY_PORTRAIT_URL",
+      "portraitImage": "https://static.wixstatic.com/media/be799a_0b0f14c16d324e30a9a604019076cdbe~mv2.jpeg/v1/fill/w_1004,h_1338,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/be799a_0b0f14c16d324e30a9a604019076cdbe~mv2.jpeg",
       "videoThumbnail": "TIMOTHY_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://vimeo.com/90509568",
+      "videoUrl": "https://www.youtube.com/watch?v=PF5Szq9TZCg",
       "artworks": [
         "TIMOTHY_ARTWORK_1_URL",
         "TIMOTHY_ARTWORK_2_URL",
@@ -60,7 +60,7 @@
       "textKey": "gizmoh",
       "color": "#FFC500",
       "slideImage": "https://cdn.myportfolio.com/1d99981d288699994df4ad34b1e413ef/d37457a5-ac5e-4035-bb22-dfa22907eb5a_rw_1920.png?h=8746ad20e56750a7a05513cc64dc948a",
-      "portraitImage": "GIZMOH_PORTRAIT_URL",
+      "portraitImage": "https://cdn.myportfolio.com/1d99981d288699994df4ad34b1e413ef/0ff2ae9e-87ad-4d40-ae1e-563736a92aaa_rw_1200.png?h=108af7cc6f1c25c1197b722298d6f418",
       "videoThumbnail": "GIZMOH_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://vimeo.com/7836802?fl=pl&fe=cm",
       "artworks": [
