@@ -568,13 +568,15 @@ const ArtUPWebsite = () => {
             <button
               onClick={() => setLanguage('de')}
               className="px-3 py-2 transition-all text-black font-black"
+              style={{ backgroundColor: language === 'de' ? '#FFC500' : 'transparent' }}
             >
               DE
             </button>
             <span className="text-gray-300">/</span>
             <button
               onClick={() => setLanguage('en')}
-              className="px-3 py-2 transition-all text-gray-400 hover:text-gray-600"
+              className="px-3 py-2 transition-all text-black font-black"
+              style={{ backgroundColor: language === 'en' ? '#FFC500' : 'transparent' }}
             >
               EN
             </button>
@@ -588,13 +590,15 @@ const ArtUPWebsite = () => {
             <button
               onClick={() => setLanguage('de')}
               className="px-2 py-1 transition-all text-black font-black"
+              style={{ backgroundColor: language === 'de' ? '#FFC500' : 'transparent' }}
             >
               DE
             </button>
             <span className="text-gray-300">/</span>
             <button
               onClick={() => setLanguage('en')}
-              className="px-2 py-1 transition-all text-gray-400 hover:text-gray-600"
+              className="px-2 py-1 transition-all text-black font-black"
+              style={{ backgroundColor: language === 'en' ? '#FFC500' : 'transparent' }}
             >
               EN
             </button>
