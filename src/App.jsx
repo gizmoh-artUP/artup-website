@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MapPin, Calendar, ArrowLeft, Instagram, Mail, Phone, MessageSquare, Menu, X } from 'lucide-react';
+import textsJSON from '../public/texts.json';
 
 const ArtUPWebsite = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,83 +12,20 @@ const ArtUPWebsite = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [formSubmitted, setFormSubmitted] = useState(false);
-  const [language, setLanguage] = useState('de'); // 'de' or 'en'
+  const [language, setLanguage] = useState('de');
 
-  // Translations
-  const t = {
-    de: {
-      home: 'Home',
-      artists: 'Künstler',
-      about: 'Über',
-      contact: 'Kontakt',
-      impressum: 'Impressum',
-      privacy: 'Datenschutz',
-      terms: 'Bedingungen',
-      eventStartsIn: 'Ausstellung öffnet in',
-      days: 'Tage',
-      hours: 'Stunden',
-      minutes: 'Minuten',
-      seconds: 'Sekunden',
-      aboutArtup: 'Über artUP',
-      aboutDescription: 'Eine Ausstellung mit 18 internationalen Künstlern über verschiedene Medien. Von Street Art bis klassischer Malerei, digitale Kunst bis Installationen – artUP feiert zeitgenössischen künstlerischen Ausdruck.',
-      learnMore: 'Mehr erfahren →',
-      location: 'Ort',
-      hours: 'Öffnungszeiten',
-      admission: 'Eintritt',
-      freeEntry: 'Kostenlos',
-      getTouched: 'Kontakt aufnehmen',
-      allArtists: 'Alle Künstler',
-      discoverArtists: 'Entdecken Sie alle 18 teilnehmenden Künstler dieser Ausstellung.',
-      eventDetails: 'Veranstaltungsdetails',
-      exhibitionPeriod: 'Ausstellungszeitraum',
-      venue: 'Veranstaltungsort',
-      contact: 'Kontakt',
-      getInTouch: 'Schreib uns',
-      haveQuestions: 'Fragen zur Ausstellung? Wir würden gerne von dir hören.',
-      name: 'Name',
-      email: 'E-Mail',
-      message: 'Nachricht',
-      sendMessage: 'Nachricht senden',
-      messageSuccess: '✓ Nachricht erfolgreich versendet! Wir melden uns bald.',
-    },
-    en: {
-      home: 'Home',
-      artists: 'Artists',
-      about: 'About',
-      contact: 'Contact',
-      impressum: 'Imprint',
-      privacy: 'Privacy',
-      terms: 'Terms',
-      eventStartsIn: 'Exhibition Opens In',
-      days: 'Days',
-      hours: 'Hours',
-      minutes: 'Minutes',
-      seconds: 'Seconds',
-      aboutArtup: 'About artUP',
-      aboutDescription: 'An exhibition bringing together 18 international artists across diverse mediums. From street art to classical painting, digital art to installations – artUP celebrates contemporary artistic expression.',
-      learnMore: 'Learn More →',
-      location: 'Location',
-      hours: 'Hours',
-      admission: 'Admission',
-      freeEntry: 'Free Entry',
-      getTouched: 'Get in Touch',
-      allArtists: 'All Artists',
-      discoverArtists: 'Discover all 18 participating artists in this year\'s exhibition.',
-      eventDetails: 'Event Details',
-      exhibitionPeriod: 'Exhibition Period',
-      venue: 'Venue',
-      contact: 'Contact',
-      getInTouch: 'Get in Touch',
-      haveQuestions: 'Have questions about the exhibition? We\'d love to hear from you.',
-      name: 'Name',
-      email: 'Email',
-      message: 'Message',
-      sendMessage: 'Send Message',
-      messageSuccess: '✓ Message sent successfully! We\'ll be in touch soon.',
+  // Helper function to get translations from JSON
+  const t = (key) => {
+    if (!textsJSON) return key;
+    const keys = key.split('.');
+    let value = textsJSON[language];
+    
+    for (const k of keys) {
+      value = value?.[k];
     }
+    
+    return value || key;
   };
-
-  const getText = (key) => t[language][key] || t['de'][key];
 
   // Alle 18 Künstler
   const allArtists = [
@@ -385,25 +323,25 @@ const ArtUPWebsite = () => {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-12">
             <p className="text-white text-sm font-black uppercase mb-8 tracking-widest" style={{ fontFamily: 'Courier New, monospace', letterSpacing: '0.3em' }}>
-              Exhibition Opens In
+              {t('countdown.header')}
             </p>
           </div>
 
           {/* Animated Countdown */}
           <div className="flex justify-center gap-2 md:gap-4 mb-12">
-            <CountdownBox value={timeLeft.days} label="Days" />
+            <CountdownBox value={timeLeft.days} label={t('countdown.days')} />
             <div className="flex items-center text-white text-xl md:text-3xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>:</div>
-            <CountdownBox value={timeLeft.hours} label="Hours" />
+            <CountdownBox value={timeLeft.hours} label={t('countdown.hours')} />
             <div className="flex items-center text-white text-xl md:text-3xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>:</div>
-            <CountdownBox value={timeLeft.minutes} label="Minutes" />
+            <CountdownBox value={timeLeft.minutes} label={t('countdown.minutes')} />
             <div className="flex items-center text-white text-xl md:text-3xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>:</div>
-            <CountdownBox value={timeLeft.seconds} label="Seconds" />
+            <CountdownBox value={timeLeft.seconds} label={t('countdown.seconds')} />
           </div>
 
           {/* Start Date - Typographic */}
           <div className="text-center">
             <p className="text-white text-base md:text-lg font-light tracking-widest" style={{ fontFamily: 'Courier New, monospace' }}>
-              April 23, 2026
+              {t('countdown.date')}
             </p>
           </div>
         </div>
@@ -417,28 +355,28 @@ const ArtUPWebsite = () => {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
-            <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>About artUP</h2>
+            <h2 className="text-4xl md:text-5xl font-black mb-6 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>{t('about_teaser.title')}</h2>
             <p className="text-lg leading-relaxed mb-8 font-medium">
-              An exhibition bringing together 18 international artists across diverse mediums. From street art to classical painting, digital art to installations – artUP celebrates contemporary artistic expression.
+              {t('about_teaser.description')}
             </p>
             <p className="text-base font-black uppercase tracking-widest" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}>
-              Learn More →
+              {t('about_teaser.learn_more')}
             </p>
           </div>
           
           <div className="border-4 border-black p-8 bg-white">
             <div className="space-y-4 font-medium">
               <div>
-                <p className="text-sm font-black uppercase text-gray-700">Location</p>
-                <p className="text-lg">Maximilianstraße 99<br />Speyer, Germany</p>
+                <p className="text-sm font-black uppercase text-gray-700">{t('about_teaser.location_label')}</p>
+                <p className="text-lg">{t('about_teaser.location')}</p>
               </div>
               <div className="border-t-2 border-black pt-4">
-                <p className="text-sm font-black uppercase text-gray-700">Hours</p>
-                <p className="text-lg">Tue – Sun<br />11:00 AM – 7:00 PM</p>
+                <p className="text-sm font-black uppercase text-gray-700">{t('about_teaser.hours_label')}</p>
+                <p className="text-lg">{t('about_teaser.hours')}</p>
               </div>
               <div className="border-t-2 border-black pt-4">
-                <p className="text-sm font-black uppercase text-gray-700">Admission</p>
-                <p className="text-lg">Free Entry</p>
+                <p className="text-sm font-black uppercase text-gray-700">{t('about_teaser.admission_label')}</p>
+                <p className="text-lg">{t('about_teaser.admission')}</p>
               </div>
             </div>
           </div>
@@ -480,26 +418,54 @@ const ArtUPWebsite = () => {
       <section className="py-20 px-6 border-b-4 border-black bg-white">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl md:text-5xl font-black mb-12 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>
-            Kommende Events
+            {t('events.title')}
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6">
-            {upcomingEvents.map((event, idx) => (
-              <div key={idx} className="border-4 border-black p-6 hover:shadow-lg transition-all cursor-pointer" style={{ backgroundColor: idx === 0 ? '#FF1461' : idx === 1 ? '#FFC500' : '#FF1461' }}>
-                <p className="text-sm font-black uppercase tracking-widest mb-2" style={{ fontFamily: 'Courier New, monospace', color: idx === 1 ? '#000' : '#fff' }}>
-                  {event.day}
-                </p>
-                <p className="text-3xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: idx === 1 ? '#000' : '#fff' }}>
-                  {getDateDisplay(event.date)}
-                </p>
-                <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Courier New, monospace', color: idx === 1 ? '#000' : '#fff' }}>
-                  {event.title}
-                </h3>
-                <p className="text-sm font-medium" style={{ color: idx === 1 ? '#666' : '#fff' }}>
-                  {event.time}
-                </p>
-              </div>
-            ))}
+            <div className="border-4 border-black p-6 hover:shadow-lg transition-all cursor-pointer" style={{ backgroundColor: '#FF1461' }}>
+              <p className="text-sm font-black uppercase tracking-widest mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
+                {t('events.day_friday')}
+              </p>
+              <p className="text-3xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
+                24 April
+              </p>
+              <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
+                {t('events.event_1')}
+              </h3>
+              <p className="text-sm font-medium" style={{ color: '#fff' }}>
+                {t('events.event_1_time')}
+              </p>
+            </div>
+
+            <div className="border-4 border-black p-6 hover:shadow-lg transition-all cursor-pointer" style={{ backgroundColor: '#FFC500' }}>
+              <p className="text-sm font-black uppercase tracking-widest mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#000' }}>
+                {t('events.day_saturday')}
+              </p>
+              <p className="text-3xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#000' }}>
+                25 April
+              </p>
+              <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#000' }}>
+                {t('events.event_2')}
+              </h3>
+              <p className="text-sm font-medium" style={{ color: '#666' }}>
+                {t('events.event_2_time')}
+              </p>
+            </div>
+
+            <div className="border-4 border-black p-6 hover:shadow-lg transition-all cursor-pointer" style={{ backgroundColor: '#FF1461' }}>
+              <p className="text-sm font-black uppercase tracking-widest mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
+                {t('events.day_sunday')}
+              </p>
+              <p className="text-3xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
+                26 April
+              </p>
+              <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
+                {t('events.event_3')}
+              </h3>
+              <p className="text-sm font-medium" style={{ color: '#fff' }}>
+                {t('events.event_3_time')}
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -534,7 +500,7 @@ const ArtUPWebsite = () => {
               backgroundColor: currentPage === 'home' ? '#FF1461' : 'transparent'
             }}
           >
-            Home
+            {t('nav.home')}
           </button>
           <button 
             onClick={() => navigateTo('artists')} 
@@ -544,7 +510,7 @@ const ArtUPWebsite = () => {
               backgroundColor: currentPage === 'artists' ? '#FF1461' : 'transparent'
             }}
           >
-            Artists
+            {t('nav.artists')}
           </button>
           <button 
             onClick={() => navigateTo('about')} 
@@ -554,7 +520,7 @@ const ArtUPWebsite = () => {
               backgroundColor: currentPage === 'about' ? '#FF1461' : 'transparent'
             }}
           >
-            About
+            {t('nav.about')}
           </button>
           <button 
             onClick={() => navigateTo('contact')} 
@@ -564,7 +530,7 @@ const ArtUPWebsite = () => {
               backgroundColor: currentPage === 'contact' ? '#FF1461' : 'transparent'
             }}
           >
-            Contact
+            {t('nav.contact')}
           </button>
           <button 
             onClick={() => navigateTo('impressum')} 
@@ -574,7 +540,7 @@ const ArtUPWebsite = () => {
               backgroundColor: currentPage === 'impressum' ? '#FF1461' : 'transparent'
             }}
           >
-            Impressum
+            {t('nav.impressum')}
           </button>
           <button 
             onClick={() => navigateTo('privacy')} 
@@ -584,7 +550,7 @@ const ArtUPWebsite = () => {
               backgroundColor: currentPage === 'privacy' ? '#FF1461' : 'transparent'
             }}
           >
-            Privacy
+            {t('nav.privacy')}
           </button>
           <button 
             onClick={() => navigateTo('terms')} 
@@ -594,7 +560,7 @@ const ArtUPWebsite = () => {
               backgroundColor: currentPage === 'terms' ? '#FF1461' : 'transparent'
             }}
           >
-            Terms
+            {t('nav.terms')}
           </button>
 
           {/* Language Switcher - End of Menu */}

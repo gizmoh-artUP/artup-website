@@ -1,0 +1,174 @@
+{
+  "de": {
+    "nav": {
+      "home": "Home",
+      "artists": "Künstler",
+      "about": "Über",
+      "contact": "Kontakt",
+      "impressum": "Impressum",
+      "privacy": "Datenschutz",
+      "terms": "Bedingungen"
+    },
+    "countdown": {
+      "header": "Ausstellung öffnet in",
+      "days": "Tage",
+      "hours": "Stunden",
+      "minutes": "Minuten",
+      "seconds": "Sekunden",
+      "date": "23. April 2026"
+    },
+    "about_teaser": {
+      "title": "Über artUP",
+      "description": "Eine Ausstellung mit 18 internationalen Künstlern über verschiedene Medien. Von Street Art bis klassischer Malerei, digitale Kunst bis Installationen – artUP feiert zeitgenössischen künstlerischen Ausdruck.",
+      "learn_more": "Mehr erfahren →",
+      "location_label": "Ort",
+      "location": "Maximilianstraße 99\nSpeyer, Deutschland",
+      "hours_label": "Öffnungszeiten",
+      "hours": "Di–So\n11:00–19:00 Uhr",
+      "admission_label": "Eintritt",
+      "admission": "Kostenlos"
+    },
+    "events": {
+      "title": "Kommende Events",
+      "day_friday": "Freitag",
+      "day_saturday": "Samstag",
+      "day_sunday": "Sonntag",
+      "event_1": "Vernissage",
+      "event_1_time": "19:00 Uhr",
+      "event_2": "Konzert - ThreeCheese",
+      "event_2_time": "20:00 Uhr",
+      "event_3": "Zauberei",
+      "event_3_time": "18:00 Uhr"
+    },
+    "artists": {
+      "title": "Alle Künstler",
+      "description": "Entdecken Sie alle 18 teilnehmenden Künstler dieser Ausstellung."
+    },
+    "about": {
+      "title": "Über artUP",
+      "exhibition_title": "Die Ausstellung",
+      "exhibition_text": "artUP ist eine zeitgenössische Kunstausstellung mit 18 internationalen Künstlern über verschiedene Medien und Praktiken. Von Street Art bis klassischer Malerei, digitale Kunst bis Installationen – artUP feiert die Vielfalt und Vitalität zeitgenössischen künstlerischen Ausdrucks.\n\nDiese monatelange Ausstellung im Herzen Speyers schafft eine Plattform für Künstler, um ihre Werke zu präsentieren und mit der Gemeinde in Dialog zu treten.",
+      "event_details": "Veranstaltungsdetails",
+      "dates_label": "Daten",
+      "dates": "23. April – 17. Mai 2026",
+      "location_label": "Ort",
+      "location": "Maximilianstraße 99\n67346 Speyer, Deutschland",
+      "hours_label": "Öffnungszeiten",
+      "hours": "Dienstag – Sonntag\n11:00 AM – 19:00 Uhr\nMontag geschlossen",
+      "admission_label": "Eintritt",
+      "admission": "Kostenlos",
+      "practical_info": "Praktische Informationen",
+      "getting_there": "Anfahrt",
+      "getting_there_text": "Mit Auto: Parkplätze sind in der Nähe verfügbar\n\nMit öffentlichen Verkehrsmitteln: Speyer Hauptbahnhof ist 15 Min. zu Fuß entfernt\n\nAdresse:\nMaximilianstraße 99\n67346 Speyer",
+      "contact_label": "Kontakt",
+      "contact_text": "Email:\ncontact@artup.space\n\nTelefon:\n+49 (0) 6232 XXX XXX\n\nWeb:\nwww.artup.space",
+      "accessibility": "Barrierefreiheit",
+      "accessibility_text": "✓ Rollstuhlgerecht\n✓ Barrierefreie Toiletten\n✓ Führungen verfügbar\n✓ Mehrsprachig\n\nFür spezielle Anforderungen bitte im Voraus kontaktieren.",
+      "media_press": "Medien & Presse",
+      "press_info": "artUP ist offen für Medienanfragen, Interviews und Berichterstattung. Wir stellen Presseunterlagen, hochauflösende Bilder und Künstlerinformationen zur Verfügung.",
+      "press_contact": "Pressekontakt",
+      "exhibition_title_full": "artUP – Contemporary Art Exhibition",
+      "download_media_kit": "Medienkit herunterladen",
+      "press_kit": "📥 PRESS KIT (PDF)",
+      "high_res_images": "📸 HOCHAUFLÖSENDE BILDER",
+      "artist_bios": "📋 KÜNSTLERBIOGRAFIEN",
+      "ready_visit": "Bereit zu besuchen?",
+      "get_in_touch": "Kontakt aufnehmen"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "description": "Fragen zur Ausstellung? Wir würden gerne von dir hören.",
+      "name_label": "Name",
+      "email_label": "E-Mail",
+      "message_label": "Nachricht",
+      "send_button": "Nachricht senden",
+      "success": "✓ Nachricht erfolgreich versendet! Wir melden uns bald."
+    }
+  },
+  "en": {
+    "nav": {
+      "home": "Home",
+      "artists": "Artists",
+      "about": "About",
+      "contact": "Contact",
+      "impressum": "Imprint",
+      "privacy": "Privacy",
+      "terms": "Terms"
+    },
+    "countdown": {
+      "header": "Exhibition Opens In",
+      "days": "Days",
+      "hours": "Hours",
+      "minutes": "Minutes",
+      "seconds": "Seconds",
+      "date": "April 23, 2026"
+    },
+    "about_teaser": {
+      "title": "About artUP",
+      "description": "An exhibition bringing together 18 international artists across diverse mediums. From street art to classical painting, digital art to installations – artUP celebrates contemporary artistic expression.",
+      "learn_more": "Learn More →",
+      "location_label": "Location",
+      "location": "Maximilianstraße 99\nSpeyer, Germany",
+      "hours_label": "Hours",
+      "hours": "Tue – Sun\n11:00 AM – 7:00 PM",
+      "admission_label": "Admission",
+      "admission": "Free Entry"
+    },
+    "events": {
+      "title": "Upcoming Events",
+      "day_friday": "Friday",
+      "day_saturday": "Saturday",
+      "day_sunday": "Sunday",
+      "event_1": "Vernissage",
+      "event_1_time": "7:00 PM",
+      "event_2": "Concert - ThreeCheese",
+      "event_2_time": "8:00 PM",
+      "event_3": "Magic Show",
+      "event_3_time": "6:00 PM"
+    },
+    "artists": {
+      "title": "All Artists",
+      "description": "Discover all 18 participating artists in this year's exhibition."
+    },
+    "about": {
+      "title": "About artUP",
+      "exhibition_title": "The Exhibition",
+      "exhibition_text": "artUP is a contemporary art exhibition bringing together 18 international artists across diverse mediums and practices. From street art to classical painting, digital art to installations – artUP celebrates the diversity and vitality of contemporary artistic expression.\n\nHeld in the heart of Speyer, this month-long exhibition creates a platform for emerging and established artists to showcase their work and engage with the community.",
+      "event_details": "Event Details",
+      "dates_label": "Dates",
+      "dates": "April 23 – May 17, 2026",
+      "location_label": "Location",
+      "location": "Maximilianstraße 99\n67346 Speyer, Germany",
+      "hours_label": "Hours",
+      "hours": "Tuesday – Sunday\n11:00 AM – 7:00 PM\nClosed Mondays",
+      "admission_label": "Admission",
+      "admission": "Free Entry",
+      "practical_info": "Practical Information",
+      "getting_there": "Getting There",
+      "getting_there_text": "By Car: Parking available at nearby public lots\n\nBy Public Transport: Speyer Main Station is 15 min walking distance\n\nAddress:\nMaximilianstraße 99\n67346 Speyer",
+      "contact_label": "Contact",
+      "contact_text": "Email:\ncontact@artup.space\n\nPhone:\n+49 (0) 6232 XXX XXX\n\nWeb:\nwww.artup.space",
+      "accessibility": "Accessibility",
+      "accessibility_text": "✓ Wheelchair accessible\n✓ Accessible restrooms\n✓ Guided tours available\n✓ Multiple languages\n\nFor special accommodations, please contact us in advance.",
+      "media_press": "Media & Press",
+      "press_info": "artUP is open to media inquiries, interviews, and coverage. We provide press materials, high-resolution images, and artist information.",
+      "press_contact": "Press Contact",
+      "exhibition_title_full": "artUP – Contemporary Art Exhibition",
+      "download_media_kit": "Download Media Kit",
+      "press_kit": "📥 PRESS KIT (PDF)",
+      "high_res_images": "📸 HIGH-RES IMAGES",
+      "artist_bios": "📋 ARTIST BIOS",
+      "ready_visit": "Ready to Visit?",
+      "get_in_touch": "Get in Touch"
+    },
+    "contact": {
+      "title": "Contact",
+      "description": "Have questions about the exhibition? We'd love to hear from you.",
+      "name_label": "Name",
+      "email_label": "Email",
+      "message_label": "Message",
+      "send_button": "Send Message",
+      "success": "✓ Message sent successfully! We'll be in touch soon."
+    }
+  }
+}
