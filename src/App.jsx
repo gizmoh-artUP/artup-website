@@ -1276,7 +1276,7 @@ const ArtUPWebsite = () => {
             {/* Portfolio Grid */}
             <div className="mb-24">
               {/* Portrait & Video Row */}
-              <div className="grid md:grid-cols-3 gap-6 mb-8 items-stretch">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8 items-stretch">
                 {/* Artist Portrait */}
                 <div className="md:col-span-1 border-4 border-black overflow-hidden bg-gray-100" style={{ aspectRatio: '4 / 5' }}>
                   <div
@@ -1291,7 +1291,7 @@ const ArtUPWebsite = () => {
                 </div>
 
                 {/* Video Embed - gleiche Höhe wie Portrait */}
-                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black" style={{ height: '100%', minHeight: '400px' }}>
+                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black h-80 md:h-auto" style={{ height: 'auto', minHeight: '400px', ...({ md: { height: '100%' } }) }}>
                   {artist.videoUrl ? (
                     <iframe
                       width="100%"
