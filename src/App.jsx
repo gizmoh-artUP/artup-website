@@ -1291,7 +1291,7 @@ const ArtUPWebsite = () => {
                 </div>
 
                 {/* Video Embed - gleiche Höhe wie Portrait */}
-                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black" style={{ height: '100%' }}>
+                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black" style={{ height: '100%', minHeight: '400px' }}>
                   {artist.videoUrl ? (
                     <iframe
                       width="100%"
