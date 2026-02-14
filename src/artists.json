@@ -5,27 +5,324 @@
       "name": "BUJA",
       "textKey": "buja",
       "color": "#FF1461",
-      "slideImage": "BUJA_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "BUJA_PORTRAIT_URL",
+      "slideImage": "https://www.buja-art.com/wp-content/uploads/2024/11/BUJA-Heidekitz-DarkBlue-140x100-klein-k.jpg",
+      "portraitImage": "https://www.buja-art.com/wp-content/uploads/2024/11/csm_ZA5K3514-3_8ec07f0e68.jpg",
       "videoThumbnail": "BUJA_VIDEO_THUMBNAIL_URL",
-      "artworks": ["BUJA_ARTWORK_1_URL", "BUJA_ARTWORK_2_URL", "BUJA_ARTWORK_3_URL"]
+      "videoUrl": "https://youtu.be/vVZrfv7ZA_k",
+      "artworks": [
+        "https://www.buja-art.com/wp-content/uploads/2024/11/BUJA-how-to-fly-120x120-klein-scaled.jpg",
+        "https://www.buja-art.com/wp-content/uploads/2024/11/BUJA-happy-ending-180x120-klein.jpg",
+        "https://www.buja-art.com/wp-content/uploads/2024/11/BUJA-a-mexican-fairy-tale-160x100-klein-ps.jpg"
+      ],
+      "website": "https://www.buja-art.de",
+      "instagram": "https://www.instagram.com/buja_streetart",
+      "facebook": null
     },
-    {"id": 2, "name": "Nina Bussjäger", "textKey": "nina", "color": "#FFC500", "slideImage": "NINA_SLIDESHOW_IMAGE_URL", "portraitImage": "NINA_PORTRAIT_URL", "videoThumbnail": "NINA_VIDEO_THUMBNAIL_URL", "artworks": ["NINA_ARTWORK_1_URL", "NINA_ARTWORK_2_URL", "NINA_ARTWORK_3_URL"]},
-    {"id": 3, "name": "Timothy Starratt", "textKey": "timothy", "color": "#FF1461", "slideImage": "TIMOTHY_SLIDESHOW_IMAGE_URL", "portraitImage": "TIMOTHY_PORTRAIT_URL", "videoThumbnail": "TIMOTHY_VIDEO_THUMBNAIL_URL", "artworks": ["TIMOTHY_ARTWORK_1_URL", "TIMOTHY_ARTWORK_2_URL", "TIMOTHY_ARTWORK_3_URL"]},
-    {"id": 4, "name": "Gizmoh", "textKey": "gizmoh", "color": "#FFC500", "slideImage": "GIZMOH_SLIDESHOW_IMAGE_URL", "portraitImage": "GIZMOH_PORTRAIT_URL", "videoThumbnail": "GIZMOH_VIDEO_THUMBNAIL_URL", "artworks": ["GIZMOH_ARTWORK_1_URL", "GIZMOH_ARTWORK_2_URL", "GIZMOH_ARTWORK_3_URL"]},
-    {"id": 5, "name": "Elena Rossi", "textKey": "elena", "color": "#FF1461", "slideImage": "ELENA_SLIDESHOW_IMAGE_URL", "portraitImage": "ELENA_PORTRAIT_URL", "videoThumbnail": "ELENA_VIDEO_THUMBNAIL_URL", "artworks": ["ELENA_ARTWORK_1_URL", "ELENA_ARTWORK_2_URL", "ELENA_ARTWORK_3_URL"]},
-    {"id": 6, "name": "Marcus Chen", "textKey": "marcus", "color": "#FFC500", "slideImage": "MARCUS_SLIDESHOW_IMAGE_URL", "portraitImage": "MARCUS_PORTRAIT_URL", "videoThumbnail": "MARCUS_VIDEO_THUMBNAIL_URL", "artworks": ["MARCUS_ARTWORK_1_URL", "MARCUS_ARTWORK_2_URL", "MARCUS_ARTWORK_3_URL"]},
-    {"id": 7, "name": "Sofía García", "textKey": "sofia", "color": "#FF1461", "slideImage": "SOFIA_SLIDESHOW_IMAGE_URL", "portraitImage": "SOFIA_PORTRAIT_URL", "videoThumbnail": "SOFIA_VIDEO_THUMBNAIL_URL", "artworks": ["SOFIA_ARTWORK_1_URL", "SOFIA_ARTWORK_2_URL", "SOFIA_ARTWORK_3_URL"]},
-    {"id": 8, "name": "James Wilson", "textKey": "james", "color": "#FFC500", "slideImage": "JAMES_SLIDESHOW_IMAGE_URL", "portraitImage": "JAMES_PORTRAIT_URL", "videoThumbnail": "JAMES_VIDEO_THUMBNAIL_URL", "artworks": ["JAMES_ARTWORK_1_URL", "JAMES_ARTWORK_2_URL", "JAMES_ARTWORK_3_URL"]},
-    {"id": 9, "name": "Yuki Tanaka", "textKey": "yuki", "color": "#FF1461", "slideImage": "YUKI_SLIDESHOW_IMAGE_URL", "portraitImage": "YUKI_PORTRAIT_URL", "videoThumbnail": "YUKI_VIDEO_THUMBNAIL_URL", "artworks": ["YUKI_ARTWORK_1_URL", "YUKI_ARTWORK_2_URL", "YUKI_ARTWORK_3_URL"]},
-    {"id": 10, "name": "Klaus Mueller", "textKey": "klaus", "color": "#FFC500", "slideImage": "KLAUS_SLIDESHOW_IMAGE_URL", "portraitImage": "KLAUS_PORTRAIT_URL", "videoThumbnail": "KLAUS_VIDEO_THUMBNAIL_URL", "artworks": ["KLAUS_ARTWORK_1_URL", "KLAUS_ARTWORK_2_URL", "KLAUS_ARTWORK_3_URL"]},
-    {"id": 11, "name": "Priya Sharma", "textKey": "priya", "color": "#FF1461", "slideImage": "PRIYA_SLIDESHOW_IMAGE_URL", "portraitImage": "PRIYA_PORTRAIT_URL", "videoThumbnail": "PRIYA_VIDEO_THUMBNAIL_URL", "artworks": ["PRIYA_ARTWORK_1_URL", "PRIYA_ARTWORK_2_URL", "PRIYA_ARTWORK_3_URL"]},
-    {"id": 12, "name": "Ahmed Hassan", "textKey": "ahmed", "color": "#FFC500", "slideImage": "AHMED_SLIDESHOW_IMAGE_URL", "portraitImage": "AHMED_PORTRAIT_URL", "videoThumbnail": "AHMED_VIDEO_THUMBNAIL_URL", "artworks": ["AHMED_ARTWORK_1_URL", "AHMED_ARTWORK_2_URL", "AHMED_ARTWORK_3_URL"]},
-    {"id": 13, "name": "Lucia Fontana", "textKey": "lucia", "color": "#FF1461", "slideImage": "LUCIA_SLIDESHOW_IMAGE_URL", "portraitImage": "LUCIA_PORTRAIT_URL", "videoThumbnail": "LUCIA_VIDEO_THUMBNAIL_URL", "artworks": ["LUCIA_ARTWORK_1_URL", "LUCIA_ARTWORK_2_URL", "LUCIA_ARTWORK_3_URL"]},
-    {"id": 14, "name": "David Kim", "textKey": "david", "color": "#FFC500", "slideImage": "DAVID_SLIDESHOW_IMAGE_URL", "portraitImage": "DAVID_PORTRAIT_URL", "videoThumbnail": "DAVID_VIDEO_THUMBNAIL_URL", "artworks": ["DAVID_ARTWORK_1_URL", "DAVID_ARTWORK_2_URL", "DAVID_ARTWORK_3_URL"]},
-    {"id": 15, "name": "Isabelle Dubois", "textKey": "isabelle", "color": "#FF1461", "slideImage": "ISABELLE_SLIDESHOW_IMAGE_URL", "portraitImage": "ISABELLE_PORTRAIT_URL", "videoThumbnail": "ISABELLE_VIDEO_THUMBNAIL_URL", "artworks": ["ISABELLE_ARTWORK_1_URL", "ISABELLE_ARTWORK_2_URL", "ISABELLE_ARTWORK_3_URL"]},
-    {"id": 16, "name": "Oscar Santos", "textKey": "oscar", "color": "#FFC500", "slideImage": "OSCAR_SLIDESHOW_IMAGE_URL", "portraitImage": "OSCAR_PORTRAIT_URL", "videoThumbnail": "OSCAR_VIDEO_THUMBNAIL_URL", "artworks": ["OSCAR_ARTWORK_1_URL", "OSCAR_ARTWORK_2_URL", "OSCAR_ARTWORK_3_URL"]},
-    {"id": 17, "name": "Mei Wong", "textKey": "mei", "color": "#FF1461", "slideImage": "MEI_SLIDESHOW_IMAGE_URL", "portraitImage": "MEI_PORTRAIT_URL", "videoThumbnail": "MEI_VIDEO_THUMBNAIL_URL", "artworks": ["MEI_ARTWORK_1_URL", "MEI_ARTWORK_2_URL", "MEI_ARTWORK_3_URL"]},
-    {"id": 18, "name": "Carlos Moreno", "textKey": "carlos", "color": "#FFC500", "slideImage": "CARLOS_SLIDESHOW_IMAGE_URL", "portraitImage": "CARLOS_PORTRAIT_URL", "videoThumbnail": "CARLOS_VIDEO_THUMBNAIL_URL", "artworks": ["CARLOS_ARTWORK_1_URL", "CARLOS_ARTWORK_2_URL", "CARLOS_ARTWORK_3_URL"]}
+    {
+      "id": 2,
+      "name": "Nina Bussjäger",
+      "textKey": "nina",
+      "color": "#FFC500",
+      "slideImage": "NINA_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "NINA_PORTRAIT_URL",
+      "videoThumbnail": "NINA_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/jNQXAC9IVRw",
+      "artworks": [
+        "NINA_ARTWORK_1_URL",
+        "NINA_ARTWORK_2_URL",
+        "NINA_ARTWORK_3_URL"
+      ],
+      "website": "https://www.ninabussjager.com",
+      "instagram": "https://www.instagram.com/ninabussjager",
+      "facebook": "https://www.facebook.com/ninabussjager"
+    },
+    {
+      "id": 3,
+      "name": "Timothy Starratt",
+      "textKey": "timothy",
+      "color": "#FF1461",
+      "slideImage": "TIMOTHY_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "TIMOTHY_PORTRAIT_URL",
+      "videoThumbnail": "TIMOTHY_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://vimeo.com/90509568",
+      "artworks": [
+        "TIMOTHY_ARTWORK_1_URL",
+        "TIMOTHY_ARTWORK_2_URL",
+        "TIMOTHY_ARTWORK_3_URL"
+      ],
+      "website": "https://www.timothystarratt.com",
+      "instagram": "https://www.instagram.com/timothystarratt",
+      "facebook": "https://www.facebook.com/timothystarratt"
+    },
+    {
+      "id": 4,
+      "name": "Gizmoh",
+      "textKey": "gizmoh",
+      "color": "#FFC500",
+      "slideImage": "https://cdn.myportfolio.com/1d99981d288699994df4ad34b1e413ef/d37457a5-ac5e-4035-bb22-dfa22907eb5a_rw_1920.png?h=8746ad20e56750a7a05513cc64dc948a",
+      "portraitImage": "GIZMOH_PORTRAIT_URL",
+      "videoThumbnail": "GIZMOH_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://vimeo.com/7836802?fl=pl&fe=cm",
+      "artworks": [
+        "GIZMOH_ARTWORK_1_URL",
+        "GIZMOH_ARTWORK_2_URL",
+        "GIZMOH_ARTWORK_3_URL"
+      ],
+      "website": "https://www.traumdesign.net",
+      "instagram": "https://www.instagram.com/gizmoh",
+      "facebook": null
+    },
+    {
+      "id": 5,
+      "name": "Elena Rossi",
+      "textKey": "elena",
+      "color": "#FF1461",
+      "slideImage": "ELENA_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "ELENA_PORTRAIT_URL",
+      "videoThumbnail": "ELENA_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/M7lc1BCxL00",
+      "artworks": [
+        "ELENA_ARTWORK_1_URL",
+        "ELENA_ARTWORK_2_URL",
+        "ELENA_ARTWORK_3_URL"
+      ],
+      "website": "https://www.elenarossi.it",
+      "instagram": "https://www.instagram.com/elenarossi_art",
+      "facebook": "https://www.facebook.com/elenarossiart"
+    },
+    {
+      "id": 6,
+      "name": "Marcus Chen",
+      "textKey": "marcus",
+      "color": "#FFC500",
+      "slideImage": "MARCUS_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "MARCUS_PORTRAIT_URL",
+      "videoThumbnail": "MARCUS_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://vimeo.com/76979871",
+      "artworks": [
+        "MARCUS_ARTWORK_1_URL",
+        "MARCUS_ARTWORK_2_URL",
+        "MARCUS_ARTWORK_3_URL"
+      ],
+      "website": "https://www.marcuschen.art",
+      "instagram": "https://www.instagram.com/marcuschen_artist",
+      "facebook": "https://www.facebook.com/marcuschenart"
+    },
+    {
+      "id": 7,
+      "name": "Sofía García",
+      "textKey": "sofia",
+      "color": "#FF1461",
+      "slideImage": "SOFIA_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "SOFIA_PORTRAIT_URL",
+      "videoThumbnail": "SOFIA_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/OPf0YbXqDm0",
+      "artworks": [
+        "SOFIA_ARTWORK_1_URL",
+        "SOFIA_ARTWORK_2_URL",
+        "SOFIA_ARTWORK_3_URL"
+      ],
+      "website": "https://www.sofiagarcia.es",
+      "instagram": "https://www.instagram.com/sofiagarcia_art",
+      "facebook": "https://www.facebook.com/sofiagarciart"
+    },
+    {
+      "id": 8,
+      "name": "James Wilson",
+      "textKey": "james",
+      "color": "#FFC500",
+      "slideImage": "JAMES_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "JAMES_PORTRAIT_URL",
+      "videoThumbnail": "JAMES_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/ZwKhaBi-1d0",
+      "artworks": [
+        "JAMES_ARTWORK_1_URL",
+        "JAMES_ARTWORK_2_URL",
+        "JAMES_ARTWORK_3_URL"
+      ],
+      "website": "https://www.jameswilson.co.uk",
+      "instagram": "https://www.instagram.com/jameswilson_art",
+      "facebook": "https://www.facebook.com/jameswilsonart"
+    },
+    {
+      "id": 9,
+      "name": "Yuki Tanaka",
+      "textKey": "yuki",
+      "color": "#FF1461",
+      "slideImage": "YUKI_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "YUKI_PORTRAIT_URL",
+      "videoThumbnail": "YUKI_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://vimeo.com/191710701",
+      "artworks": [
+        "YUKI_ARTWORK_1_URL",
+        "YUKI_ARTWORK_2_URL",
+        "YUKI_ARTWORK_3_URL"
+      ],
+      "website": "https://www.yukitanaka.jp",
+      "instagram": "https://www.instagram.com/yukitanaka_art",
+      "facebook": "https://www.facebook.com/yukitanakaart"
+    },
+    {
+      "id": 10,
+      "name": "Klaus Mueller",
+      "textKey": "klaus",
+      "color": "#FFC500",
+      "slideImage": "KLAUS_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "KLAUS_PORTRAIT_URL",
+      "videoThumbnail": "KLAUS_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/kJQP7kiw9Fk",
+      "artworks": [
+        "KLAUS_ARTWORK_1_URL",
+        "KLAUS_ARTWORK_2_URL",
+        "KLAUS_ARTWORK_3_URL"
+      ],
+      "website": "https://www.klausmueller.de",
+      "instagram": "https://www.instagram.com/klausmueller_art",
+      "facebook": "https://www.facebook.com/klausmuellerart"
+    },
+    {
+      "id": 11,
+      "name": "Priya Sharma",
+      "textKey": "priya",
+      "color": "#FF1461",
+      "slideImage": "PRIYA_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "PRIYA_PORTRAIT_URL",
+      "videoThumbnail": "PRIYA_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/tYzMGcUty6s",
+      "artworks": [
+        "PRIYA_ARTWORK_1_URL",
+        "PRIYA_ARTWORK_2_URL",
+        "PRIYA_ARTWORK_3_URL"
+      ],
+      "website": "https://www.priyasharma.in",
+      "instagram": "https://www.instagram.com/priyasharma_art",
+      "facebook": "https://www.facebook.com/priyasharmaart"
+    },
+    {
+      "id": 12,
+      "name": "Ahmed Hassan",
+      "textKey": "ahmed",
+      "color": "#FFC500",
+      "slideImage": "AHMED_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "AHMED_PORTRAIT_URL",
+      "videoThumbnail": "AHMED_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://vimeo.com/286994633",
+      "artworks": [
+        "AHMED_ARTWORK_1_URL",
+        "AHMED_ARTWORK_2_URL",
+        "AHMED_ARTWORK_3_URL"
+      ],
+      "website": "https://www.ahmedhassan.ae",
+      "instagram": "https://www.instagram.com/ahmedhassan_art",
+      "facebook": "https://www.facebook.com/ahmedhassanart"
+    },
+    {
+      "id": 13,
+      "name": "Lucia Fontana",
+      "textKey": "lucia",
+      "color": "#FF1461",
+      "slideImage": "LUCIA_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "LUCIA_PORTRAIT_URL",
+      "videoThumbnail": "LUCIA_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+      "artworks": [
+        "LUCIA_ARTWORK_1_URL",
+        "LUCIA_ARTWORK_2_URL",
+        "LUCIA_ARTWORK_3_URL"
+      ],
+      "website": "https://www.luciafontana.it",
+      "instagram": "https://www.instagram.com/luciafontana_art",
+      "facebook": "https://www.facebook.com/luciafontanaart"
+    },
+    {
+      "id": 14,
+      "name": "David Kim",
+      "textKey": "david",
+      "color": "#FFC500",
+      "slideImage": "DAVID_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "DAVID_PORTRAIT_URL",
+      "videoThumbnail": "DAVID_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/6JwxnHjAl0Y",
+      "artworks": [
+        "DAVID_ARTWORK_1_URL",
+        "DAVID_ARTWORK_2_URL",
+        "DAVID_ARTWORK_3_URL"
+      ],
+      "website": "https://www.davidkim.kr",
+      "instagram": "https://www.instagram.com/davidkim_artist",
+      "facebook": "https://www.facebook.com/davidkimart"
+    },
+    {
+      "id": 15,
+      "name": "Isabelle Dubois",
+      "textKey": "isabelle",
+      "color": "#FF1461",
+      "slideImage": "ISABELLE_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "ISABELLE_PORTRAIT_URL",
+      "videoThumbnail": "ISABELLE_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://vimeo.com/374197516",
+      "artworks": [
+        "ISABELLE_ARTWORK_1_URL",
+        "ISABELLE_ARTWORK_2_URL",
+        "ISABELLE_ARTWORK_3_URL"
+      ],
+      "website": "https://www.isabelledubois.fr",
+      "instagram": "https://www.instagram.com/isabelledubois_art",
+      "facebook": "https://www.facebook.com/isabelleduboisart"
+    },
+    {
+      "id": 16,
+      "name": "Oscar Santos",
+      "textKey": "oscar",
+      "color": "#FFC500",
+      "slideImage": "OSCAR_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "OSCAR_PORTRAIT_URL",
+      "videoThumbnail": "OSCAR_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/LXb3EKWsInQ",
+      "artworks": [
+        "OSCAR_ARTWORK_1_URL",
+        "OSCAR_ARTWORK_2_URL",
+        "OSCAR_ARTWORK_3_URL"
+      ],
+      "website": "https://www.oscarsantos.com.br",
+      "instagram": "https://www.instagram.com/oscarsantos_artist",
+      "facebook": "https://www.facebook.com/oscarsantosart"
+    },
+    {
+      "id": 17,
+      "name": "Mei Wong",
+      "textKey": "mei",
+      "color": "#FF1461",
+      "slideImage": "MEI_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "MEI_PORTRAIT_URL",
+      "videoThumbnail": "MEI_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://www.youtube.com/embed/2lAB1z9MzP0",
+      "artworks": [
+        "MEI_ARTWORK_1_URL",
+        "MEI_ARTWORK_2_URL",
+        "MEI_ARTWORK_3_URL"
+      ],
+      "website": "https://www.meiwong.hk",
+      "instagram": "https://www.instagram.com/meiwong_art",
+      "facebook": "https://www.facebook.com/meiwongarts"
+    },
+    {
+      "id": 18,
+      "name": "Carlos Moreno",
+      "textKey": "carlos",
+      "color": "#FFC500",
+      "slideImage": "CARLOS_SLIDESHOW_IMAGE_URL",
+      "portraitImage": "CARLOS_PORTRAIT_URL",
+      "videoThumbnail": "CARLOS_VIDEO_THUMBNAIL_URL",
+      "videoUrl": "https://vimeo.com/542385064",
+      "artworks": [
+        "CARLOS_ARTWORK_1_URL",
+        "CARLOS_ARTWORK_2_URL",
+        "CARLOS_ARTWORK_3_URL"
+      ],
+      "website": "https://www.carlosmoreno.mx",
+      "instagram": "https://www.instagram.com/carlosmoreno_artist",
+      "facebook": "https://www.facebook.com/carlosmorenart"
+    }
   ]
 }

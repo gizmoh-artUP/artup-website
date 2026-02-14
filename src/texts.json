@@ -183,6 +183,18 @@
       "ready_visit": "Bereit zu besuchen?",
       "get_in_touch": "Kontakt aufnehmen"
     },
+    "artists_page": {
+      "title": "Alle Künstler",
+      "description": "Entdecken Sie alle 18 teilnehmenden Künstler dieser Ausstellung."
+    },
+    "about_page": {
+      "title": "Über artUP",
+      "description": "artUP ist eine zeitgenössische Kunstausstellung, die 18 internationale Künstler zeigt. Von Street Art bis klassischer Malerei, digitale Kunst bis Installationen – artUP feiert vielfältigen künstlerischen Ausdruck.",
+      "exhibition_period": "23. April – 17. Mai 2026",
+      "venue": "Maximilianstraße 99, Speyer, Deutschland",
+      "hours": "Dienstag – Sonntag, 11:00 – 19:00 Uhr",
+      "admission": "Kostenlos"
+    },
     "contact": {
       "title": "Kontakt",
       "description": "Fragen zur Ausstellung? Wir würden gerne von dir hören.",
@@ -376,6 +388,18 @@
       "artist_bios": "📋 ARTIST BIOS",
       "ready_visit": "Ready to Visit?",
       "get_in_touch": "Get in Touch"
+    },
+    "artists_page": {
+      "title": "All Artists",
+      "description": "Discover all 18 participating artists in this year's exhibition."
+    },
+    "about_page": {
+      "title": "About artUP",
+      "description": "artUP is a contemporary art exhibition featuring 18 international artists. From street art to classical painting, digital art to installations – artUP celebrates diverse artistic expression.",
+      "exhibition_period": "April 23 – May 17, 2026",
+      "venue": "Maximilianstraße 99, Speyer, Germany",
+      "hours": "Tuesday – Sunday, 11:00 AM – 7:00 PM",
+      "admission": "Free"
     },
     "contact": {
       "title": "Contact",

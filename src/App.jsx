@@ -39,10 +39,10 @@ const ArtUPWebsite = () => {
   const allArtists = artistsJSON.artists;
 
   const sponsors = [
-    { id: 1, name: 'Sponsor One', logo: 'SPONSOR_LOGO_1_URL' },
-    { id: 2, name: 'Sponsor Two', logo: 'SPONSOR_LOGO_2_URL' },
-    { id: 3, name: 'Sponsor Three', logo: 'SPONSOR_LOGO_3_URL' },
-    { id: 4, name: 'Sponsor Four', logo: 'SPONSOR_LOGO_4_URL' }
+    { id: 1, name: 'Sponsor One', logo: 'SPONSOR_LOGO_1_URL', website: 'https://www.sponsor-one.com' },
+    { id: 2, name: 'Sponsor Two', logo: 'SPONSOR_LOGO_2_URL', website: 'https://www.sponsor-two.com' },
+    { id: 3, name: 'Sponsor Three', logo: 'SPONSOR_LOGO_3_URL', website: 'https://www.sponsor-three.com' },
+    { id: 4, name: 'Sponsor Four', logo: 'SPONSOR_LOGO_4_URL', website: 'https://www.sponsor-four.com' }
   ];
 
   // Zufällige Featured Artists generieren
@@ -353,36 +353,6 @@ const ArtUPWebsite = () => {
           >
             {t('nav.contact')}
           </button>
-          <button 
-            onClick={() => navigateTo('impressum')} 
-            className={`px-4 py-2 transition-all uppercase tracking-wide text-xs ${currentPage === 'impressum' ? 'text-white' : 'text-black hover:opacity-60'}`}
-            style={{ 
-              fontFamily: 'Courier New, monospace',
-              backgroundColor: currentPage === 'impressum' ? '#FF1461' : 'transparent'
-            }}
-          >
-            {t('nav.impressum')}
-          </button>
-          <button 
-            onClick={() => navigateTo('privacy')} 
-            className={`px-4 py-2 transition-all uppercase tracking-wide text-xs ${currentPage === 'privacy' ? 'text-white' : 'text-black hover:opacity-60'}`}
-            style={{ 
-              fontFamily: 'Courier New, monospace',
-              backgroundColor: currentPage === 'privacy' ? '#FF1461' : 'transparent'
-            }}
-          >
-            {t('nav.privacy')}
-          </button>
-          <button 
-            onClick={() => navigateTo('terms')} 
-            className={`px-4 py-2 transition-all uppercase tracking-wide text-xs ${currentPage === 'terms' ? 'text-white' : 'text-black hover:opacity-60'}`}
-            style={{ 
-              fontFamily: 'Courier New, monospace',
-              backgroundColor: currentPage === 'terms' ? '#FF1461' : 'transparent'
-            }}
-          >
-            {t('nav.terms')}
-          </button>
 
           {/* Language Switcher - End of Menu */}
           <div className="flex gap-2 text-xs font-medium border-l border-gray-300 pl-6 ml-4" style={{ fontFamily: 'Courier New, monospace' }}>
@@ -465,27 +435,6 @@ const ArtUPWebsite = () => {
             style={{ fontFamily: 'Courier New, monospace' }}
           >
             CONTACT
-          </button>
-          <button 
-            onClick={() => navigateTo('impressum')} 
-            className="block w-full text-left py-2 hover:text-pink-600 transition-colors font-medium text-sm"
-            style={{ fontFamily: 'Courier New, monospace' }}
-          >
-            IMPRESSUM
-          </button>
-          <button 
-            onClick={() => navigateTo('privacy')} 
-            className="block w-full text-left py-2 hover:text-pink-600 transition-colors font-medium text-sm"
-            style={{ fontFamily: 'Courier New, monospace' }}
-          >
-            PRIVACY
-          </button>
-          <button 
-            onClick={() => navigateTo('terms')} 
-            className="block w-full text-left py-2 hover:text-pink-600 transition-colors font-medium text-sm"
-            style={{ fontFamily: 'Courier New, monospace' }}
-          >
-            TERMS
           </button>
         </div>
       )}
@@ -612,9 +561,16 @@ const ArtUPWebsite = () => {
           <h3 className="text-sm font-black uppercase tracking-widest mb-8" style={{ fontFamily: 'Courier New, monospace' }}>Supported by</h3>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {sponsors.map((sponsor) => (
-              <div key={sponsor.id} className="flex items-center justify-center">
+              <a
+                key={sponsor.id}
+                href={sponsor.website}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center justify-center hover:opacity-80 transition-opacity"
+                title={sponsor.name}
+              >
                 <div
-                  className="h-16 border-2 border-white rounded-lg flex items-center justify-center px-4"
+                  className="h-16 border-2 border-white rounded-lg flex items-center justify-center px-4 w-full hover:border-pink-600 transition-colors"
                   style={{
                     backgroundImage: `url(${sponsor.logo})`,
                     backgroundSize: 'contain',
@@ -626,7 +582,7 @@ const ArtUPWebsite = () => {
                     <span className="text-xs text-gray-500 text-center font-medium">{sponsor.name}</span>
                   )}
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -737,8 +693,8 @@ const ArtUPWebsite = () => {
         {/* All Artists Grid */}
         <section className="py-24 px-6 bg-white border-b-4 border-black">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>All Artists</h2>
-            <p className="text-lg mb-16 max-w-xl font-medium">Discover all {allArtists.length} participating artists in this year's exhibition.</p>
+            <h2 className="text-5xl md:text-6xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>{t('artists_page.title')}</h2>
+            <p className="text-lg mb-16 max-w-xl font-medium">{t('artists_page.description')}</p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {allArtists.map((artist) => (
@@ -747,19 +703,28 @@ const ArtUPWebsite = () => {
                   onClick={() => navigateTo('artist-detail', artist)}
                   className="group text-left transition-all duration-300 border-3 border-black p-4 hover:shadow-xl"
                 >
-                  <div className="mb-4 h-48 bg-gradient-to-br from-gray-100 to-gray-200 relative border-3 border-black">
+                  <div className="mb-4 h-48 bg-gradient-to-br from-gray-100 to-gray-200 relative border-3 border-black overflow-hidden">
+                    {/* Background Image */}
                     <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      className="absolute inset-0"
+                      style={{
+                        backgroundImage: `url(${artist.slideImage})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                      }}
+                    />
+                    {/* Overlay on Hover */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-90 transition-opacity duration-300"
                       style={{ backgroundColor: artist.color }}
                     />
+                    {/* View Text */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-all duration-300 font-black">
-                        <p style={{ fontFamily: 'Courier New, monospace' }}>VIEW</p>
-                      </div>
+                      <p className="text-white text-center opacity-0 group-hover:opacity-100 transition-all duration-300 font-black" style={{ fontFamily: 'Courier New, monospace' }}>VIEW</p>
                     </div>
                   </div>
                   <h3 className="text-lg font-black mb-1 group-hover:opacity-70 transition-opacity" style={{ fontFamily: 'Courier New, monospace' }}>{artist.name}</h3>
-                  <p className="text-sm font-medium italic" style={{ color: artist.color, fontFamily: 'Courier New, monospace' }}>{artist.style}</p>
+                  <p className="text-sm font-medium italic" style={{ color: artist.color, fontFamily: 'Courier New, monospace' }}>{getArtistText(artist, 'style')}</p>
                 </button>
               ))}
             </div>
@@ -802,12 +767,12 @@ const ArtUPWebsite = () => {
         {/* Contact Section */}
         <section className="py-24 px-6 bg-white border-b-4 border-black">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-5xl md:text-6xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>Get in Touch</h2>
-            <p className="text-lg mb-16 font-medium">Have questions about the exhibition? We'd love to hear from you.</p>
+            <h2 className="text-5xl md:text-6xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>{t('contact.title')}</h2>
+            <p className="text-lg mb-16 font-medium">{t('contact.description')}</p>
             
             <form onSubmit={handleFormSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Name</label>
+                <label htmlFor="name" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>{t('contact.name_label')}</label>
                 <input
                   type="text"
                   id="name"
@@ -822,7 +787,7 @@ const ArtUPWebsite = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Email</label>
+                <label htmlFor="email" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>{t('contact.email_label')}</label>
                 <input
                   type="email"
                   id="email"
@@ -837,7 +802,7 @@ const ArtUPWebsite = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Message</label>
+                <label htmlFor="message" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>{t('contact.message_label')}</label>
                 <textarea
                   id="message"
                   name="message"
@@ -856,12 +821,12 @@ const ArtUPWebsite = () => {
                 className="w-full px-6 py-4 font-black text-white border-4 border-black transform hover:scale-105 transition-all uppercase tracking-widest"
                 style={{ fontFamily: 'Courier New, monospace', backgroundColor: '#FF1461' }}
               >
-                Send Message
+                {t('contact.send_button')}
               </button>
 
               {formSubmitted && (
                 <div className="p-4 bg-yellow-100 border-3 border-black text-black text-sm text-center font-black animate-fadeIn" style={{ fontFamily: 'Courier New, monospace' }}>
-                  ✓ Nachricht erfolgreich versendet!
+                  {t('contact.success')}
                 </div>
               )}
             </form>
@@ -899,13 +864,13 @@ const ArtUPWebsite = () => {
           <div className="max-w-7xl mx-auto">
             {/* About Section */}
             <div className="mb-24">
-              <h1 className="text-6xl md:text-7xl font-black mb-8 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}>About artUP</h1>
+              <h1 className="text-6xl md:text-7xl font-black mb-8 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}>{t('about_page.title')}</h1>
               
               <div className="grid md:grid-cols-2 gap-12 items-start">
                 <div>
                   <h2 className="text-3xl font-black mb-6 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>The Exhibition</h2>
                   <p className="text-lg leading-relaxed mb-6 font-medium">
-                    artUP is a contemporary art exhibition bringing together 18 international artists across diverse mediums and practices. From street art to classical painting, digital art to conceptual installations – artUP celebrates the diversity and vitality of contemporary artistic expression.
+                    {t('about_page.description')}
                   </p>
                   <p className="text-lg leading-relaxed font-medium">
                     Held in the heart of Speyer, this month-long exhibition creates a platform for emerging and established artists to showcase their work and engage with the community.
@@ -1085,15 +1050,14 @@ const ArtUPWebsite = () => {
         
         <section className="pt-32 pb-24 px-6">
           <div className="max-w-2xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL' }}>Get in Touch</h1>
+            <h1 className="text-6xl md:text-7xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}>{t('contact.title')}</h1>
             <p className="text-lg mb-16 font-medium">
-              Questions about the exhibition? Interested in sponsoring? We're here to help.
+              {t('contact.description')}
             </p>
             
             <form onSubmit={handleFormSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Name</label>
+                <label htmlFor="name" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>{t('contact.name_label')}</label>
                 <input
                   type="text"
                   id="name"
@@ -1108,7 +1072,7 @@ const ArtUPWebsite = () => {
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Email</label>
+                <label htmlFor="email" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>{t('contact.email_label')}</label>
                 <input
                   type="email"
                   id="email"
@@ -1123,7 +1087,7 @@ const ArtUPWebsite = () => {
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Message</label>
+                <label htmlFor="message" className="block text-sm font-black uppercase mb-2" style={{ fontFamily: 'Courier New, monospace' }}>{t('contact.message_label')}</label>
                 <textarea
                   id="message"
                   name="message"
@@ -1142,12 +1106,12 @@ const ArtUPWebsite = () => {
                 className="w-full px-6 py-4 font-black text-white border-4 border-black transform hover:scale-105 transition-all uppercase tracking-widest"
                 style={{ fontFamily: 'Courier New, monospace', backgroundColor: '#FF1461' }}
               >
-                Send Message
+                {t('contact.send_button')}
               </button>
 
               {formSubmitted && (
                 <div className="p-4 bg-yellow-100 border-3 border-black text-black text-sm text-center font-black animate-fadeIn" style={{ fontFamily: 'Courier New, monospace' }}>
-                  ✓ Nachricht erfolgreich versendet!
+                  {t('contact.success')}
                 </div>
               )}
             </form>
@@ -1167,10 +1131,9 @@ const ArtUPWebsite = () => {
         
         <section className="pt-32 pb-24 px-6">
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-6xl md:text-7xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461',
-      slideImage: 'SLIDESHOW_IMAGE_URL' }}>All Artists</h1>
+            <h1 className="text-6xl md:text-7xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}>{t('artists_page.title')}</h1>
             <p className="text-lg mb-16 max-w-2xl font-medium">
-              Discover all {allArtists.length} participating artists in this year's exhibition.
+              {t('artists_page.description')}
             </p>
             
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -1180,19 +1143,28 @@ const ArtUPWebsite = () => {
                   onClick={() => navigateTo('artist-detail', artist)}
                   className="group text-left transition-all duration-300 border-3 border-black p-4 hover:shadow-xl"
                 >
-                  <div className="mb-4 h-48 bg-gradient-to-br from-gray-100 to-gray-200 relative border-3 border-black">
+                  <div className="mb-4 h-48 bg-gradient-to-br from-gray-100 to-gray-200 relative border-3 border-black overflow-hidden">
+                    {/* Background Image */}
                     <div
-                      className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                      className="absolute inset-0"
+                      style={{
+                        backgroundImage: `url(${artist.slideImage})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center'
+                      }}
+                    />
+                    {/* Overlay on Hover */}
+                    <div
+                      className="absolute inset-0 opacity-0 group-hover:opacity-90 transition-opacity duration-300"
                       style={{ backgroundColor: artist.color }}
                     />
+                    {/* View Text */}
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-all duration-300 font-black">
-                        <p style={{ fontFamily: 'Courier New, monospace' }}>VIEW</p>
-                      </div>
+                      <p className="text-white text-center opacity-0 group-hover:opacity-100 transition-all duration-300 font-black" style={{ fontFamily: 'Courier New, monospace' }}>VIEW</p>
                     </div>
                   </div>
                   <h3 className="text-lg font-black mb-1 group-hover:opacity-70 transition-opacity" style={{ fontFamily: 'Courier New, monospace' }}>{artist.name}</h3>
-                  <p className="text-sm font-medium italic" style={{ color: artist.color, fontFamily: 'Courier New, monospace' }}>{artist.style}</p>
+                  <p className="text-sm font-medium italic" style={{ color: artist.color, fontFamily: 'Courier New, monospace' }}>{getArtistText(artist, 'style')}</p>
                 </button>
               ))}
             </div>
@@ -1213,17 +1185,47 @@ const ArtUPWebsite = () => {
       <div className="min-h-screen bg-white">
         <Navigation />
 
-        {/* Hero */}
-        <div className="pt-32 pb-16 px-6 md:pt-48 border-b-4 border-black" style={{ backgroundColor: artist.color }}>
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8">
-              <div
-                className="w-24 h-24 border-4 border-black"
-                style={{ backgroundColor: artist.color }}
-              />
+        {/* Hero Section */}
+        <div className="pt-32 pb-16 px-6 md:pt-48 border-b-4 border-black relative overflow-visible" style={{ minHeight: '400px' }}>
+          {/* Background Image */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              backgroundImage: `url(${artist.slideImage})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center'
+            }}
+          />
+          {/* Dark Overlay */}
+          <div className="absolute inset-0 bg-black opacity-40 z-5" />
+          
+          {/* Content */}
+          <div className="max-w-4xl mx-auto relative z-10">
+            <div className="p-8" style={{ backgroundColor: artist.color }}>
+              <h1 className="text-6xl md:text-7xl font-black tracking-tighter mb-4 text-white" style={{ fontFamily: 'Courier New, monospace' }}>{artist.name}</h1>
+              <p className="text-2xl font-black text-white italic" style={{ fontFamily: 'Courier New, monospace' }}>{getArtistText(artist, 'style')}</p>
             </div>
-            <h1 className="text-6xl md:text-7xl font-black tracking-tighter mb-4 text-white" style={{ fontFamily: 'Courier New, monospace', textShadow: '2px 2px 0px rgba(0,0,0,0.3)' }}>{artist.name}</h1>
-            <p className="text-2xl font-black mb-8 text-white italic" style={{ fontFamily: 'Courier New, monospace' }}>{artist.style}</p>
+          </div>
+        </div>
+
+        {/* Social Icons - Below Hero */}
+        <div className="px-6 py-4 bg-white border-b-4 border-black">
+          <div className="max-w-4xl mx-auto flex gap-3">
+            {artist.website && (
+              <a href={artist.website} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-black text-white font-black border-2 border-black hover:bg-white hover:text-black transition" style={{ fontFamily: 'Courier New, monospace' }} title="Website">
+                WEB
+              </a>
+            )}
+            {artist.instagram && (
+              <a href={artist.instagram} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-black text-white font-black border-2 border-black hover:bg-white hover:text-black transition" style={{ fontFamily: 'Courier New, monospace' }} title="Instagram">
+                IG
+              </a>
+            )}
+            {artist.facebook && (
+              <a href={artist.facebook} target="_blank" rel="noopener noreferrer" className="px-4 py-2 bg-black text-white font-black border-2 border-black hover:bg-white hover:text-black transition" style={{ fontFamily: 'Courier New, monospace' }} title="Facebook">
+                FB
+              </a>
+            )}
           </div>
         </div>
 
@@ -1237,43 +1239,39 @@ const ArtUPWebsite = () => {
 
             {/* Portfolio Grid */}
             <div className="mb-24">
-              
               {/* Portrait & Video Row */}
-              <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="grid md:grid-cols-3 gap-6 mb-8 items-stretch">
                 {/* Artist Portrait */}
-                <div className="md:col-span-1 border-4 border-black overflow-hidden bg-gray-100 h-80 flex items-center justify-center">
-                  <div className="text-center">
-                    <div
-                      className="w-full h-full"
-                      style={{
-                        backgroundColor: artist.color,
-                        backgroundImage: `url(${artist.portraitImage})`,
-                        backgroundSize: 'cover',
-                        backgroundPosition: 'center'
-                      }}
-                    />
-                  </div>
-                </div>
-
-                {/* Video Embed */}
-                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-gray-100 h-80 flex items-center justify-center">
+                <div className="md:col-span-1 border-4 border-black overflow-hidden bg-gray-100" style={{ aspectRatio: '4 / 5' }}>
                   <div
-                    className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center"
+                    className="w-full h-full"
                     style={{
-                      backgroundImage: `url(${artist.videoThumbnail})`,
+                      backgroundColor: artist.color,
+                      backgroundImage: `url(${artist.portraitImage})`,
                       backgroundSize: 'cover',
                       backgroundPosition: 'center'
                     }}
-                  >
-                    <div className="text-center text-white">
-                      <div className="w-16 h-16 border-4 border-white rounded-full flex items-center justify-center mx-auto">
-                        <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                          <path d="M8 5v14l11-7z" />
-                        </svg>
-                      </div>
-                      <p className="text-sm font-black mt-4" style={{ fontFamily: 'Courier New, monospace' }}>VIDEO</p>
+                  />
+                </div>
+
+                {/* Video Embed - gleiche Höhe wie Portrait */}
+                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black" style={{ height: '100%' }}>
+                  {artist.videoUrl ? (
+                    <iframe
+                      width="100%"
+                      height="100%"
+                      src={artist.videoUrl}
+                      title="Artist Video"
+                      frameBorder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                      style={{ display: 'block' }}
+                    ></iframe>
+                  ) : (
+                    <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
+                      <p className="text-center text-gray-600 font-black" style={{ fontFamily: 'Courier New, monospace' }}>Kein Video verfügbar</p>
                     </div>
-                  </div>
+                  )}
                 </div>
               </div>
 
@@ -1299,10 +1297,9 @@ const ArtUPWebsite = () => {
               </div>
             </div>
 
-
             {/* Related Artists */}
-            <div className="mt-16">
-              <h2 className="text-4xl font-black mb-12 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>Other Featured Artists</h2>
+            <div className="pt-16 border-t-4 border-black">
+              <h2 className="text-4xl font-black mb-12 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>Related Artists</h2>
               <div className="grid md:grid-cols-3 gap-6">
                 {relatedArtists.map((a) => (
                   <button
@@ -1310,19 +1307,25 @@ const ArtUPWebsite = () => {
                     onClick={() => navigateTo('artist-detail', a)}
                     className="group text-left transition-all duration-300 border-3 border-black p-4 hover:shadow-xl"
                   >
-                    <div className="mb-4 h-40 bg-gradient-to-br from-gray-100 to-gray-200 relative border-3 border-black">
+                    <div className="mb-4 h-40 bg-gradient-to-br from-gray-100 to-gray-200 relative border-3 border-black overflow-hidden">
                       <div
-                        className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+                        className="absolute inset-0"
+                        style={{
+                          backgroundImage: `url(${a.slideImage})`,
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center'
+                        }}
+                      />
+                      <div
+                        className="absolute inset-0 opacity-0 group-hover:opacity-90 transition-opacity duration-300"
                         style={{ backgroundColor: a.color }}
                       />
                       <div className="absolute inset-0 flex items-center justify-center">
-                        <div className="text-white text-center opacity-0 group-hover:opacity-100 transition-all duration-300 font-black">
-                          <p style={{ fontFamily: 'Courier New, monospace' }}>VIEW</p>
-                        </div>
+                        <p className="text-white text-center opacity-0 group-hover:opacity-100 transition-all duration-300 font-black" style={{ fontFamily: 'Courier New, monospace' }}>VIEW</p>
                       </div>
                     </div>
                     <h3 className="font-black mb-1 group-hover:opacity-70 transition-opacity text-sm" style={{ fontFamily: 'Courier New, monospace' }}>{a.name}</h3>
-                    <p className="text-xs font-medium italic" style={{ color: a.color, fontFamily: 'Courier New, monospace' }}>{a.style}</p>
+                    <p className="text-xs font-medium italic" style={{ color: a.color, fontFamily: 'Courier New, monospace' }}>{getArtistText(a, 'style')}</p>
                   </button>
                 ))}
               </div>
@@ -1334,7 +1337,6 @@ const ArtUPWebsite = () => {
       </div>
     );
   }
-
   // Impressum Page
   if (currentPage === 'impressum') {
     return (
