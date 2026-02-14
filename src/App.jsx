@@ -1290,25 +1290,39 @@ const ArtUPWebsite = () => {
                   />
                 </div>
 
-                {/* Video Embed - gleiche Höhe wie Portrait */}
+                {/* Video Embed - mit iPhone Fallback */}
                 <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black h-80 md:h-auto" style={{ height: 'auto', minHeight: '400px', position: 'relative' }}>
                   {artist.videoUrl ? (
-                    <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
-                      <iframe
-                        style={{
-                          position: 'absolute',
-                          top: 0,
-                          left: 0,
-                          width: '100%',
-                          height: '100%',
-                          border: 'none'
-                        }}
-                        src={artist.videoUrl}
-                        title="Artist Video"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
+                    <>
+                      <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                        <iframe
+                          style={{
+                            position: 'absolute',
+                            top: 0,
+                            left: 0,
+                            width: '100%',
+                            height: '100%',
+                            border: 'none'
+                          }}
+                          src={artist.videoUrl}
+                          title="Artist Video"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          allowFullScreen
+                        ></iframe>
+                      </div>
+                      {/* iPhone Fallback - Link Button */}
+                      <div className="absolute inset-0 flex items-center justify-center pointer-events-none md:hidden">
+                        <a
+                          href={artist.videoUrl.includes('youtube') ? artist.videoUrl.replace('/embed/', '/watch?v=') : artist.videoUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="pointer-events-auto px-6 py-3 bg-pink-600 text-white font-black border-2 border-white hover:bg-pink-700 transition rounded"
+                          style={{ fontFamily: 'Courier New, monospace' }}
+                        >
+                          ▶ Open Video
+                        </a>
+                      </div>
+                    </>
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
                       <p className="text-center text-gray-600 font-black" style={{ fontFamily: 'Courier New, monospace' }}>Kein Video verfügbar</p>
