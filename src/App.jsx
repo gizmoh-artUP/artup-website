@@ -1291,20 +1291,24 @@ const ArtUPWebsite = () => {
                 </div>
 
                 {/* Video Embed - gleiche Höhe wie Portrait */}
-                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black h-80 md:h-auto" style={{ height: 'auto', minHeight: '400px' }}>
+                <div className="md:col-span-2 border-4 border-black overflow-hidden bg-black h-80 md:h-auto" style={{ height: 'auto', minHeight: '400px', position: 'relative' }}>
                   {artist.videoUrl ? (
-                    <iframe
-                      width="100%"
-                      height="100%"
-                      src={artist.videoUrl}
-                      title="Artist Video"
-                      frameBorder="0"
-                      sandbox="allow-same-origin allow-scripts allow-presentation allow-popups"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                      allowFullScreen={true}
-                      loading="lazy"
-                      style={{ display: 'block', minHeight: '400px', width: '100%' }}
-                    ></iframe>
+                    <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden' }}>
+                      <iframe
+                        style={{
+                          position: 'absolute',
+                          top: 0,
+                          left: 0,
+                          width: '100%',
+                          height: '100%',
+                          border: 'none'
+                        }}
+                        src={artist.videoUrl}
+                        title="Artist Video"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
                   ) : (
                     <div className="w-full h-full bg-gradient-to-br from-gray-300 to-gray-400 flex items-center justify-center">
                       <p className="text-center text-gray-600 font-black" style={{ fontFamily: 'Courier New, monospace' }}>Kein Video verfügbar</p>
