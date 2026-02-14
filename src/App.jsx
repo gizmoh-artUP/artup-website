@@ -514,98 +514,130 @@ const ArtUPWebsite = () => {
       borderBottomColor: 'rgba(0, 0, 0, 0.3)',
       borderBottomWidth: '2px'
     }}>
-      <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center relative">
-        {/* Language Switcher - Top Left */}
-        <div className="flex gap-2 text-xs font-medium" style={{ fontFamily: 'Courier New, monospace' }}>
-          <button
-            className="px-2 py-1 transition-all text-black font-black border-b-2 border-black cursor-default"
-          >
-            DE
-          </button>
-          <span className="text-gray-300">/</span>
-          <button
-            className="px-2 py-1 transition-all text-gray-400 hover:text-gray-600 cursor-default"
-          >
-            EN
-          </button>
-        </div>
-
-        {/* Logo - Center */}
+      <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+        {/* Logo - Left */}
         <button 
           onClick={() => navigateTo('home')} 
-          className="text-2xl font-black tracking-tight hover:opacity-70 transition-opacity absolute left-1/2 transform -translate-x-1/2"
+          className="text-2xl font-black tracking-tight hover:opacity-70 transition-opacity"
           style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}
         >
           artUP
         </button>
 
-        {/* Desktop Menu - Right */}
-        <div className="hidden md:flex gap-12 text-sm font-medium ml-auto">
+        {/* Desktop Menu - Center */}
+        <div className="hidden md:flex gap-2 text-sm font-medium">
           <button 
             onClick={() => navigateTo('home')} 
-            className="hover:opacity-60 transition-opacity uppercase tracking-wide"
-            style={{ fontFamily: 'Courier New, monospace' }}
+            className={`px-4 py-2 transition-all uppercase tracking-wide ${currentPage === 'home' ? 'text-white' : 'text-black hover:opacity-60'}`}
+            style={{ 
+              fontFamily: 'Courier New, monospace',
+              backgroundColor: currentPage === 'home' ? '#FF1461' : 'transparent'
+            }}
           >
             Home
           </button>
           <button 
             onClick={() => navigateTo('artists')} 
-            className="hover:opacity-60 transition-opacity uppercase tracking-wide"
-            style={{ fontFamily: 'Courier New, monospace' }}
+            className={`px-4 py-2 transition-all uppercase tracking-wide ${currentPage === 'artists' ? 'text-white' : 'text-black hover:opacity-60'}`}
+            style={{ 
+              fontFamily: 'Courier New, monospace',
+              backgroundColor: currentPage === 'artists' ? '#FF1461' : 'transparent'
+            }}
           >
             Artists
           </button>
           <button 
-            onClick={() => navigateTo('poster')} 
-            className="hover:opacity-60 transition-opacity uppercase tracking-wide"
-            style={{ fontFamily: 'Courier New, monospace' }}
-          >
-            Poster
-          </button>
-          <button 
             onClick={() => navigateTo('about')} 
-            className="hover:opacity-60 transition-opacity uppercase tracking-wide"
-            style={{ fontFamily: 'Courier New, monospace' }}
+            className={`px-4 py-2 transition-all uppercase tracking-wide ${currentPage === 'about' ? 'text-white' : 'text-black hover:opacity-60'}`}
+            style={{ 
+              fontFamily: 'Courier New, monospace',
+              backgroundColor: currentPage === 'about' ? '#FF1461' : 'transparent'
+            }}
           >
             About
           </button>
           <button 
             onClick={() => navigateTo('contact')} 
-            className="hover:opacity-60 transition-opacity uppercase tracking-wide"
-            style={{ fontFamily: 'Courier New, monospace' }}
+            className={`px-4 py-2 transition-all uppercase tracking-wide ${currentPage === 'contact' ? 'text-white' : 'text-black hover:opacity-60'}`}
+            style={{ 
+              fontFamily: 'Courier New, monospace',
+              backgroundColor: currentPage === 'contact' ? '#FF1461' : 'transparent'
+            }}
           >
             Contact
           </button>
           <button 
             onClick={() => navigateTo('impressum')} 
-            className="hover:opacity-60 transition-opacity uppercase tracking-wide text-xs"
-            style={{ fontFamily: 'Courier New, monospace' }}
+            className={`px-4 py-2 transition-all uppercase tracking-wide text-xs ${currentPage === 'impressum' ? 'text-white' : 'text-black hover:opacity-60'}`}
+            style={{ 
+              fontFamily: 'Courier New, monospace',
+              backgroundColor: currentPage === 'impressum' ? '#FF1461' : 'transparent'
+            }}
           >
             Impressum
           </button>
           <button 
             onClick={() => navigateTo('privacy')} 
-            className="hover:opacity-60 transition-opacity uppercase tracking-wide text-xs"
-            style={{ fontFamily: 'Courier New, monospace' }}
+            className={`px-4 py-2 transition-all uppercase tracking-wide text-xs ${currentPage === 'privacy' ? 'text-white' : 'text-black hover:opacity-60'}`}
+            style={{ 
+              fontFamily: 'Courier New, monospace',
+              backgroundColor: currentPage === 'privacy' ? '#FF1461' : 'transparent'
+            }}
           >
             Privacy
           </button>
           <button 
             onClick={() => navigateTo('terms')} 
-            className="hover:opacity-60 transition-opacity uppercase tracking-wide text-xs"
-            style={{ fontFamily: 'Courier New, monospace' }}
+            className={`px-4 py-2 transition-all uppercase tracking-wide text-xs ${currentPage === 'terms' ? 'text-white' : 'text-black hover:opacity-60'}`}
+            style={{ 
+              fontFamily: 'Courier New, monospace',
+              backgroundColor: currentPage === 'terms' ? '#FF1461' : 'transparent'
+            }}
           >
             Terms
           </button>
+
+          {/* Language Switcher - End of Menu */}
+          <div className="flex gap-2 text-xs font-medium border-l border-gray-300 pl-6 ml-4" style={{ fontFamily: 'Courier New, monospace' }}>
+            <button
+              className="px-3 py-2 transition-all text-black font-black"
+            >
+              DE
+            </button>
+            <span className="text-gray-300">/</span>
+            <button
+              className="px-3 py-2 transition-all text-gray-400 hover:text-gray-600"
+            >
+              EN
+            </button>
+          </div>
         </div>
 
-        {/* Mobile Menu Button */}
-        <button 
-          onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="md:hidden p-2 hover:bg-gray-100 rounded-lg transition-colors"
-        >
-          {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-        </button>
+        {/* Mobile Menu Button + Language Switcher - Right */}
+        <div className="md:hidden flex items-center gap-4">
+          {/* Language Switcher - Mobile */}
+          <div className="flex gap-1 text-xs font-medium" style={{ fontFamily: 'Courier New, monospace' }}>
+            <button
+              className="px-2 py-1 transition-all text-black font-black"
+            >
+              DE
+            </button>
+            <span className="text-gray-300">/</span>
+            <button
+              className="px-2 py-1 transition-all text-gray-400 hover:text-gray-600"
+            >
+              EN
+            </button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button 
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            className="p-2 hover:bg-gray-100 rounded-lg transition-colors"
+          >
+            {mobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          </button>
+        </div>
       </div>
 
       {/* Mobile Menu */}
