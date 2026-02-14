@@ -42,7 +42,115 @@
     },
     "artists": {
       "title": "Alle Künstler",
-      "description": "Entdecken Sie alle 18 teilnehmenden Künstler dieser Ausstellung."
+      "description": "Entdecken Sie alle 18 teilnehmenden Künstler dieser Ausstellung.",
+      "buja": {
+        "style": "Street Art",
+        "shortBio": "Urbane Ästhetik trifft zeitgenössischen Ausdruck.",
+        "fullBio": "BUJA transformiert Stadtlandschaften in lebendige Dialoge zwischen Künstler und Gemeinschaft. Mit über einem Jahrzehnt Erfahrung in Street Art hinterfragen ihre Werke Wahrnehmungen von öffentlichem Raum und künstlerischem Ausdruck.",
+        "description": "Urbane Ästhetik trifft zeitgenössischen Ausdruck. BUJA transformiert Stadtlandschaften in lebendigen Dialog."
+      },
+      "nina": {
+        "style": "Klassische Malerei",
+        "shortBio": "Zeitlose Eleganz in jedem Pinselstrich.",
+        "fullBio": "Nina Bussjäger bringt klassische Maltechniken in die zeitgenössische Sphäre. Ihre Werke erforschen die Schnittstelle zwischen Tradition und Moderne, schaffen Stücke, die sowohl Erbe als auch Innovation ansprechen.",
+        "description": "Zeitlose Eleganz in jedem Pinselstrich. Traditionelle Meisterschaft mit zeitgenössischer Vision."
+      },
+      "timothy": {
+        "style": "Abstrakt",
+        "shortBio": "Reine Form und Farbe tanzen im Raum.",
+        "fullBio": "Timothys abstrakte Werke reduzieren sich auf das Wesentliche der visuellen Sprache. Farbe, Form und Komposition werden zu Fahrzeugen für emotionalen Ausdruck und schaffen immersive visuelle Erfahrungen.",
+        "description": "Reine Form und Farbe tanzen im Raum. Abstraktion als Sprache jenseits der Repräsentation."
+      },
+      "gizmoh": {
+        "style": "Illustrative Poesie",
+        "shortBio": "Wo Illustration auf Erzählung trifft.",
+        "fullBio": "Gizmoh schafft visuelle Geschichten, die die Grenzen zwischen Illustration und bildender Kunst verwischen. Jedes Stück ist eine poetische Erzählung in exquisiter Detailfülle und Vorstellungskraft.",
+        "description": "Wo Illustration auf Erzählung trifft. Visuelle Geschichten, die flüstern und singen."
+      },
+      "elena": {
+        "style": "Figurativ",
+        "shortBio": "Menschliche Emotion durch figurativen Ausdruck.",
+        "fullBio": "Elena erfasst die Komplexität menschlicher Emotion und Verbindung durch figurative Malerei. Ihre Porträts und Figurenstudien enthüllen die innere Landschaft der menschlichen Erfahrung.",
+        "description": "Menschliche Emotion durch figurativen Ausdruck."
+      },
+      "marcus": {
+        "style": "Digitale Kunst",
+        "shortBio": "Analoge und digitale Welten verbinden.",
+        "fullBio": "Marcus Chen erforscht die Schnittstelle zwischen traditionellen künstlerischen Prinzipien und hochmoderner digitaler Technologie und schafft Werke, die unsere Wahrnehmung von Medium und Authentizität hinterfragen.",
+        "description": "Analoge und digitale Welten verbinden."
+      },
+      "sofia": {
+        "style": "Konzeptkunst",
+        "shortBio": "Ideen durch Konzept greifbar gemacht.",
+        "fullBio": "Sofías konzeptuelle Praxis untersucht soziale Strukturen und kulturelle Narrative. Ihre Installationen und Interventionen provozieren Gedanken und Dialog.",
+        "description": "Ideen durch Konzept greifbar gemacht."
+      },
+      "james": {
+        "style": "Mixed Media",
+        "shortBio": "Materialien, Bedeutungen und Texturen schichten.",
+        "fullBio": "James kombiniert traditionelle und unkonventionelle Materialien, um reich strukturierte Werke zu schaffen, die zu taktiler und visueller Erforschung einladen.",
+        "description": "Materialien, Bedeutungen und Texturen schichten."
+      },
+      "yuki": {
+        "style": "Fotografie",
+        "shortBio": "Licht und Schatten als Erzähler.",
+        "fullBio": "Yukis fotografisches Auge erfasst die Essenz von Momenten und transformiert alltägliche Szenen in tiefe Meditationen über Zeit, Erinnerung und menschliche Verbindung.",
+        "description": "Licht und Schatten als Erzähler."
+      },
+      "klaus": {
+        "style": "Skulptur",
+        "shortBio": "Form erkundet die Leere.",
+        "fullBio": "Klaus schafft monumentale Skulpturen, die sich mit Raum und Materialität auseinandersetzen. Seine Werke hinterfragen die Beziehung zwischen Objekt, Betrachter und Umgebung.",
+        "description": "Form erkundet die Leere."
+      },
+      "priya": {
+        "style": "Videokunst",
+        "shortBio": "Zeit und Bewegung als Medium.",
+        "fullBio": "Priyas Videoinstallationen erforschen zeitliche Erfahrung und verkörperte Wahrnehmung. Ihre Werke schaffen immersive Umgebungen, die alle Sinne ansprechen.",
+        "description": "Zeit und Bewegung als Medium."
+      },
+      "ahmed": {
+        "style": "Kalligrafie & Textkunst",
+        "shortBio": "Worte als visuelle Form.",
+        "fullBio": "Ahmeds Praxis verbindet traditionelle Kalligrafie mit zeitgenössischer Kunst und erforscht Sprache als sowohl semantische als auch ästhetische Kraft.",
+        "description": "Worte als visuelle Form."
+      },
+      "lucia": {
+        "style": "Performance Art",
+        "shortBio": "Der Körper als Leinwand, Aktion als Kunst.",
+        "fullBio": "Lucias Performance-Praxis hinterfragt herkömmliche Vorstellungen von künstlerischem Medium und macht den Körper und seine Bewegungen zum Zentrum der Arbeit.",
+        "description": "Der Körper als Leinwand, Aktion als Kunst."
+      },
+      "david": {
+        "style": "Druckkunst",
+        "shortBio": "Alte Techniken, zeitgenössische Vision.",
+        "fullBio": "David belebt traditionelle Druckverfahren neu und schafft Werke, die das Handwerk ehren und gleichzeitig mit aktuellem künstlerischem Diskurs in Dialog treten.",
+        "description": "Alte Techniken, zeitgenössische Vision."
+      },
+      "isabelle": {
+        "style": "Installationskunst",
+        "shortBio": "Raum als Medium.",
+        "fullBio": "Isabelle transformiert ganze Räume in immersive Kunstwerke und lädt Betrachter ein, zu Teilnehmern der ästhetischen Erfahrung zu werden.",
+        "description": "Raum als Medium."
+      },
+      "oscar": {
+        "style": "Keramikkunst",
+        "shortBio": "Erde durch Feuer verwandelt.",
+        "fullBio": "Oscars keramische Praxis zelebriert die Materialität und Unvollkommenheit von Ton und schafft Formen, die utilitäre und bildende Kunsttradition verbinden.",
+        "description": "Erde durch Feuer verwandelt."
+      },
+      "mei": {
+        "style": "Textil & Faserkunst",
+        "shortBio": "Fäden erzählen Geschichten.",
+        "fullBio": "Meis Textilwerke weben kulturelle Narrative und persönliche Geschichten zusammen und schaffen taktile Erkundungen von Identität und Zugehörigkeit.",
+        "description": "Fäden erzählen Geschichten."
+      },
+      "carlos": {
+        "style": "Graffiti & Street Expression",
+        "shortBio": "Urbane Wände als Galerien.",
+        "fullBio": "Carlos bringt lebendige Energie in öffentliche Räume und transformiert Wände in dynamische Leinwände, die Gemeinschaften herausfordern und inspirieren.",
+        "description": "Urbane Wände als Galerien."
+      }
     },
     "about": {
       "title": "Über artUP",
@@ -128,7 +236,115 @@
     },
     "artists": {
       "title": "All Artists",
-      "description": "Discover all 18 participating artists in this year's exhibition."
+      "description": "Discover all 18 participating artists in this year's exhibition.",
+      "buja": {
+        "style": "Street Art",
+        "shortBio": "Urban aesthetics meet contemporary expression.",
+        "fullBio": "BUJA transforms cityscapes into vibrant dialogues between artist and community. With over a decade in street art, their work challenges perceptions of public space and creative expression.",
+        "description": "Urban aesthetics meet contemporary expression. BUJA transforms cityscapes into vibrant dialogue."
+      },
+      "nina": {
+        "style": "Classical Painting",
+        "shortBio": "Timeless elegance in every brushstroke.",
+        "fullBio": "Nina Bussjäger brings classical painting techniques into the contemporary realm. Her works explore the intersection of tradition and modernity, creating pieces that speak to both heritage and innovation.",
+        "description": "Timeless elegance in every brushstroke. Traditional mastery with a contemporary vision."
+      },
+      "timothy": {
+        "style": "Abstract",
+        "shortBio": "Pure form and color dancing in space.",
+        "fullBio": "Timothy's abstract works strip down to the essence of visual language. Color, form, and composition become vehicles for emotional expression, creating immersive visual experiences.",
+        "description": "Pure form and color dancing in space. Abstraction as a language beyond representation."
+      },
+      "gizmoh": {
+        "style": "Illustrative Poetry",
+        "shortBio": "Where illustration meets narrative.",
+        "fullBio": "Gizmoh creates visual stories that blur the lines between illustration and fine art. Each piece is a poetic narrative rendered in exquisite detail and imagination.",
+        "description": "Where illustration meets narrative. Visual stories that whisper and sing."
+      },
+      "elena": {
+        "style": "Figurative",
+        "shortBio": "Human emotion through figurative expression.",
+        "fullBio": "Elena captures the complexity of human emotion and connection through figurative painting. Her portraits and figure studies reveal the inner landscape of the human experience.",
+        "description": "Human emotion through figurative expression."
+      },
+      "marcus": {
+        "style": "Digital Art",
+        "shortBio": "Bridging analog and digital realms.",
+        "fullBio": "Marcus Chen explores the intersection of traditional artistic principles and cutting-edge digital technology, creating works that challenge our perception of medium and authenticity.",
+        "description": "Bridging analog and digital realms."
+      },
+      "sofia": {
+        "style": "Conceptual Art",
+        "shortBio": "Ideas made tangible through concept.",
+        "fullBio": "Sofía's conceptual practice examines social structures and cultural narratives. Her installations and interventions provoke thought and dialogue.",
+        "description": "Ideas made tangible through concept."
+      },
+      "james": {
+        "style": "Mixed Media",
+        "shortBio": "Layering materials, meanings, and textures.",
+        "fullBio": "James combines traditional and unconventional materials to create richly textured works that invite tactile and visual exploration.",
+        "description": "Layering materials, meanings, and textures."
+      },
+      "yuki": {
+        "style": "Photography",
+        "shortBio": "Light and shadow as storytellers.",
+        "fullBio": "Yuki's photographic eye captures the essence of moments, transforming everyday scenes into profound meditations on time, memory, and human connection.",
+        "description": "Light and shadow as storytellers."
+      },
+      "klaus": {
+        "style": "Sculpture",
+        "shortBio": "Form exploring the void.",
+        "fullBio": "Klaus creates monumental sculptures that engage with space and materiality. His work questions the relationship between object, viewer, and environment.",
+        "description": "Form exploring the void."
+      },
+      "priya": {
+        "style": "Video Art",
+        "shortBio": "Time and motion as medium.",
+        "fullBio": "Priya's video installations explore temporal experience and embodied perception. Her works create immersive environments that engage all senses.",
+        "description": "Time and motion as medium."
+      },
+      "ahmed": {
+        "style": "Calligraphy & Text Art",
+        "shortBio": "Words as visual form.",
+        "fullBio": "Ahmed's practice bridges traditional calligraphy with contemporary art, exploring language as both semantic and aesthetic force.",
+        "description": "Words as visual form."
+      },
+      "lucia": {
+        "style": "Performance Art",
+        "shortBio": "Body as canvas, action as art.",
+        "fullBio": "Lucia's performance practice challenges conventional notions of artistic medium, making the body and its movements central to the work.",
+        "description": "Body as canvas, action as art."
+      },
+      "david": {
+        "style": "Printmaking",
+        "shortBio": "Ancient techniques, contemporary vision.",
+        "fullBio": "David revitalizes traditional printmaking methods, creating works that honor craft while engaging with current artistic discourse.",
+        "description": "Ancient techniques, contemporary vision."
+      },
+      "isabelle": {
+        "style": "Installation Art",
+        "shortBio": "Space as medium.",
+        "fullBio": "Isabelle transforms entire spaces into immersive artworks, inviting viewers to become participants in the aesthetic experience.",
+        "description": "Space as medium."
+      },
+      "oscar": {
+        "style": "Ceramic Art",
+        "shortBio": "Earth transformed through fire.",
+        "fullBio": "Oscar's ceramic practice celebrates the materiality and imperfection of clay, creating forms that bridge utilitarian and fine art traditions.",
+        "description": "Earth transformed through fire."
+      },
+      "mei": {
+        "style": "Textile & Fiber Art",
+        "shortBio": "Threads telling stories.",
+        "fullBio": "Mei's textile works weave together cultural narratives and personal histories, creating tactile explorations of identity and belonging.",
+        "description": "Threads telling stories."
+      },
+      "carlos": {
+        "style": "Graffiti & Street Expression",
+        "shortBio": "Urban walls as galleries.",
+        "fullBio": "Carlos brings vibrant energy to public spaces, transforming walls into dynamic canvases that challenge and inspire communities.",
+        "description": "Urban walls as galleries."
+      }
     },
     "about": {
       "title": "About artUP",

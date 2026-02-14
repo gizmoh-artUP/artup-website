@@ -15,17 +15,11 @@ const ArtUPWebsite = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [language, setLanguage] = useState('de');
 
-  // Helper function to get translations from JSON
-  const t = (key) => {
-    if (!textsJSON) return key;
-    const keys = key.split('.');
-    let value = textsJSON[language];
-    
-    for (const k of keys) {
-      value = value?.[k];
-    }
-    
-    return value || key;
+  // Helper function to get artist text from texts.json
+  const getArtistText = (artist, textProperty) => {
+    if (!artist || !artist.textKey) return '';
+    const artistTexts = textsJSON[language]?.artists?.[artist.textKey];
+    return artistTexts?.[textProperty] || '';
   };
 
   // Alle 18 Künstler
@@ -675,8 +669,8 @@ const ArtUPWebsite = () => {
                 {/* Text Content */}
                 <div className="relative z-10 text-center max-w-2xl mx-auto px-6">
                   <h2 className="text-6xl md:text-8xl font-black mb-4 tracking-tighter text-white" style={{ fontFamily: 'Courier New, monospace', textShadow: '3px 3px 10px rgba(0,0,0,0.8)' }}>{artist.name}</h2>
-                  <p className="text-xl md:text-2xl mb-8 font-bold italic text-white" style={{ fontFamily: 'Courier New, monospace', textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>{artist.style}</p>
-                  <p className="text-lg leading-relaxed max-w-xl mx-auto text-white font-medium" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>{artist.description}</p>
+                  <p className="text-xl md:text-2xl mb-8 font-bold italic text-white" style={{ fontFamily: 'Courier New, monospace', textShadow: '2px 2px 8px rgba(0,0,0,0.8)' }}>{getArtistText(artist, 'style')}</p>
+                  <p className="text-lg leading-relaxed max-w-xl mx-auto text-white font-medium" style={{ textShadow: '2px 2px 6px rgba(0,0,0,0.8)' }}>{getArtistText(artist, 'description')}</p>
                 </div>
               </div>
             ))}
@@ -1224,7 +1218,7 @@ const ArtUPWebsite = () => {
           <div className="max-w-6xl mx-auto">
             {/* Biography Text */}
             <div className="mb-16">
-              <p className="text-lg leading-relaxed font-medium">{artist.fullBio}</p>
+              <p className="text-lg leading-relaxed font-medium">{getArtistText(artist, 'fullBio')}</p>
             </div>
 
             {/* Portfolio Grid */}
