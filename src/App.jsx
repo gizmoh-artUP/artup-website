@@ -15,6 +15,19 @@ const ArtUPWebsite = () => {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [language, setLanguage] = useState('de');
 
+  // Helper function to get translations from JSON
+  const t = (key) => {
+    if (!textsJSON) return key;
+    const keys = key.split('.');
+    let value = textsJSON[language];
+    
+    for (const k of keys) {
+      value = value?.[k];
+    }
+    
+    return value || key;
+  };
+
   // Helper function to get artist text from texts.json
   const getArtistText = (artist, textProperty) => {
     if (!artist || !artist.textKey) return '';
