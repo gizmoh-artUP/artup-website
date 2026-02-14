@@ -1,7 +1,7 @@
 /* eslint-disable */
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MapPin, Calendar, ArrowLeft, Instagram, Mail, Phone, MessageSquare, Menu, X } from 'lucide-react';
-import textsJSON from '../public/texts.json';
+import textsJSON from './texts.json';
 
 const ArtUPWebsite = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
