@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, MapPin, Calendar, ArrowLeft, Instagram, Mail, Phone, MessageSquare, Menu, X } from 'lucide-react';
 import textsJSON from './texts.json';
+import eventsJSON from './events.json';
 import artistsJSON from './artists.json';
 
 const ArtUPWebsite = () => {
@@ -14,6 +15,17 @@ const ArtUPWebsite = () => {
   const [formData, setFormData] = useState({ name: '', email: '', message: '' });
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [language, setLanguage] = useState('de');
+  const [cookieAccepted, setCookieAccepted] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return localStorage.getItem('artup-cookies-accepted') === 'true';
+    }
+    return false;
+  });
+
+  const handleCookieAccept = () => {
+    localStorage.setItem('artup-cookies-accepted', 'true');
+    setCookieAccepted(true);
+  };
 
   // Helper function to get translations from JSON
   const t = (key) => {
@@ -131,6 +143,23 @@ const ArtUPWebsite = () => {
     return () => window.removeEventListener('popstate', handlePopState);
   }, [allArtists]);
 
+  // Get next 3 upcoming events
+  const [upcomingEvents, setUpcomingEvents] = useState([]);
+
+  useEffect(() => {
+    const getUpcomingEvents = () => {
+      const today = new Date();
+      today.setHours(0, 0, 0, 0);
+      
+      return eventsJSON.events
+        .filter(event => new Date(event.date) >= today)
+        .sort((a, b) => new Date(a.date) - new Date(b.date))
+        .slice(0, 3);
+    };
+    
+    setUpcomingEvents(getUpcomingEvents());
+  }, []);
+
   // Countdown Component
   const CountdownSection = () => {
     const [timeLeft, setTimeLeft] = useState({
@@ -142,7 +171,7 @@ const ArtUPWebsite = () => {
 
     useEffect(() => {
       const calculateTimeLeft = () => {
-        const eventDate = new Date('2026-04-23T00:00:00').getTime();
+        const eventDate = new Date('2026-04-24T00:00:00').getTime();
         const now = new Date().getTime();
         const distance = eventDate - now;
 
@@ -243,32 +272,7 @@ const ArtUPWebsite = () => {
 
   // Events Component
   const EventsTeaser = () => {
-    const allEvents = [
-      { date: '2026-04-24', day: 'Freitag', title: 'Vernissage', time: '19:00 Uhr' },
-      { date: '2026-04-25', day: 'Samstag', title: 'Konzert - ThreeCheese', time: '20:00 Uhr' },
-      { date: '2026-04-26', day: 'Sonntag', title: 'Zauberei', time: '18:00 Uhr' },
-    ];
-
-    const getDateDisplay = (dateString) => {
-      const [year, month, day] = dateString.split('-');
-      const monthNames = {
-        '01': 'Januar',
-        '02': 'Februar',
-        '03': 'März',
-        '04': 'April',
-        '05': 'Mai',
-        '06': 'Juni',
-        '07': 'Juli',
-        '08': 'August',
-        '09': 'September',
-        '10': 'Oktober',
-        '11': 'November',
-        '12': 'Dezember'
-      };
-      return `${day} ${monthNames[month]}`;
-    };
-
-    const upcomingEvents = allEvents.slice(0, 3);
+    const allEventsData = upcomingEvents;
 
     return (
       <section className="py-20 px-6 border-b-4 border-black bg-white">
@@ -278,50 +282,39 @@ const ArtUPWebsite = () => {
           </h2>
           
           <div className="grid md:grid-cols-3 gap-6">
-            <div className="border-4 border-black p-6 hover:shadow-lg transition-all cursor-pointer" style={{ backgroundColor: '#FF1461' }}>
-              <p className="text-sm font-black uppercase tracking-widest mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
-                {t('events.day_friday')}
-              </p>
-              <p className="text-3xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
-                24 April
-              </p>
-              <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
-                {t('events.event_1')}
-              </h3>
-              <p className="text-sm font-medium" style={{ color: '#fff' }}>
-                {t('events.event_1_time')}
-              </p>
-            </div>
-
-            <div className="border-4 border-black p-6 hover:shadow-lg transition-all cursor-pointer" style={{ backgroundColor: '#FFC500' }}>
-              <p className="text-sm font-black uppercase tracking-widest mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#000' }}>
-                {t('events.day_saturday')}
-              </p>
-              <p className="text-3xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#000' }}>
-                25 April
-              </p>
-              <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#000' }}>
-                {t('events.event_2')}
-              </h3>
-              <p className="text-sm font-medium" style={{ color: '#666' }}>
-                {t('events.event_2_time')}
-              </p>
-            </div>
-
-            <div className="border-4 border-black p-6 hover:shadow-lg transition-all cursor-pointer" style={{ backgroundColor: '#FF1461' }}>
-              <p className="text-sm font-black uppercase tracking-widest mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
-                {t('events.day_sunday')}
-              </p>
-              <p className="text-3xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
-                26 April
-              </p>
-              <h3 className="text-xl font-black mb-2" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
-                {t('events.event_3')}
-              </h3>
-              <p className="text-sm font-medium" style={{ color: '#fff' }}>
-                {t('events.event_3_time')}
-              </p>
-            </div>
+            {allEventsData && allEventsData.length > 0 ? (
+              allEventsData.map((event, idx) => {
+                const colors = ['#FF1461', '#FFC500', '#FF1461'];
+                const textColor = colors[idx] === '#FFC500' ? '#000' : '#fff';
+                const secondaryColor = colors[idx] === '#FFC500' ? '#666' : '#fff';
+                const eventDate = new Date(event.date);
+                const dayNumber = eventDate.getDate();
+                const monthName = eventDate.toLocaleString('de-DE', { month: 'long' });
+                const dayName = eventDate.toLocaleString('de-DE', { weekday: 'long' }).charAt(0).toUpperCase() + eventDate.toLocaleString('de-DE', { weekday: 'long' }).slice(1).toUpperCase();
+                const eventTitle = language === 'de' ? event.title_de : event.title_en;
+                
+                return (
+                  <div key={event.id} className="border-4 border-black p-6 hover:shadow-lg transition-all cursor-pointer" style={{ backgroundColor: colors[idx] }}>
+                    <p className="text-sm font-black uppercase tracking-widest mb-2" style={{ fontFamily: 'Courier New, monospace', color: textColor }}>
+                      {dayName}
+                    </p>
+                    <p className="text-3xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace', color: textColor }}>
+                      {dayNumber} {monthName.charAt(0).toUpperCase() + monthName.slice(1)}
+                    </p>
+                    {eventTitle && (
+                      <h3 className="text-lg font-black mb-2" style={{ fontFamily: 'Courier New, monospace', color: textColor }}>
+                        {eventTitle}
+                      </h3>
+                    )}
+                    <p className="text-sm font-medium" style={{ color: secondaryColor }}>
+                      {event.time} {language === 'de' ? 'Uhr' : 'PM'}
+                    </p>
+                  </div>
+                );
+              })
+            ) : (
+              <p>Keine Events verfügbar</p>
+            )}
           </div>
         </div>
       </section>
@@ -636,10 +629,34 @@ const ArtUPWebsite = () => {
   );
 
   // Home Page
+  // Cookie Banner Component
+  const CookieBanner = () => {
+    if (cookieAccepted) return null;
+    
+    return (
+      <div className="fixed bottom-0 left-0 right-0 bg-black text-white p-6 border-t-4 border-pink-600 z-40">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+          <p className="text-sm font-medium" style={{ fontFamily: 'Courier New, monospace' }}>
+            Wir nutzen Cookies für Analytics und bessere Nutzererfahrung. Durch Nutzung der Website stimmst du zu. | 
+            We use cookies for analytics and user experience. By using the website, you agree.
+          </p>
+          <button
+            onClick={handleCookieAccept}
+            className="px-6 py-2 bg-pink-600 hover:bg-pink-700 text-white font-black border-2 border-pink-600 transition whitespace-nowrap"
+            style={{ fontFamily: 'Courier New, monospace' }}
+          >
+            Akzeptieren / Accept
+          </button>
+        </div>
+      </div>
+    );
+  };
+
   if (currentPage === 'home') {
     return (
-      <div className="min-h-screen bg-white overflow-hidden">
-        <Navigation />
+      <>
+        <div className="min-h-screen bg-white overflow-hidden">
+          <Navigation />
 
         {/* Hero Slideshow */}
         <div className="pt-40 pb-32 min-h-screen flex flex-col justify-center relative overflow-hidden border-b-4 border-black">
@@ -886,13 +903,16 @@ const ArtUPWebsite = () => {
             animation: fadeIn 0.4s ease-out;
           }
         `}</style>
-      </div>
+        </div>
+        <CookieBanner />
+      </>
     );
   }
 
   // About Page with Media Kit
   if (currentPage === 'about') {
     return (
+      <>
       <div className="min-h-screen bg-white">
         <Navigation />
         
@@ -918,7 +938,7 @@ const ArtUPWebsite = () => {
                   <div className="space-y-4 font-medium">
                     <div>
                       <p className="text-sm font-black uppercase text-gray-700">Dates</p>
-                      <p className="text-lg">April 23 – May 17, 2026</p>
+                      <p className="text-lg">April 24 – May 17, 2026</p>
                     </div>
                     <div>
                       <p className="text-sm font-black uppercase text-gray-700">Location</p>
@@ -926,7 +946,7 @@ const ArtUPWebsite = () => {
                     </div>
                     <div>
                       <p className="text-sm font-black uppercase text-gray-700">Hours</p>
-                      <p className="text-lg">Tuesday – Sunday<br />11:00 AM – 7:00 PM<br />Closed Mondays</p>
+                      <p className="text-lg">Wedenesday – Sunday<br />02:00 PM – 10:00 PM<br />Closed Mondays + Tuesdays</p>
                     </div>
                     <div>
                       <p className="text-sm font-black uppercase text-gray-700">Admission</p>
@@ -1039,6 +1059,7 @@ const ArtUPWebsite = () => {
 
         <Footer />
       </div>
+      </>
     );
   }
 
@@ -1266,10 +1287,10 @@ const ArtUPWebsite = () => {
         </div>
 
         {/* Content */}
-        <div className="px-6 pb-24 pt-32">
+        <div className="px-6 pb-24 pt-8">
           <div className="max-w-6xl mx-auto">
             {/* Biography Text */}
-            <div className="mb-16">
+            <div className="mb-8">
               <p className="text-lg leading-relaxed font-medium">{getArtistText(artist, 'fullBio')}</p>
             </div>
 
@@ -1627,7 +1648,11 @@ const ArtUPWebsite = () => {
     );
   }
 
-  return null;
+  return (
+    <>
+      <CookieBanner />
+    </>
+  );
 };
 
 export default ArtUPWebsite;

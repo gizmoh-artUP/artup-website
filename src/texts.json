@@ -15,7 +15,7 @@
       "hours": "Stunden",
       "minutes": "Minuten",
       "seconds": "Sekunden",
-      "date": "23. April 2026"
+      "date": "24. April 2026"
     },
     "about_teaser": {
       "title": "Über artUP",
@@ -24,7 +24,7 @@
       "location_label": "Ort",
       "location": "Maximilianstraße 99\nSpeyer, Deutschland",
       "hours_label": "Öffnungszeiten",
-      "hours": "Di–So\n11:00–19:00 Uhr",
+      "hours": "Mi–So\n14:00–22:00 Uhr",
       "admission_label": "Eintritt",
       "admission": "Kostenlos"
     },
@@ -46,7 +46,7 @@
       "buja": {
         "style": "Street Art",
         "shortBio": "Urbane Ästhetik trifft zeitgenössischen Ausdruck.",
-        "fullBio": "BUJA transformiert Stadtlandschaften in lebendige Dialoge zwischen Künstler und Gemeinschaft. Mit über einem Jahrzehnt Erfahrung in Street Art hinterfragen ihre Werke Wahrnehmungen von öffentlichem Raum und künstlerischem Ausdruck.",
+        "fullBio": "BUJA transformiert Stadtlandschaften in lebendige Dialoge zwischen Künstler und Gemeinschaft. Mit jahrzenhtelanger Erfahrung in Street Art hinterfragen seine Werke Wahrnehmungen von öffentlichem Raum und künstlerischem Ausdruck.",
         "description": "Urbane Ästhetik trifft zeitgenössischen Ausdruck. BUJA transformiert Stadtlandschaften in lebendigen Dialog."
       },
       "nina": {
@@ -64,20 +64,20 @@
       "gizmoh": {
         "style": "Illustrative Poesie",
         "shortBio": "Wo Illustration auf Erzählung trifft.",
-        "fullBio": "Gizmoh schafft visuelle Geschichten, die die Grenzen zwischen Illustration und bildender Kunst verwischen. Jedes Stück ist eine poetische Erzählung in exquisiter Detailfülle und Vorstellungskraft.",
+        "fullBio": "Gizmoh schafft eine visuelle Ästhetik, die die Grenzen zwischen Illustration, Design, Typografie und bildender Kunst verwischen. Jedes seiner Stücke ist eine poetische Erzählung in Detailfülle und Vorstellungskraft.",
         "description": "Wo Illustration auf Erzählung trifft. Visuelle Geschichten, die flüstern und singen."
       },
-      "elena": {
-        "style": "Figurativ",
-        "shortBio": "Menschliche Emotion durch figurativen Ausdruck.",
-        "fullBio": "Elena erfasst die Komplexität menschlicher Emotion und Verbindung durch figurative Malerei. Ihre Porträts und Figurenstudien enthüllen die innere Landschaft der menschlichen Erfahrung.",
-        "description": "Menschliche Emotion durch figurativen Ausdruck."
+      "nikol": {
+        "style": "konzeptioneller Fotorealismus",
+        "shortBio": "Spuren der Berührung",
+        "fullBio": "Nikol Minova schafft eine visuelle Sprache, die Fotorealismus, lineare Schwarz-Weiß-Zeichnung und farbige Kompositionen vereint. Jedes Werk ist eine emotionale Momentaufnahme präzise, sensibel und voller Tiefe.",
+        "description": "Spuren der Berührung"
       },
-      "marcus": {
-        "style": "Digitale Kunst",
-        "shortBio": "Analoge und digitale Welten verbinden.",
-        "fullBio": "Marcus Chen erforscht die Schnittstelle zwischen traditionellen künstlerischen Prinzipien und hochmoderner digitaler Technologie und schafft Werke, die unsere Wahrnehmung von Medium und Authentizität hinterfragen.",
-        "description": "Analoge und digitale Welten verbinden."
+      "olga": {
+        "style": "Kunstmalerei",
+        "shortBio": "Stilistische Vielfalt und konzeptuelle Tiefe",
+        "fullBio": "Olga Davids künstlerische Arbeit zeichnet sich durch eine große stilistische und thematische Bandbreite aus. In ihren Werken verbindet sie Malerei, Grafik und architektonisches Denken zu einem vielschichtigen Ausdruck, der über klassische Kategorien hinausgeht.",
+        "description": "Stilistische Vielfalt und konzeptuelle Tiefe"
       },
       "sofia": {
         "style": "Konzeptkunst",
@@ -158,11 +158,11 @@
       "exhibition_text": "artUP ist eine zeitgenössische Kunstausstellung mit 18 internationalen Künstlern über verschiedene Medien und Praktiken. Von Street Art bis klassischer Malerei, digitale Kunst bis Installationen – artUP feiert die Vielfalt und Vitalität zeitgenössischen künstlerischen Ausdrucks.\n\nDiese monatelange Ausstellung im Herzen Speyers schafft eine Plattform für Künstler, um ihre Werke zu präsentieren und mit der Gemeinde in Dialog zu treten.",
       "event_details": "Veranstaltungsdetails",
       "dates_label": "Daten",
-      "dates": "23. April – 17. Mai 2026",
+      "dates": "24. April – 17. Mai 2026",
       "location_label": "Ort",
       "location": "Maximilianstraße 99\n67346 Speyer, Deutschland",
       "hours_label": "Öffnungszeiten",
-      "hours": "Dienstag – Sonntag\n11:00 AM – 19:00 Uhr\nMontag geschlossen",
+      "hours": "Mittwoch – Sonntag\n14:00 – 22:00 Uhr\nMontag + Dienstag geschlossen",
       "admission_label": "Eintritt",
       "admission": "Kostenlos",
       "practical_info": "Praktische Informationen",
@@ -190,9 +190,9 @@
     "about_page": {
       "title": "Über artUP",
       "description": "artUP ist eine zeitgenössische Kunstausstellung, die 18 internationale Künstler zeigt. Von Street Art bis klassischer Malerei, digitale Kunst bis Installationen – artUP feiert vielfältigen künstlerischen Ausdruck.",
-      "exhibition_period": "23. April – 17. Mai 2026",
+      "exhibition_period": "24. April – 17. Mai 2026",
       "venue": "Maximilianstraße 99, Speyer, Deutschland",
-      "hours": "Dienstag – Sonntag, 11:00 – 19:00 Uhr",
+      "hours": "Mittwoch – Sonntag, 14:00 – 22:00 Uhr",
       "admission": "Kostenlos"
     },
     "contact": {
@@ -221,7 +221,7 @@
       "hours": "Hours",
       "minutes": "Minutes",
       "seconds": "Seconds",
-      "date": "April 23, 2026"
+      "date": "April 24, 2026"
     },
     "about_teaser": {
       "title": "About artUP",
@@ -230,7 +230,7 @@
       "location_label": "Location",
       "location": "Maximilianstraße 99\nSpeyer, Germany",
       "hours_label": "Hours",
-      "hours": "Tue – Sun\n11:00 AM – 7:00 PM",
+      "hours": "Wed – Sun\n02:00 PM – 10:00 PM",
       "admission_label": "Admission",
       "admission": "Free Entry"
     },
@@ -252,7 +252,7 @@
       "buja": {
         "style": "Street Art",
         "shortBio": "Urban aesthetics meet contemporary expression.",
-        "fullBio": "BUJA transforms cityscapes into vibrant dialogues between artist and community. With over a decade in street art, their work challenges perceptions of public space and creative expression.",
+        "fullBio": "BUJA transforms cityscapes into vibrant dialogues between artist and community. With over a decade in street art, his works challenges perceptions of public space and creative expression.",
         "description": "Urban aesthetics meet contemporary expression. BUJA transforms cityscapes into vibrant dialogue."
       },
       "nina": {
@@ -273,17 +273,17 @@
         "fullBio": "Gizmoh creates visual stories that blur the lines between illustration and fine art. Each piece is a poetic narrative rendered in exquisite detail and imagination.",
         "description": "Where illustration meets narrative. Visual stories that whisper and sing."
       },
-      "elena": {
-        "style": "Figurative",
-        "shortBio": "Human emotion through figurative expression.",
-        "fullBio": "Elena captures the complexity of human emotion and connection through figurative painting. Her portraits and figure studies reveal the inner landscape of the human experience.",
-        "description": "Human emotion through figurative expression."
+      "nikol": {
+        "style": "Conceptual photorealism",
+        "shortBio": "Traces of touch",
+        "fullBio": "Nikol captures the complexity of human emotion and connection through figurative painting. Her portraits and figure studies reveal the inner landscape of the human experience.",
+        "description": "Traces of touch"
       },
-      "marcus": {
-        "style": "Digital Art",
-        "shortBio": "Bridging analog and digital realms.",
-        "fullBio": "Marcus Chen explores the intersection of traditional artistic principles and cutting-edge digital technology, creating works that challenge our perception of medium and authenticity.",
-        "description": "Bridging analog and digital realms."
+      "olga": {
+        "style": "Fine Art Painting",
+        "shortBio": "Stylistic Range and Conceptual Depth",
+        "fullBio": "Olga David's artistic practice is distinguished by considerable stylistic and thematic range. Her works merge painting, graphic art, and architectural thinking into a multifaceted expression that goes beyond conventional categories.",
+        "description": "Stylistic Range and Conceptual Depth"
       },
       "sofia": {
         "style": "Conceptual Art",
@@ -364,11 +364,11 @@
       "exhibition_text": "artUP is a contemporary art exhibition bringing together 18 international artists across diverse mediums and practices. From street art to classical painting, digital art to installations – artUP celebrates the diversity and vitality of contemporary artistic expression.\n\nHeld in the heart of Speyer, this month-long exhibition creates a platform for emerging and established artists to showcase their work and engage with the community.",
       "event_details": "Event Details",
       "dates_label": "Dates",
-      "dates": "April 23 – May 17, 2026",
+      "dates": "April 24 – May 17, 2026",
       "location_label": "Location",
       "location": "Maximilianstraße 99\n67346 Speyer, Germany",
       "hours_label": "Hours",
-      "hours": "Tuesday – Sunday\n11:00 AM – 7:00 PM\nClosed Mondays",
+      "hours": "Wednesday – Sunday\n02:00 PM – 10:00 PM\nClosed Mondays + Tuesdays",
       "admission_label": "Admission",
       "admission": "Free Entry",
       "practical_info": "Practical Information",
@@ -396,9 +396,9 @@
     "about_page": {
       "title": "About artUP",
       "description": "artUP is a contemporary art exhibition featuring 18 international artists. From street art to classical painting, digital art to installations – artUP celebrates diverse artistic expression.",
-      "exhibition_period": "April 23 – May 17, 2026",
+      "exhibition_period": "April 24 – May 17, 2026",
       "venue": "Maximilianstraße 99, Speyer, Germany",
-      "hours": "Tuesday – Sunday, 11:00 AM – 7:00 PM",
+      "hours": "Wednesday – Sunday, 02:00 PM – 10:00 PM",
       "admission": "Free"
     },
     "contact": {

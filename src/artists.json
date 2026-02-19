@@ -6,7 +6,7 @@
       "textKey": "buja",
       "color": "#FF1461",
       "slideImage": "https://www.buja-art.com/wp-content/uploads/2024/11/BUJA-Heidekitz-DarkBlue-140x100-klein-k.jpg",
-      "portraitImage": "https://www.buja-art.com/wp-content/uploads/2024/11/csm_ZA5K3514-3_8ec07f0e68.jpg",
+      "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771445768/buja_4_5_90_2_wslzhy.jpg",
       "videoThumbnail": "BUJA_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://youtu.be/vVZrfv7ZA_k",
       "artworks": [
@@ -23,12 +23,12 @@
       "name": "Nina Bussjäger",
       "textKey": "nina",
       "color": "#FFC500",
-      "slideImage": "NINA_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "https://kunst-eckrich.de/wp-content/uploads/2018/07/Nina-Bussj%C3%A4ger.jpg",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771500007/nina_painting_1_v4ghws.jpg",
+      "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771445769/nina_4_5_90_avkuzm.jpg",
       "videoThumbnail": "NINA_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/watch?v=9ZITmU3FiEU",
       "artworks": [
-        "NINA_ARTWORK_1_URL",
+        "https://www.rheinpfalz.de/cms_media/module_img/12209/6104945_2_articledetail_dc8fcf68-272a-46e0-8829-821fff9615ee.webp",
         "NINA_ARTWORK_2_URL",
         "NINA_ARTWORK_3_URL"
       ],
@@ -41,14 +41,14 @@
       "name": "Timothy Starratt",
       "textKey": "timothy",
       "color": "#FF1461",
-      "slideImage": "TIMOTHY_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "https://static.wixstatic.com/media/be799a_0b0f14c16d324e30a9a604019076cdbe~mv2.jpeg/v1/fill/w_1004,h_1338,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/be799a_0b0f14c16d324e30a9a604019076cdbe~mv2.jpeg",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_2_andnyv.jpg",
+      "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771445770/tim_4_5_90_u2bimk.jpg",
       "videoThumbnail": "TIMOTHY_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/watch?v=PF5Szq9TZCg",
       "artworks": [
-        "TIMOTHY_ARTWORK_1_URL",
-        "TIMOTHY_ARTWORK_2_URL",
-        "TIMOTHY_ARTWORK_3_URL"
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_1_rlldju.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_4_c93uaq.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_3_pmnk0v.jpg"
       ],
       "website": "https://www.timothystarratt.com",
       "instagram": "https://www.instagram.com/timothystarratt",
@@ -59,8 +59,8 @@
       "name": "Gizmoh",
       "textKey": "gizmoh",
       "color": "#FFC500",
-      "slideImage": "https://cdn.myportfolio.com/1d99981d288699994df4ad34b1e413ef/d37457a5-ac5e-4035-bb22-dfa22907eb5a_rw_1920.png?h=8746ad20e56750a7a05513cc64dc948a",
-      "portraitImage": "https://cdn.myportfolio.com/1d99981d288699994df4ad34b1e413ef/0ff2ae9e-87ad-4d40-ae1e-563736a92aaa_rw_1200.png?h=108af7cc6f1c25c1197b722298d6f418",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771511223/gizmoh_art_1_qn9jzn.jpg",
+      "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771445766/gizmoh_4_5_90_uv64iy.jpg",
       "videoThumbnail": "GIZMOH_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://vimeo.com/7836802?fl=pl&fe=cm",
       "artworks": [
@@ -74,17 +74,17 @@
     },
     {
       "id": 5,
-      "name": "Elena Rossi",
-      "textKey": "elena",
+      "name": "Nikol Minova",
+      "textKey": "nikol",
       "color": "#FF1461",
-      "slideImage": "ELENA_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "ELENA_PORTRAIT_URL",
+      "slideImage": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=1024,height=1101/image/541494444/dbd47a26-85e8-40cd-b860-4fa50f2d257d.jpg",
+      "portraitImage": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=3;0;46;0,width=480,height=462/image/541045434/7a710089-17aa-45f4-a81c-fd207e923537.jpg",
       "videoThumbnail": "ELENA_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/embed/M7lc1BCxL00",
       "artworks": [
-        "ELENA_ARTWORK_1_URL",
-        "ELENA_ARTWORK_2_URL",
-        "ELENA_ARTWORK_3_URL"
+        "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=89;0;0;0,width=2560,height=2560/image/533341434/026448ca-db4d-4442-a9d8-1793d0fa980c.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771509790/nikol_art_1.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771509795/nikol_art_2.jpg"
       ],
       "website": "https://www.elenarossi.it",
       "instagram": "https://www.instagram.com/elenarossi_art",
@@ -92,11 +92,11 @@
     },
     {
       "id": 6,
-      "name": "Marcus Chen",
-      "textKey": "marcus",
+      "name": "Olga David",
+      "textKey": "olga",
       "color": "#FFC500",
-      "slideImage": "MARCUS_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "MARCUS_PORTRAIT_URL",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771511237/olga_art_1_ddeb5c.jpg",
+      "portraitImage": "https://olga-david.de/wp-content/uploads/2019/04/Olga_David_15-1Q.jpg",
       "videoThumbnail": "MARCUS_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://vimeo.com/76979871",
       "artworks": [
@@ -104,9 +104,9 @@
         "MARCUS_ARTWORK_2_URL",
         "MARCUS_ARTWORK_3_URL"
       ],
-      "website": "https://www.marcuschen.art",
-      "instagram": "https://www.instagram.com/marcuschen_artist",
-      "facebook": "https://www.facebook.com/marcuschenart"
+      "website": "https://olga-david.de/",
+      "instagram": "http://www.instagram.com/kunst.olga.david/",
+      "facebook": "https://www.facebook.com/Kunstmalerei.Olga.David/"
     },
     {
       "id": 7,
