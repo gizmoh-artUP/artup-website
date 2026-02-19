@@ -79,23 +79,23 @@
         "fullBio": "Olga Davids künstlerische Arbeit zeichnet sich durch eine große stilistische und thematische Bandbreite aus. In ihren Werken verbindet sie Malerei, Grafik und architektonisches Denken zu einem vielschichtigen Ausdruck, der über klassische Kategorien hinausgeht.",
         "description": "Stilistische Vielfalt und konzeptuelle Tiefe"
       },
-      "sofia": {
-        "style": "Konzeptkunst",
-        "shortBio": "Ideen durch Konzept greifbar gemacht.",
-        "fullBio": "Sofías konzeptuelle Praxis untersucht soziale Strukturen und kulturelle Narrative. Ihre Installationen und Interventionen provozieren Gedanken und Dialog.",
-        "description": "Ideen durch Konzept greifbar gemacht."
+      "monika": {
+        "style": "Bildhauerei",
+        "shortBio": "Rohheit und Poesie",
+        "fullBio": "Monika Schaper arbeitet mit den Gegensätzen: Rohe Materialität trifft auf subtile Ästhetik. In ihren expressiven Betonplastiken offenbaren sich Spannung und Bewegung. Ob Beton, Holz, Gips oder Metall. Jedes Material wird in ihrer Hand zum Träger einer eigenständigen künstlerischen Sprache.",
+        "description": "Rohheit und Poesie"
       },
-      "james": {
-        "style": "Mixed Media",
-        "shortBio": "Materialien, Bedeutungen und Texturen schichten.",
-        "fullBio": "James kombiniert traditionelle und unkonventionelle Materialien, um reich strukturierte Werke zu schaffen, die zu taktiler und visueller Erforschung einladen.",
-        "description": "Materialien, Bedeutungen und Texturen schichten."
+      "astrid": {
+        "style": "Papierplastiken",
+        "shortBio": "Materialien, Bedeutungen und Texturen in Schichten. Geliebte Zeitgenossen",
+        "fullBio": "Aus alten Zeitungen und Kleister entstehen bei Astrid Steegmüller ausdrucksstarke Tierskulpturen, die zum Streicheln einladen. Ohne Drahtkonstruktion, nur aus Papier und Geduld, modelliert sie jedes Tier mit feinen Details. Was mit Faszination begann, ist zur täglichen Leidenschaft geworden.",
+        "description": "Materialien, Bedeutungen und Texturen in Schichten. Geliebte Zeitgenossen"
       },
-      "yuki": {
+      "joachim": {
         "style": "Fotografie",
-        "shortBio": "Licht und Schatten als Erzähler.",
-        "fullBio": "Yukis fotografisches Auge erfasst die Essenz von Momenten und transformiert alltägliche Szenen in tiefe Meditationen über Zeit, Erinnerung und menschliche Verbindung.",
-        "description": "Licht und Schatten als Erzähler."
+        "shortBio": "Licht und Schatten als Erzähler jenseites des Moments.",
+        "fullBio": "Porträts, die erzählen. Von Persönlichkeiten, Emotionen, Träumen und Schicksalen. Die Fotografie dieses Künstlers erfasst die Tiefe menschlicher Erfahrung. Daneben dokumentiert er die Alltagskultur Thailands mit einfühlsamem Blick, fern ab touristischer Pfade. Digitale Spiegelungen und Verfremdungen schaffen surreale Welten, während eigene Texte Bild und Wort zu einer poetischen Einheit verbinden.",
+        "description": "Licht und Schatten als Erzähler jenseits des Moments."
       },
       "klaus": {
         "style": "Skulptur",
@@ -285,23 +285,23 @@
         "fullBio": "Olga David's artistic practice is distinguished by considerable stylistic and thematic range. Her works merge painting, graphic art, and architectural thinking into a multifaceted expression that goes beyond conventional categories.",
         "description": "Stylistic Range and Conceptual Depth"
       },
-      "sofia": {
-        "style": "Conceptual Art",
-        "shortBio": "Ideas made tangible through concept.",
-        "fullBio": "Sofía's conceptual practice examines social structures and cultural narratives. Her installations and interventions provoke thought and dialogue.",
+      "monika": {
+        "style": "Sculpture",
+        "shortBio": "Rawness and Poetry",
+        "fullBio": "Monika Schaper works with contrasts: raw materiality meets subtle aesthetics. In her expressive concrete sculptures, tension and movement reveal themselves. Whether concrete, wood, plaster, or metal, each material becomes a vehicle for her distinctive artistic language.",
         "description": "Ideas made tangible through concept."
       },
-      "james": {
-        "style": "Mixed Media",
-        "shortBio": "Layering materials, meanings, and textures.",
-        "fullBio": "James combines traditional and unconventional materials to create richly textured works that invite tactile and visual exploration.",
-        "description": "Layering materials, meanings, and textures."
+      "astrid": {
+        "style": "Paper Sculptures",
+        "shortBio": "Layering materials, meanings, and textures. Beloved companions",
+        "fullBio": "From old newspapers and paste, Astrid Steegmüller creates expressive animal sculptures that invite the viewer to touch. Without wire construction, only paper and patience, she models each creature with fine details. What began as fascination has become a daily passion.",
+        "description": "Layering materials, meanings, and textures. Beloved companions"
       },
-      "yuki": {
+      "joachim": {
         "style": "Photography",
-        "shortBio": "Light and shadow as storytellers.",
-        "fullBio": "Yuki's photographic eye captures the essence of moments, transforming everyday scenes into profound meditations on time, memory, and human connection.",
-        "description": "Light and shadow as storytellers."
+        "shortBio": "Light and shadow as storytellers beyond those moments.",
+        "fullBio": "Portraits that tell stories. Of personalities, emotions, dreams, and destinies. This artist's photography captures the depth of human experience. Beyond that, he documents Thai everyday culture with empathetic vision, far from tourist trails. Digital reflections and distortions create surreal worlds, while his own texts unite image and word into a poetic unity.",
+        "description": "Light and shadow as storytellers beyond those moments."
       },
       "klaus": {
         "style": "Sculpture",

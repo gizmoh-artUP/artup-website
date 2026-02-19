@@ -51,7 +51,7 @@ const ArtUPWebsite = () => {
   const allArtists = artistsJSON.artists;
 
   const sponsors = [
-    { id: 1, name: 'Sponsor One', logo: 'SPONSOR_LOGO_1_URL', website: 'https://www.sponsor-one.com' },
+    { id: 1, name: 'Blackstorck', logo: 'SPONSOR_LOGO_1_URL', website: 'https://www.blackstork-braumanufaktur.de/' },
     { id: 2, name: 'Sponsor Two', logo: 'SPONSOR_LOGO_2_URL', website: 'https://www.sponsor-two.com' },
     { id: 3, name: 'Sponsor Three', logo: 'SPONSOR_LOGO_3_URL', website: 'https://www.sponsor-three.com' },
     { id: 4, name: 'Sponsor Four', logo: 'SPONSOR_LOGO_4_URL', website: 'https://www.sponsor-four.com' }
@@ -796,7 +796,7 @@ const ArtUPWebsite = () => {
       slideImage: 'SLIDESHOW_IMAGE_URL' }} />
                   <div>
                     <p className="text-sm font-black uppercase" style={{ fontFamily: 'Courier New, monospace' }}>Exhibition Period</p>
-                    <p className="text-2xl font-black">23 April – 17 May</p>
+                    <p className="text-2xl font-black">24 April – 17 May</p>
                   </div>
                 </div>
                 <p className="text-sm ml-12 font-medium">A month-long celebration of contemporary art and creative expression.</p>

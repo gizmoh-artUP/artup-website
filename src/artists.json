@@ -110,57 +110,57 @@
     },
     {
       "id": 7,
-      "name": "Sofía García",
-      "textKey": "sofia",
+      "name": "Monika Schaper",
+      "textKey": "monika",
       "color": "#FF1461",
-      "slideImage": "SOFIA_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "SOFIA_PORTRAIT_URL",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771523369/monika_art_1_h1kgl6.jpg",
+      "portraitImage": "https://i0.wp.com/monikaschaper.com/wp-content/uploads/2020/04/photo-2019-05-29-15-44-15-2.jpg?w=4000&h=&ssl=1",
       "videoThumbnail": "SOFIA_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/embed/OPf0YbXqDm0",
       "artworks": [
-        "SOFIA_ARTWORK_1_URL",
-        "SOFIA_ARTWORK_2_URL",
-        "SOFIA_ARTWORK_3_URL"
+        "https://i0.wp.com/monikaschaper.com/wp-content/uploads/2020/04/bild-2-2.jpeg?w=4000&h=&ssl=1",
+        "https://monikaschaper.com/wp-content/uploads/2019/04/dsc_0038.jpg",
+        "https://i0.wp.com/monikaschaper.com/wp-content/uploads/2019/04/img_7456.jpg?w=4000&h=&ssl=1"
       ],
-      "website": "https://www.sofiagarcia.es",
-      "instagram": "https://www.instagram.com/sofiagarcia_art",
-      "facebook": "https://www.facebook.com/sofiagarciart"
+      "website": "https://monikaschaper.com",
+      "instagram": null,
+      "facebook": null
     },
     {
       "id": 8,
-      "name": "James Wilson",
-      "textKey": "james",
+      "name": "Astrid Steegmüller",
+      "textKey": "astrid",
       "color": "#FFC500",
-      "slideImage": "JAMES_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "JAMES_PORTRAIT_URL",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771523349/astrid_art_1_dy7uwr.jpg",
+      "portraitImage": "https://images.squarespace-cdn.com/content/v1/66d32a6d65386e5d23db70d6/28d47e29-a1ca-410b-bd05-0506bdd97d78/unbenannt-0104.jpg",
       "videoThumbnail": "JAMES_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/embed/ZwKhaBi-1d0",
       "artworks": [
-        "JAMES_ARTWORK_1_URL",
-        "JAMES_ARTWORK_2_URL",
-        "JAMES_ARTWORK_3_URL"
+        "https://aparte-kunst.de/wp-content/uploads/2024/01/Hase-4087-1024x727.jpg",
+        "https://aparte-kunst.de/wp-content/uploads/2024/01/IMG_0535.jpg",
+        "https://aparte-kunst.de/wp-content/uploads/2024/01/Kleiner-Esel-4131-1024x742.jpg"
       ],
-      "website": "https://www.jameswilson.co.uk",
-      "instagram": "https://www.instagram.com/jameswilson_art",
-      "facebook": "https://www.facebook.com/jameswilsonart"
+      "website": null,
+      "instagram": "https://www.instagram.com/astrid.steegmueller",
+      "facebook": null
     },
     {
       "id": 9,
-      "name": "Yuki Tanaka",
-      "textKey": "yuki",
+      "name": "Joachim Pfaffmann",
+      "textKey": "joachim",
       "color": "#FF1461",
-      "slideImage": "YUKI_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "YUKI_PORTRAIT_URL",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771526116/joachim_art_1_oiu8hm.jpg",
+      "portraitImage": "https://image.jimcdn.com/cdn-cgi/image/width=622%2Cheight=10000%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/i6303a156b56f0775/version/1757598707/image.jpg",
       "videoThumbnail": "YUKI_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://vimeo.com/191710701",
       "artworks": [
-        "YUKI_ARTWORK_1_URL",
-        "YUKI_ARTWORK_2_URL",
-        "YUKI_ARTWORK_3_URL"
+        "https://image.jimcdn.com/cdn-cgi/image/width=2048%2Cheight=2048%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/i8fd299b139a20e3d/version/1731263524/image.jpg",
+        "https://image.jimcdn.com/cdn-cgi/image/width=532%2Cheight=710%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/i685cc0e740a41145/version/1758218973/image.jpg",
+        "https://image.jimcdn.com/cdn-cgi/image/width=532%2Cheight=710%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/ida6cfb83267b44eb/version/1758218906/image.jpg"
       ],
-      "website": "https://www.yukitanaka.jp",
-      "instagram": "https://www.instagram.com/yukitanaka_art",
-      "facebook": "https://www.facebook.com/yukitanakaart"
+      "website": "https://www.joachimpfaffmann.de/",
+      "instagram": "https://www.instagram.com/joachim.pfaffmann/",
+      "facebook": null
     },
     {
       "id": 10,
