@@ -23,14 +23,14 @@
       "name": "Nina Bussjäger",
       "textKey": "nina",
       "color": "#FFC500",
-      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771500007/nina_painting_1_v4ghws.jpg",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771581089/nina_art_1_pxbvav.jpg",
       "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771445769/nina_4_5_90_avkuzm.jpg",
       "videoThumbnail": "NINA_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/watch?v=9ZITmU3FiEU",
       "artworks": [
-        "https://www.rheinpfalz.de/cms_media/module_img/12209/6104945_2_articledetail_dc8fcf68-272a-46e0-8829-821fff9615ee.webp",
-        "NINA_ARTWORK_2_URL",
-        "NINA_ARTWORK_3_URL"
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771581088/nina_art_4_vzqhgu.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771581088/nina_art_2_px4ajk.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771581088/nina_art_3_uveqo0.jpg"
       ],
       "website": "https://www.ninabussjager.com",
       "instagram": "https://www.instagram.com/ninabussjager",
@@ -164,39 +164,39 @@
     },
     {
       "id": 10,
-      "name": "Klaus Mueller",
-      "textKey": "klaus",
+      "name": "Katharina Andes",
+      "textKey": "katharina",
       "color": "#FFC500",
-      "slideImage": "KLAUS_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "KLAUS_PORTRAIT_URL",
+      "slideImage": "https://static.wixstatic.com/media/34e75f_41049a4c62f942d4a4130e42d1b07821~mv2.png/v1/fill/w_1526,h_714,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/rot%20KA.png",
+      "portraitImage": "https://static.wixstatic.com/media/34e75f_1a726183c4144a408ae728123f7e29bc~mv2.jpg/v1/fill/w_368,h_520,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/L1080630.jpg",
       "videoThumbnail": "KLAUS_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/embed/kJQP7kiw9Fk",
       "artworks": [
-        "KLAUS_ARTWORK_1_URL",
-        "KLAUS_ARTWORK_2_URL",
-        "KLAUS_ARTWORK_3_URL"
+        "https://static.wixstatic.com/media/34e75f_b8cba405651045d89dc78593d88b6e21~mv2.jpg/v1/fill/w_1070,h_1520,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/PXL_20231012_183225550_ACTION_PAN-01_COVER.jpg",
+        "https://static.wixstatic.com/media/34e75f_eb15e3adb0874e24b1dce593c1d44c0d~mv2.jpg/v1/fill/w_699,h_933,al_c,q_85,enc_avif,quality_auto/IMG_20220704_213652.jpg",
+        "https://static.wixstatic.com/media/34e75f_1ba63f67755c4a86b5530fff03380ddb~mv2.jpg/v1/fill/w_604,h_806,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/IMG_20220128_195318_resized_20220128_075419894.jpg"
       ],
-      "website": "https://www.klausmueller.de",
-      "instagram": "https://www.instagram.com/klausmueller_art",
-      "facebook": "https://www.facebook.com/klausmuellerart"
+      "website": "https://www.katharinaandes.com/",
+      "instagram": "https://www.instagram.com/0kandes0/",
+      "facebook": null
     },
     {
       "id": 11,
-      "name": "Priya Sharma",
-      "textKey": "priya",
+      "name": "Björn Ruppert",
+      "textKey": "bjoern",
       "color": "#FF1461",
-      "slideImage": "PRIYA_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "PRIYA_PORTRAIT_URL",
+      "slideImage": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=1440,height=390/image/327261183/08953598-7011-4848-981c-2b98ec82a4d5.jpg",
+      "portraitImage": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=1280,height=1920/image/327261548/f87ef7b7-8ace-46cb-8162-eaf1d235b5bc.jpg",
       "videoThumbnail": "PRIYA_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/embed/tYzMGcUty6s",
       "artworks": [
-        "PRIYA_ARTWORK_1_URL",
-        "PRIYA_ARTWORK_2_URL",
-        "PRIYA_ARTWORK_3_URL"
+        "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=2560,height=1930/image/396790474/11516e28-22a0-4ef8-9f9c-54d2fb54e371.jpg",
+        "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=2560,height=2073/image/327261544/634f6a62-6d0f-4a87-8574-5d588ecfde7b.jpg",
+        "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=0;0;0;0,width=2560,height=1899/image/396790471/caf084dc-de8c-4051-88ed-5866247d6ca9.jpg"
       ],
-      "website": "https://www.priyasharma.in",
-      "instagram": "https://www.instagram.com/priyasharma_art",
-      "facebook": "https://www.facebook.com/priyasharmaart"
+      "website": "https://www.bjoernruppert.eu/",
+      "instagram": null,
+      "facebook": null
     },
     {
       "id": 12,
@@ -290,21 +290,21 @@
     },
     {
       "id": 17,
-      "name": "Mei Wong",
-      "textKey": "mei",
+      "name": "Antighost",
+      "textKey": "anti",
       "color": "#FF1461",
-      "slideImage": "MEI_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "MEI_PORTRAIT_URL",
+      "slideImage": "https://antighost.de/wp-content/uploads/2026/02/RieslingFist-1600x1201.jpg",
+      "portraitImage": "https://antighost.de/wp-content/uploads/2021/11/Rakel-1-1600x1022.jpg",
       "videoThumbnail": "MEI_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://www.youtube.com/embed/2lAB1z9MzP0",
+      "videoUrl": "https://www.youtube.com/watch?v=_cdjCcbLZAQ",
       "artworks": [
-        "MEI_ARTWORK_1_URL",
-        "MEI_ARTWORK_2_URL",
-        "MEI_ARTWORK_3_URL"
+        "https://antighost.de/wp-content/uploads/2026/01/Interrupted-1.jpg",
+        "https://antighost.de/wp-content/uploads/2025/02/Airmax.jpg",
+        "https://antighost.de/wp-content/uploads/2024/11/img_0763-1600x1201.jpeg"
       ],
-      "website": "https://www.meiwong.hk",
-      "instagram": "https://www.instagram.com/meiwong_art",
-      "facebook": "https://www.facebook.com/meiwongarts"
+      "website": "https://antighost.de/",
+      "instagram": "https://www.instagram.com/antighostsiebdruck",
+      "facebook": "https://www.facebook.com/AntighostSiebdruck"
     },
     {
       "id": 18,

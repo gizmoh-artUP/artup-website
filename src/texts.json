@@ -19,7 +19,7 @@
     },
     "about_teaser": {
       "title": "Über artUP",
-      "description": "Eine Ausstellung mit 18 internationalen Künstlern über verschiedene Medien. Von Street Art bis klassischer Malerei, digitale Kunst bis Installationen – artUP feiert zeitgenössischen künstlerischen Ausdruck.",
+      "description": "Eine Ausstellung mit zahlreichen regionalen Künstlern über verschiedene Medien. Von Street Art bis klassischer Malerei, abstrakte Kunst bis Skulpturen – artUP feiert zeitgenössischen künstlerischen Ausdruck.",
       "learn_more": "Mehr erfahren →",
       "location_label": "Ort",
       "location": "Maximilianstraße 99\nSpeyer, Deutschland",
@@ -97,16 +97,16 @@
         "fullBio": "Porträts, die erzählen. Von Persönlichkeiten, Emotionen, Träumen und Schicksalen. Die Fotografie dieses Künstlers erfasst die Tiefe menschlicher Erfahrung. Daneben dokumentiert er die Alltagskultur Thailands mit einfühlsamem Blick, fern ab touristischer Pfade. Digitale Spiegelungen und Verfremdungen schaffen surreale Welten, während eigene Texte Bild und Wort zu einer poetischen Einheit verbinden.",
         "description": "Licht und Schatten als Erzähler jenseits des Moments."
       },
-      "klaus": {
-        "style": "Skulptur",
+      "katharina": {
+        "style": "Raum und Körper",
         "shortBio": "Form erkundet die Leere.",
-        "fullBio": "Klaus schafft monumentale Skulpturen, die sich mit Raum und Materialität auseinandersetzen. Seine Werke hinterfragen die Beziehung zwischen Objekt, Betrachter und Umgebung.",
+        "fullBio": "Katharina Andes ist interdisziplinäre Künstlerin, Bühnen- und Kostümbildnerin, deren multidimensionale Kunst Raum, Körper, Bewegung und Sinneserfahrung verbindet",
         "description": "Form erkundet die Leere."
       },
-      "priya": {
-        "style": "Videokunst",
+      "bjoern": {
+        "style": "Malerei und Lithographie",
         "shortBio": "Zeit und Bewegung als Medium.",
-        "fullBio": "Priyas Videoinstallationen erforschen zeitliche Erfahrung und verkörperte Wahrnehmung. Ihre Werke schaffen immersive Umgebungen, die alle Sinne ansprechen.",
+        "fullBio": "Björn Ruppert ist in Landschaften zu Hause. In realen, aber mehr noch in erschauten, die sich dann rätselvoll in seinen Gemälden niederschlagen.",
         "description": "Zeit und Bewegung als Medium."
       },
       "ahmed": {
@@ -139,10 +139,10 @@
         "fullBio": "Oscars keramische Praxis zelebriert die Materialität und Unvollkommenheit von Ton und schafft Formen, die utilitäre und bildende Kunsttradition verbinden.",
         "description": "Erde durch Feuer verwandelt."
       },
-      "mei": {
-        "style": "Textil & Faserkunst",
+      "anti": {
+        "style": "Handgemachte Siebdrucke",
         "shortBio": "Fäden erzählen Geschichten.",
-        "fullBio": "Meis Textilwerke weben kulturelle Narrative und persönliche Geschichten zusammen und schaffen taktile Erkundungen von Identität und Zugehörigkeit.",
+        "fullBio": "Neben Gigpostern gestalten und drucken wir auch limitierte Artprints und siebgedruckte Unikate. Freie Arbeiten bei denen wir viel Wert auf pfiffige Ideen legen.",
         "description": "Fäden erzählen Geschichten."
       },
       "carlos": {
@@ -185,11 +185,11 @@
     },
     "artists_page": {
       "title": "Alle Künstler",
-      "description": "Entdecken Sie alle 18 teilnehmenden Künstler dieser Ausstellung."
+      "description": "Entdecken Sie alle teilnehmenden Künstler dieser Ausstellung."
     },
     "about_page": {
       "title": "Über artUP",
-      "description": "artUP ist eine zeitgenössische Kunstausstellung, die 18 internationale Künstler zeigt. Von Street Art bis klassischer Malerei, digitale Kunst bis Installationen – artUP feiert vielfältigen künstlerischen Ausdruck.",
+      "description": "artUP ist eine zeitgenössische Kunstausstellung, die eine Vielzahl regionaler Künstler zeigt. Von Street Art bis klassischer Malerei, abstrakter Kunst bis Skulpturen – artUP feiert vielfältigen künstlerischen Ausdruck.",
       "exhibition_period": "24. April – 17. Mai 2026",
       "venue": "Maximilianstraße 99, Speyer, Deutschland",
       "hours": "Mittwoch – Sonntag, 14:00 – 22:00 Uhr",
@@ -225,7 +225,7 @@
     },
     "about_teaser": {
       "title": "About artUP",
-      "description": "An exhibition bringing together 18 international artists across diverse mediums. From street art to classical painting, digital art to installations – artUP celebrates contemporary artistic expression.",
+      "description": "An exhibition bringing together a wide range of regional artists across diverse mediums. From street art to classical painting, abstract art to sculptures – artUP celebrates contemporary artistic expression.",
       "learn_more": "Learn More →",
       "location_label": "Location",
       "location": "Maximilianstraße 99\nSpeyer, Germany",
@@ -248,7 +248,7 @@
     },
     "artists": {
       "title": "All Artists",
-      "description": "Discover all 18 participating artists in this year's exhibition.",
+      "description": "Discover all participating artists in this year's exhibition.",
       "buja": {
         "style": "Street Art",
         "shortBio": "Urban aesthetics meet contemporary expression.",
@@ -303,16 +303,16 @@
         "fullBio": "Portraits that tell stories. Of personalities, emotions, dreams, and destinies. This artist's photography captures the depth of human experience. Beyond that, he documents Thai everyday culture with empathetic vision, far from tourist trails. Digital reflections and distortions create surreal worlds, while his own texts unite image and word into a poetic unity.",
         "description": "Light and shadow as storytellers beyond those moments."
       },
-      "klaus": {
-        "style": "Sculpture",
+      "katharina": {
+        "style": "Body and space",
         "shortBio": "Form exploring the void.",
-        "fullBio": "Klaus creates monumental sculptures that engage with space and materiality. His work questions the relationship between object, viewer, and environment.",
+        "fullBio": "Her artistic approach to space is an invitation to movements and attitudes and is addressed to the senses. The materials and colours, spaces and movements create physical resonances.",
         "description": "Form exploring the void."
       },
-      "priya": {
-        "style": "Video Art",
+      "bjoern": {
+        "style": "Painting and Lithography",
         "shortBio": "Time and motion as medium.",
-        "fullBio": "Priya's video installations explore temporal experience and embodied perception. Her works create immersive environments that engage all senses.",
+        "fullBio": "His paintings are a true manifest of his handcrafted approach to art",
         "description": "Time and motion as medium."
       },
       "ahmed": {
@@ -345,10 +345,10 @@
         "fullBio": "Oscar's ceramic practice celebrates the materiality and imperfection of clay, creating forms that bridge utilitarian and fine art traditions.",
         "description": "Earth transformed through fire."
       },
-      "mei": {
-        "style": "Textile & Fiber Art",
+      "anti": {
+        "style": "Handmade Screen Prints",
         "shortBio": "Threads telling stories.",
-        "fullBio": "Mei's textile works weave together cultural narratives and personal histories, creating tactile explorations of identity and belonging.",
+        "fullBio": "Neben Gigpostern gestalten und drucken wir auch limitierte Artprints und siebgedruckte Unikate. Freie Arbeiten bei denen wir viel Wert auf pfiffige Ideen legen.",
         "description": "Threads telling stories."
       },
       "carlos": {
@@ -391,11 +391,11 @@
     },
     "artists_page": {
       "title": "All Artists",
-      "description": "Discover all 18 participating artists in this year's exhibition."
+      "description": "Discover all participating artists in this year's exhibition."
     },
     "about_page": {
       "title": "About artUP",
-      "description": "artUP is a contemporary art exhibition featuring 18 international artists. From street art to classical painting, digital art to installations – artUP celebrates diverse artistic expression.",
+      "description": "artUP is a contemporary art exhibition featuring a wide range of regional artists. From street art to classical painting, abstract art to sculptures – artUP celebrates diverse artistic expression.",
       "exhibition_period": "April 24 – May 17, 2026",
       "venue": "Maximilianstraße 99, Speyer, Germany",
       "hours": "Wednesday – Sunday, 02:00 PM – 10:00 PM",

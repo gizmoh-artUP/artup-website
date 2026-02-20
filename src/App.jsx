@@ -51,9 +51,9 @@ const ArtUPWebsite = () => {
   const allArtists = artistsJSON.artists;
 
   const sponsors = [
-    { id: 1, name: 'Blackstorck', logo: 'SPONSOR_LOGO_1_URL', website: 'https://www.blackstork-braumanufaktur.de/' },
-    { id: 2, name: 'Sponsor Two', logo: 'SPONSOR_LOGO_2_URL', website: 'https://www.sponsor-two.com' },
-    { id: 3, name: 'Sponsor Three', logo: 'SPONSOR_LOGO_3_URL', website: 'https://www.sponsor-three.com' },
+    { id: 1, name: 'Blackstorck', logo: 'https://res.cloudinary.com/dsktnxayr/image/upload/v1771593469/bs_logo_2_uafi9s.jpg', website: 'https://www.blackstork-braumanufaktur.de/' },
+    { id: 2, name: 'Bassermann-Jordan', logo: 'https://res.cloudinary.com/dsktnxayr/image/upload/v1771593471/bj_logo_2_axvgf4.jpg', website: 'https://www.bassermann-jordan.de/' },
+    { id: 3, name: 'Boesner Künstlerbedarf', logo: 'https://res.cloudinary.com/dsktnxayr/image/upload/v1771593337/boesner_logo_6_v1kcs6.jpg', website: 'https://www.boesner.com/' },
     { id: 4, name: 'Sponsor Four', logo: 'SPONSOR_LOGO_4_URL', website: 'https://www.sponsor-four.com' }
   ];
 
@@ -171,7 +171,7 @@ const ArtUPWebsite = () => {
 
     useEffect(() => {
       const calculateTimeLeft = () => {
-        const eventDate = new Date('2026-04-24T00:00:00').getTime();
+        const eventDate = new Date('2026-04-24T19:00:00').getTime();
         const now = new Date().getTime();
         const distance = eventDate - now;
 
@@ -604,7 +604,9 @@ const ArtUPWebsite = () => {
                     backgroundImage: `url(${sponsor.logo})`,
                     backgroundSize: 'contain',
                     backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center'
+                    backgroundPosition: 'center',
+                    backgroundSize: '100%',
+                    backgroundColor: '#111111'
                   }}
                 >
                   {!sponsor.logo.includes('http') && (
@@ -1365,7 +1367,7 @@ const ArtUPWebsite = () => {
                       }}
                     >
                       <div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-20 transition-all" />
-                      <p className="text-sm font-black text-gray-600 group-hover:text-white transition-colors" style={{ fontFamily: 'Courier New, monospace' }}>
+                      <p className="text-sm font-black text-gray-600 group-hover:text-white transition-colors opacity-0" style={{ fontFamily: 'Courier New, monospace' }}>
                         ARTWORK {idx + 1}
                       </p>
                     </div>

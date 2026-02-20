@@ -12,17 +12,17 @@
       "id": 2,
       "date": "2026-04-25",
       "day_key": "day_saturday",
-      "title_de": "Konzert - ThreeCheese",
-      "title_en": "Concert - ThreeCheese",
+      "title_de": "Konzert - Arthur Gepting",
+      "title_en": "Concert - Arthur Gepting",
       "time": "20:00"
     },
     {
       "id": 3,
-      "date": "2026-04-26",
-      "day_key": "day_sunday",
-      "title_de": "Zauberei & Performance",
-      "title_en": "Magic & Performance",
-      "time": "18:00"
+      "date": "2026-04-30",
+      "day_key": "day_thursday",
+      "title_de": "Tanz in den Mai /w Tim & Gizmoh",
+      "title_en": "Dance into May /w Tim & Gizmoh",
+      "time": "20:00"
     },
     {
       "id": 4,
