@@ -200,39 +200,39 @@
     },
     {
       "id": 12,
-      "name": "Ahmed Hassan",
-      "textKey": "ahmed",
+      "name": "Manfred Plathe",
+      "textKey": "manfred",
       "color": "#FFC500",
-      "slideImage": "AHMED_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "AHMED_PORTRAIT_URL",
+      "slideImage": "https://www.manfredplathe.de/arbeiten/bilder/48.jpg",
+      "portraitImage": "https://www.manfredplathe.de/vita/bilder/foto.png",
       "videoThumbnail": "AHMED_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://vimeo.com/286994633",
       "artworks": [
-        "AHMED_ARTWORK_1_URL",
-        "AHMED_ARTWORK_2_URL",
-        "AHMED_ARTWORK_3_URL"
+        "https://www.manfredplathe.de/arbeiten/bilder/54.jpg",
+        "https://www.manfredplathe.de/arbeiten/bilder/57.jpg",
+        "https://www.manfredplathe.de/arbeiten/bilder/38.jpg"
       ],
-      "website": "https://www.ahmedhassan.ae",
-      "instagram": "https://www.instagram.com/ahmedhassan_art",
-      "facebook": "https://www.facebook.com/ahmedhassanart"
+      "website": "https://www.manfredplathe.de/",
+      "instagram": null,
+      "facebook": null
     },
     {
       "id": 13,
-      "name": "Lucia Fontana",
-      "textKey": "lucia",
+      "name": "Daniel Ewinger",
+      "textKey": "daniel",
       "color": "#FF1461",
-      "slideImage": "LUCIA_SLIDESHOW_IMAGE_URL",
+      "slideImage": "https://danielewinger.de/wp-content/uploads/2023/01/Wont-let-the-sun_2_Website_2023.jpg",
       "portraitImage": "LUCIA_PORTRAIT_URL",
       "videoThumbnail": "LUCIA_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://www.youtube.com/embed/aqz-KE-bpKQ",
+      "videoUrl": null,
       "artworks": [
-        "LUCIA_ARTWORK_1_URL",
-        "LUCIA_ARTWORK_2_URL",
-        "LUCIA_ARTWORK_3_URL"
+        "https://danielewinger.de/wp-content/uploads/2026/02/Edition_Nacht-auf-der-Sonne.jpg",
+        "https://danielewinger.de/wp-content/uploads/2023/01/Schnecke_Repro_Website_2023.jpg",
+        "https://danielewinger.de/wp-content/uploads/2024/01/O.T.Zustand-in-gelb_Bonaudo_Web.jpg"
       ],
-      "website": "https://www.luciafontana.it",
-      "instagram": "https://www.instagram.com/luciafontana_art",
-      "facebook": "https://www.facebook.com/luciafontanaart"
+      "website": "https://danielewinger.de/",
+      "instagram": "https://www.instagram.com/danielewinger/",
+      "facebook": null
     },
     {
       "id": 14,

@@ -109,13 +109,13 @@
         "fullBio": "Björn Ruppert ist in Landschaften zu Hause. In realen, aber mehr noch in erschauten, die sich dann rätselvoll in seinen Gemälden niederschlagen.",
         "description": "Zeit und Bewegung als Medium."
       },
-      "ahmed": {
-        "style": "Kalligrafie & Textkunst",
-        "shortBio": "Worte als visuelle Form.",
-        "fullBio": "Ahmeds Praxis verbindet traditionelle Kalligrafie mit zeitgenössischer Kunst und erforscht Sprache als sowohl semantische als auch ästhetische Kraft.",
-        "description": "Worte als visuelle Form."
+      "manfred": {
+        "style": "Pop & Urban Art",
+        "shortBio": "Träume in Neon",
+        "fullBio": "Farbe wabert, vibriert und fließt, zum Teil neon-schrill, über die Bildfläche. Gemalte und gesprayte Formen bilden Farbräume. Und zwischen all dem Abstrakten tauchen einzelne Motive auf.",
+        "description": "Träume in Neon"
       },
-      "lucia": {
+      "daniel": {
         "style": "Performance Art",
         "shortBio": "Der Körper als Leinwand, Aktion als Kunst.",
         "fullBio": "Lucias Performance-Praxis hinterfragt herkömmliche Vorstellungen von künstlerischem Medium und macht den Körper und seine Bewegungen zum Zentrum der Arbeit.",
@@ -304,7 +304,7 @@
         "description": "Light and shadow as storytellers beyond those moments."
       },
       "katharina": {
-        "style": "Body and space",
+        "style": "Body and Space",
         "shortBio": "Form exploring the void.",
         "fullBio": "Her artistic approach to space is an invitation to movements and attitudes and is addressed to the senses. The materials and colours, spaces and movements create physical resonances.",
         "description": "Form exploring the void."
@@ -315,13 +315,13 @@
         "fullBio": "His paintings are a true manifest of his handcrafted approach to art",
         "description": "Time and motion as medium."
       },
-      "ahmed": {
-        "style": "Calligraphy & Text Art",
-        "shortBio": "Words as visual form.",
-        "fullBio": "Ahmed's practice bridges traditional calligraphy with contemporary art, exploring language as both semantic and aesthetic force.",
-        "description": "Words as visual form."
+      "manfred": {
+        "style": "Pop & Urban Art",
+        "shortBio": "Dreams in Neon",
+        "fullBio": "Color pulses and flows across the canvas, vibrant and neon-sharp. Painted and sprayed forms generate color fields. Within this abstraction, individual subjects surface.",
+        "description": "Dreams in Neon"
       },
-      "lucia": {
+      "daniel": {
         "style": "Performance Art",
         "shortBio": "Body as canvas, action as art.",
         "fullBio": "Lucia's performance practice challenges conventional notions of artistic medium, making the body and its movements central to the work.",

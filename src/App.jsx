@@ -54,7 +54,7 @@ const ArtUPWebsite = () => {
     { id: 1, name: 'Blackstorck', logo: 'https://res.cloudinary.com/dsktnxayr/image/upload/v1771593469/bs_logo_2_uafi9s.jpg', website: 'https://www.blackstork-braumanufaktur.de/' },
     { id: 2, name: 'Bassermann-Jordan', logo: 'https://res.cloudinary.com/dsktnxayr/image/upload/v1771593471/bj_logo_2_axvgf4.jpg', website: 'https://www.bassermann-jordan.de/' },
     { id: 3, name: 'Boesner Künstlerbedarf', logo: 'https://res.cloudinary.com/dsktnxayr/image/upload/v1771593337/boesner_logo_6_v1kcs6.jpg', website: 'https://www.boesner.com/' },
-    { id: 4, name: 'Sponsor Four', logo: 'SPONSOR_LOGO_4_URL', website: 'https://www.sponsor-four.com' }
+    { id: 4, name: 'Schramms Kaffeerösterei', logo: 'https://res.cloudinary.com/dsktnxayr/image/upload/v1771610990/schramms_logo_ht6qpb.jpg', website: 'https://www.schramms-kaffee.de/' }
   ];
 
   // Zufällige Featured Artists generieren
