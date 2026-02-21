@@ -121,23 +121,23 @@
         "fullBio": "Lucias Performance-Praxis hinterfragt herkömmliche Vorstellungen von künstlerischem Medium und macht den Körper und seine Bewegungen zum Zentrum der Arbeit.",
         "description": "Der Körper als Leinwand, Aktion als Kunst."
       },
-      "david": {
-        "style": "Druckkunst",
+      "hannah": {
+        "style": "Malerei",
         "shortBio": "Alte Techniken, zeitgenössische Vision.",
-        "fullBio": "David belebt traditionelle Druckverfahren neu und schafft Werke, die das Handwerk ehren und gleichzeitig mit aktuellem künstlerischem Diskurs in Dialog treten.",
+        "fullBio": "Hannah belebt traditionelle Malverfahren neu und schafft Werke, die das Handwerk ehren und gleichzeitig mit aktuellem künstlerischem Diskurs in Dialog treten.",
         "description": "Alte Techniken, zeitgenössische Vision."
       },
-      "isabelle": {
-        "style": "Installationskunst",
-        "shortBio": "Raum als Medium.",
-        "fullBio": "Isabelle transformiert ganze Räume in immersive Kunstwerke und lädt Betrachter ein, zu Teilnehmern der ästhetischen Erfahrung zu werden.",
-        "description": "Raum als Medium."
+      "pete": {
+        "style": "Street Photography",
+        "shortBio": "Räume in S&W.",
+        "fullBio": "Pete beobachtet Momente, Licht und Menschen und lädt Betrachter ein, zu Teilnehmern seiner Erfahrung zu werden.",
+        "description": "Räume in S&W"
       },
-      "oscar": {
-        "style": "Keramikkunst",
-        "shortBio": "Erde durch Feuer verwandelt.",
+      "schulen": {
+        "style": "aufstrebende Künstler",
+        "shortBio": "Ein Blick in die Zukunft.",
         "fullBio": "Oscars keramische Praxis zelebriert die Materialität und Unvollkommenheit von Ton und schafft Formen, die utilitäre und bildende Kunsttradition verbinden.",
-        "description": "Erde durch Feuer verwandelt."
+        "description": "Ein Blick in die Zukunft."
       },
       "anti": {
         "style": "Handgemachte Siebdrucke",
@@ -145,11 +145,11 @@
         "fullBio": "Neben Gigpostern gestalten und drucken wir auch limitierte Artprints und siebgedruckte Unikate. Freie Arbeiten bei denen wir viel Wert auf pfiffige Ideen legen.",
         "description": "Fäden erzählen Geschichten."
       },
-      "carlos": {
-        "style": "Graffiti & Street Expression",
-        "shortBio": "Urbane Wände als Galerien.",
-        "fullBio": "Carlos bringt lebendige Energie in öffentliche Räume und transformiert Wände in dynamische Leinwände, die Gemeinschaften herausfordern und inspirieren.",
-        "description": "Urbane Wände als Galerien."
+      "you": {
+        "style": "2027",
+        "shortBio": "Sei mutig",
+        "fullBio": "Wir wollen dich und deine Kunst kennenlernen. Sprich mit uns, zeig dich und vielleicht bist du nächstes Jahr ein teil der artUP",
+        "description": "2027"
       }
     },
     "about": {
@@ -327,23 +327,23 @@
         "fullBio": "Lucia's performance practice challenges conventional notions of artistic medium, making the body and its movements central to the work.",
         "description": "Body as canvas, action as art."
       },
-      "david": {
-        "style": "Printmaking",
+      "hannah": {
+        "style": "Painting",
         "shortBio": "Ancient techniques, contemporary vision.",
-        "fullBio": "David revitalizes traditional printmaking methods, creating works that honor craft while engaging with current artistic discourse.",
+        "fullBio": "Hannah revitalizes traditional painting methods, creating works that honor craft while engaging with current artistic discourse.",
         "description": "Ancient techniques, contemporary vision."
       },
-      "isabelle": {
-        "style": "Installation Art",
-        "shortBio": "Space as medium.",
-        "fullBio": "Isabelle transforms entire spaces into immersive artworks, inviting viewers to become participants in the aesthetic experience.",
-        "description": "Space as medium."
+      "pete": {
+        "style": "Street Photography",
+        "shortBio": "Spaces in B&W.",
+        "fullBio": "Pete captures moments, spaces and light. His black and white photography with a keen eye for timing is inviting viewers to become participants.",
+        "description": "Spaces in B&W"
       },
-      "oscar": {
-        "style": "Ceramic Art",
-        "shortBio": "Earth transformed through fire.",
-        "fullBio": "Oscar's ceramic practice celebrates the materiality and imperfection of clay, creating forms that bridge utilitarian and fine art traditions.",
-        "description": "Earth transformed through fire."
+      "schulen": {
+        "style": "emerging artists",
+        "shortBio": "The artists of the future",
+        "fullBio": "The best work from local students.",
+        "description": "The artists of the future"
       },
       "anti": {
         "style": "Handmade Screen Prints",
@@ -351,11 +351,11 @@
         "fullBio": "Neben Gigpostern gestalten und drucken wir auch limitierte Artprints und siebgedruckte Unikate. Freie Arbeiten bei denen wir viel Wert auf pfiffige Ideen legen.",
         "description": "Threads telling stories."
       },
-      "carlos": {
-        "style": "Graffiti & Street Expression",
-        "shortBio": "Urban walls as galleries.",
-        "fullBio": "Carlos brings vibrant energy to public spaces, transforming walls into dynamic canvases that challenge and inspire communities.",
-        "description": "Urban walls as galleries."
+      "you": {
+        "style": "2027",
+        "shortBio": "be brave",
+        "fullBio": "We want to know more about you and your art. Talk to us and you might be part of next years artUP",
+        "description": "be brave & talk to us"
       }
     },
     "about": {

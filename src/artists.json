@@ -236,44 +236,44 @@
     },
     {
       "id": 14,
-      "name": "David Kim",
-      "textKey": "david",
+      "name": "Hannah Neuhaus",
+      "textKey": "hannah",
       "color": "#FFC500",
-      "slideImage": "DAVID_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "DAVID_PORTRAIT_URL",
+      "slideImage": "https://speyerer-brezelfest.de/images/kuenstlerbilder/Brezelfestbild_2025-web.jpg",
+      "portraitImage": "https://www.rheinpfalz.de/cms_media/module_img/10657/5328700_1_org_hanna_neuhaus_12_.webp",
       "videoThumbnail": "DAVID_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://www.youtube.com/embed/6JwxnHjAl0Y",
+      "videoUrl": null,
       "artworks": [
         "DAVID_ARTWORK_1_URL",
         "DAVID_ARTWORK_2_URL",
         "DAVID_ARTWORK_3_URL"
       ],
-      "website": "https://www.davidkim.kr",
-      "instagram": "https://www.instagram.com/davidkim_artist",
-      "facebook": "https://www.facebook.com/davidkimart"
+      "website": null,
+      "instagram": null,
+      "facebook": null
     },
     {
       "id": 15,
-      "name": "Isabelle Dubois",
-      "textKey": "isabelle",
+      "name": "PeteBeat",
+      "textKey": "pete",
       "color": "#FF1461",
-      "slideImage": "ISABELLE_SLIDESHOW_IMAGE_URL",
-      "portraitImage": "ISABELLE_PORTRAIT_URL",
+      "slideImage": "https://i.etsystatic.com/61074304/r/il/23be6e/7624397357/il_1588xN.7624397357_9ckm.jpg",
+      "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771671559/pete_portrait_betobr.jpg",
       "videoThumbnail": "ISABELLE_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://vimeo.com/374197516",
+      "videoUrl": null,
       "artworks": [
-        "ISABELLE_ARTWORK_1_URL",
-        "ISABELLE_ARTWORK_2_URL",
-        "ISABELLE_ARTWORK_3_URL"
+        "https://i.etsystatic.com/61074304/r/il/e3d321/7624421317/il_1588xN.7624421317_9bwo.jpg",
+        "https://i.etsystatic.com/61074304/r/il/4ba0c5/7624412661/il_1588xN.7624412661_cca5.jpg",
+        "https://i.etsystatic.com/61074304/r/il/c6294b/7576326076/il_1588xN.7576326076_s812.jpg"
       ],
-      "website": "https://www.isabelledubois.fr",
-      "instagram": "https://www.instagram.com/isabelledubois_art",
-      "facebook": "https://www.facebook.com/isabelleduboisart"
+      "website": "https://www.etsy.com/shop/PeteBeatPhotography",
+      "instagram": "https://www.instagram.com/petebeat/?hl=de",
+      "facebook": null
     },
     {
       "id": 16,
-      "name": "Oscar Santos",
-      "textKey": "oscar",
+      "name": "Schulklassen aus Speyer",
+      "textKey": "schulen",
       "color": "#FFC500",
       "slideImage": "OSCAR_SLIDESHOW_IMAGE_URL",
       "portraitImage": "OSCAR_PORTRAIT_URL",
@@ -284,9 +284,9 @@
         "OSCAR_ARTWORK_2_URL",
         "OSCAR_ARTWORK_3_URL"
       ],
-      "website": "https://www.oscarsantos.com.br",
-      "instagram": "https://www.instagram.com/oscarsantos_artist",
-      "facebook": "https://www.facebook.com/oscarsantosart"
+      "website": null,
+      "instagram": null,
+      "facebook": null
     },
     {
       "id": 17,
@@ -308,10 +308,10 @@
     },
     {
       "id": 18,
-      "name": "Carlos Moreno",
-      "textKey": "carlos",
+      "name": "We want YOU 4",
+      "textKey": "you",
       "color": "#FFC500",
-      "slideImage": "CARLOS_SLIDESHOW_IMAGE_URL",
+      "slideImage": "https://cdn.myportfolio.com/1d99981d288699994df4ad34b1e413ef/682f9683dc2edc69f390fa2e_rw_1920.png?h=a701999c63009078bc055229f5cd3491",
       "portraitImage": "CARLOS_PORTRAIT_URL",
       "videoThumbnail": "CARLOS_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://vimeo.com/542385064",
@@ -320,9 +320,9 @@
         "CARLOS_ARTWORK_2_URL",
         "CARLOS_ARTWORK_3_URL"
       ],
-      "website": "https://www.carlosmoreno.mx",
-      "instagram": "https://www.instagram.com/carlosmoreno_artist",
-      "facebook": "https://www.facebook.com/carlosmorenart"
+      "website": null,
+      "instagram": null,
+      "facebook": null
     }
   ]
 }
