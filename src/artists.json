@@ -50,7 +50,7 @@
         "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_4_c93uaq.jpg",
         "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_3_pmnk0v.jpg"
       ],
-      "website": "https://www.timothystarratt.com",
+      "website": "https://www.starratt.net/",
       "instagram": "https://www.instagram.com/timothystarratt",
       "facebook": "https://www.facebook.com/timothystarratt"
     },
@@ -64,9 +64,9 @@
       "videoThumbnail": "GIZMOH_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://vimeo.com/7836802?fl=pl&fe=cm",
       "artworks": [
-        "GIZMOH_ARTWORK_1_URL",
-        "GIZMOH_ARTWORK_2_URL",
-        "GIZMOH_ARTWORK_3_URL"
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132667/insta_gizmoh_1_vpxblr.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132666/insta_gizmoh_4_vcnqzx.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132666/insta_gizmoh_5_fr043i.jpg"
       ],
       "website": "https://www.traumdesign.net",
       "instagram": "https://www.instagram.com/gizmoh",
@@ -80,10 +80,10 @@
       "slideImage": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=1024,height=1101/image/541494444/dbd47a26-85e8-40cd-b860-4fa50f2d257d.jpg",
       "portraitImage": "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=3;0;46;0,width=480,height=462/image/541045434/7a710089-17aa-45f4-a81c-fd207e923537.jpg",
       "videoThumbnail": "ELENA_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://www.youtube.com/embed/M7lc1BCxL00",
+      "videoUrl": null,
       "artworks": [
-        "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,trim=89;0;0;0,width=2560,height=2560/image/533341434/026448ca-db4d-4442-a9d8-1793d0fa980c.jpg",
-        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771509790/nikol_art_1.jpg",
+        "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=2048,height=2732/image/541893864/1d22cdd9-2856-4577-89e0-f3cedd626f6f.png",
+        "https://storage.e.jimdo.com/cdn-cgi/image/quality=85,fit=scale-down,format=auto,width=3464,height=3464/image/541736437/b29b1586-fec2-428a-a481-34c21642f930.jpg",
         "https://res.cloudinary.com/dsktnxayr/image/upload/v1771509795/nikol_art_2.jpg"
       ],
       "website": "https://www.elenarossi.it",
@@ -95,14 +95,14 @@
       "name": "Olga David",
       "textKey": "olga",
       "color": "#FFC500",
-      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771511237/olga_art_1_ddeb5c.jpg",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132776/ruf-olga-david_asodc7.jpg",
       "portraitImage": "https://olga-david.de/wp-content/uploads/2019/04/Olga_David_15-1Q.jpg",
       "videoThumbnail": "MARCUS_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://vimeo.com/76979871",
+      "videoUrl": null,
       "artworks": [
-        "MARCUS_ARTWORK_1_URL",
-        "MARCUS_ARTWORK_2_URL",
-        "MARCUS_ARTWORK_3_URL"
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132777/landau-olga-david_pdleqh.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132776/siebte-quelle-olga-david_kszygm.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132776/venedig-olga-david_fvnu0s.jpg"
       ],
       "website": "https://olga-david.de/",
       "instagram": "http://www.instagram.com/kunst.olga.david/",
@@ -116,7 +116,7 @@
       "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771523369/monika_art_1_h1kgl6.jpg",
       "portraitImage": "https://i0.wp.com/monikaschaper.com/wp-content/uploads/2020/04/photo-2019-05-29-15-44-15-2.jpg?w=4000&h=&ssl=1",
       "videoThumbnail": "SOFIA_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://www.youtube.com/embed/OPf0YbXqDm0",
+      "videoUrl": null,
       "artworks": [
         "https://i0.wp.com/monikaschaper.com/wp-content/uploads/2020/04/bild-2-2.jpeg?w=4000&h=&ssl=1",
         "https://monikaschaper.com/wp-content/uploads/2019/04/dsc_0038.jpg",
@@ -134,7 +134,7 @@
       "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771523349/astrid_art_1_dy7uwr.jpg",
       "portraitImage": "https://images.squarespace-cdn.com/content/v1/66d32a6d65386e5d23db70d6/28d47e29-a1ca-410b-bd05-0506bdd97d78/unbenannt-0104.jpg",
       "videoThumbnail": "JAMES_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://www.youtube.com/embed/ZwKhaBi-1d0",
+      "videoUrl": null,
       "artworks": [
         "https://aparte-kunst.de/wp-content/uploads/2024/01/Hase-4087-1024x727.jpg",
         "https://aparte-kunst.de/wp-content/uploads/2024/01/IMG_0535.jpg",
@@ -152,11 +152,11 @@
       "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771526116/joachim_art_1_oiu8hm.jpg",
       "portraitImage": "https://image.jimcdn.com/cdn-cgi/image/width=622%2Cheight=10000%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/i6303a156b56f0775/version/1757598707/image.jpg",
       "videoThumbnail": "YUKI_VIDEO_THUMBNAIL_URL",
-      "videoUrl": "https://vimeo.com/191710701",
+      "videoUrl": null,
       "artworks": [
         "https://image.jimcdn.com/cdn-cgi/image/width=2048%2Cheight=2048%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/i8fd299b139a20e3d/version/1731263524/image.jpg",
-        "https://image.jimcdn.com/cdn-cgi/image/width=532%2Cheight=710%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/i685cc0e740a41145/version/1758218973/image.jpg",
-        "https://image.jimcdn.com/cdn-cgi/image/width=532%2Cheight=710%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/ida6cfb83267b44eb/version/1758218906/image.jpg"
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132970/Linet_t57qkl.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132967/Who_does_she_hope_to_be_uqdcti.jpg"
       ],
       "website": "https://www.joachimpfaffmann.de/",
       "instagram": "https://www.instagram.com/joachim.pfaffmann/",
@@ -218,16 +218,16 @@
     },
     {
       "id": 13,
-      "name": "Daniel Ewinger",
+      "name": "Daniel Bonaudo",
       "textKey": "daniel",
       "color": "#FF1461",
       "slideImage": "https://danielewinger.de/wp-content/uploads/2023/01/Wont-let-the-sun_2_Website_2023.jpg",
-      "portraitImage": "LUCIA_PORTRAIT_URL",
-      "videoThumbnail": "LUCIA_VIDEO_THUMBNAIL_URL",
+      "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132823/WhatsApp_Image_2026-03-09_at_16.45.20_qglpok.jpg",
+      "videoThumbnail": null,
       "videoUrl": null,
       "artworks": [
-        "https://danielewinger.de/wp-content/uploads/2026/02/Edition_Nacht-auf-der-Sonne.jpg",
-        "https://danielewinger.de/wp-content/uploads/2023/01/Schnecke_Repro_Website_2023.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132822/WhatsApp_Image_2026-03-09_at_16.45.30_gldwxa.jpg",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132822/WhatsApp_Image_2026-03-09_at_16.45.41_fgsta3.jpg",
         "https://danielewinger.de/wp-content/uploads/2024/01/O.T.Zustand-in-gelb_Bonaudo_Web.jpg"
       ],
       "website": "https://danielewinger.de/",

@@ -490,7 +490,7 @@ const ArtUPWebsite = () => {
             </p>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/artupspeyer/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 border border-white hover:bg-pink-600 hover:border-pink-600 transition-all transform hover:scale-110"
@@ -499,7 +499,7 @@ const ArtUPWebsite = () => {
                 <Instagram className="w-5 h-5" />
               </a>
               <a
-                href="mailto:contact@artup.space"
+                href="mailto:hello@artup.space"
                 className="p-3 border border-white hover:bg-pink-600 hover:border-pink-600 transition-all transform hover:scale-110"
                 aria-label="Email"
               >
@@ -581,7 +581,7 @@ const ArtUPWebsite = () => {
             <h3 className="text-sm font-black uppercase tracking-widest mb-4" style={{ fontFamily: 'Courier New, monospace' }}>Contact</h3>
             <p className="text-sm text-gray-400 mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Maximilianstraße 99</p>
             <p className="text-sm text-gray-400 mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Speyer, Germany</p>
-            <p className="text-sm text-gray-400" style={{ fontFamily: 'Courier New, monospace' }}>contact@artup.space</p>
+            <p className="text-sm text-gray-400" style={{ fontFamily: 'Courier New, monospace' }}>hello@artup.space</p>
           </div>
         </div>
 
@@ -979,7 +979,7 @@ const ArtUPWebsite = () => {
                   <h3 className="text-2xl font-black mb-4 tracking-tighter" style={{ fontFamily: 'Courier New, monospace' }}>Contact</h3>
                   <p className="text-sm leading-relaxed mb-4">
                     <strong>Email:</strong><br />
-                    contact@artup.space<br /><br />
+                    hello@artup.space<br /><br />
                     <strong>Phone:</strong><br />
                     +49 (0) 6232 XXX XXX<br /><br />
                     <strong>Web:</strong><br />
@@ -1014,7 +1014,7 @@ const ArtUPWebsite = () => {
                   <div className="space-y-4 mb-8">
                     <div className="border-4 border-black p-4">
                       <p className="font-black text-sm uppercase" style={{ fontFamily: 'Courier New, monospace' }}>Press Contact</p>
-                      <p className="font-medium">press@artup.space</p>
+                      <p className="font-medium">hello@artup.space</p>
                     </div>
                     
                     <div className="border-4 border-black p-4">
@@ -1431,15 +1431,15 @@ const ArtUPWebsite = () => {
               {/* Verantwortlich */}
               <div>
                 <h2 className="text-2xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>Verantwortlich für den Inhalt</h2>
-                <p className="font-medium mb-2" style={{ fontFamily: 'Courier New, monospace' }}>artUP Exhibition</p>
-                <p className="mb-2">Maximilianstraße 99<br />67346 Speyer<br />Deutschland</p>
+                <p className="font-medium mb-2" style={{ fontFamily: 'Courier New, monospace' }}>Rene Burjack & Georg Rück</p>
+                <p className="mb-2">Killianstraße 3<br />67373 Dudenhofen<br />Deutschland</p>
               </div>
 
               {/* Kontakt */}
               <div className="border-t-4 border-black pt-8">
                 <h2 className="text-2xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>Kontakt</h2>
                 <p className="mb-2">
-                  <strong>Email:</strong> contact@artup.space<br />
+                  <strong>Email:</strong> hello@artup.space<br />
                   <strong>Website:</strong> www.artup.space
                 </p>
               </div>
@@ -1447,7 +1447,7 @@ const ArtUPWebsite = () => {
               {/* Vertretungsberechtigte Person */}
               <div className="border-t-4 border-black pt-8">
                 <h2 className="text-2xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>Vertretungsberechtigte Person</h2>
-                <p className="font-medium" style={{ fontFamily: 'Courier New, monospace' }}>[Name und Titel einfügen]</p>
+                <p className="font-medium" style={{ fontFamily: 'Courier New, monospace' }}>Nina Bussjäger & Timothy Starratt</p>
               </div>
 
               {/* Disclaimer */}
@@ -1510,7 +1510,7 @@ const ArtUPWebsite = () => {
 
             <div className="mt-12 p-6 border-4 border-black bg-yellow-100">
               <p className="text-sm font-medium text-gray-700" style={{ fontFamily: 'Courier New, monospace' }}>
-                <strong>Hinweis:</strong> Bitte ersetze [Name und Titel einfügen] mit deinen persönlichen Daten. Für eine rechtssichere Website solltest du diese Seite mit einem Rechtsanwalt überprüfen lassen.
+                <strong>Hinweis:</strong> Wie kleinkariert kann man sein, damit man den Scheiß hier auch noch liest. Glückwunsch Arschloch.
               </p>
             </div>
           </div>
@@ -1563,14 +1563,14 @@ const ArtUPWebsite = () => {
               <div className="border-t-4 border-black pt-8">
                 <h2 className="text-2xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>5. Your Rights</h2>
                 <p className="text-lg leading-relaxed mb-4">
-                  You have the right to access, correct, or delete your personal data. Please contact us at contact@artup.space to exercise these rights.
+                  You have the right to access, correct, or delete your personal data. Please contact us at hello@artup.space to exercise these rights.
                 </p>
               </div>
 
               <div className="border-t-4 border-black pt-8">
                 <h2 className="text-2xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>6. Contact</h2>
                 <p className="text-lg leading-relaxed">
-                  If you have questions about our privacy practices, please contact us at contact@artup.space
+                  If you have questions about our privacy practices, please contact us at hello@artup.space
                 </p>
               </div>
             </div>
@@ -1638,7 +1638,7 @@ const ArtUPWebsite = () => {
               <div className="border-t-4 border-black pt-8">
                 <h2 className="text-2xl font-black mb-4" style={{ fontFamily: 'Courier New, monospace' }}>7. Contact</h2>
                 <p className="text-lg leading-relaxed">
-                  If you have questions about these terms, please contact us at contact@artup.space
+                  If you have questions about these terms, please contact us at hello@artup.space
                 </p>
               </div>
             </div>
