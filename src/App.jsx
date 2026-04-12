@@ -676,29 +676,29 @@ const ArtUPWebsite = () => {
           </section>
 
           {/* Schramms Kaffee Kollaboration */}
-          <section className="py-24 px-6 border-b-4 border-black" style={{ backgroundColor: '#000' }}>
+          <section className="border-b-4 border-black" style={{ backgroundColor: '#000' }}>
             <div className="max-w-7xl mx-auto">
 
-              {/* Header */}
-              <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+              {/* Header — kompakt, über den Etiketten */}
+              <div className="px-6 pt-16 pb-10 flex flex-col md:flex-row md:items-end justify-between gap-6">
                 <div>
                   <p className="text-xs font-black uppercase tracking-widest mb-3" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461', letterSpacing: '0.25em' }}>
                     {language === 'de' ? 'Kollaboration' : 'Collaboration'}
                   </p>
                   <h2 className="text-4xl md:text-5xl font-black tracking-tighter text-white leading-none" style={{ fontFamily: 'Courier New, monospace' }}>
-                    artUP<br />× Schramms
+                    artUP × Schramms
                   </h2>
                 </div>
-                <p className="text-gray-400 max-w-sm text-sm font-medium leading-relaxed">
+                <p className="text-gray-400 max-w-xs text-sm font-medium leading-relaxed">
                   {language === 'de'
-                    ? 'Das artUP-Team hat vier Etiketten für die Kaffeerösterei Schramms entworfen – erhältlich als Special Edition während der Ausstellung. Und natürlich gibt es diesen Kaffee auch direkt bei uns.'
-                    : 'The artUP team designed four labels for Schramms Kaffeerösterei – available as a special edition during the exhibition. And of course, you can enjoy this coffee right here with us.'
+                    ? 'Vier Etiketten, vier Künstler – als Special Edition erhältlich in der Kaffeerösterei Schramms und bei uns in der Ausstellung.'
+                    : 'Four labels, four artists – available as a special edition at Schramms Kaffeerösterei and at our exhibition.'
                   }
                 </p>
               </div>
 
-              {/* 4 Labels Grid — 1:3 aspect ratio */}
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12">
+              {/* 4 Labels — volle Breite, gleichmäßig verteilt */}
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mx-auto" style={{ maxWidth: '780px' }}>
                 {[
                   'https://res.cloudinary.com/dsktnxayr/image/upload/v1776022169/schramms_gizmoh.png',
                   'https://res.cloudinary.com/dsktnxayr/image/upload/v1776022169/schramms_tim.png',
@@ -707,25 +707,29 @@ const ArtUPWebsite = () => {
                 ].map((url, idx) => (
                   <div
                     key={idx}
-                    className="relative border-2 border-gray-800 overflow-hidden group transition-all hover:border-gray-500"
-                    style={{ aspectRatio: '182 / 460' }}
+                    className="relative overflow-hidden group transition-all"
+                    style={{
+                      aspectRatio: '182 / 460',
+                    }}
                   >
                     <img
                       src={url}
                       alt={`Schramms Label ${idx + 1}`}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                     />
+                    {/* Subtle hover overlay */}
+                    <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-5 transition-opacity" />
                   </div>
                 ))}
               </div>
 
               {/* Footer link */}
-              <div className="flex justify-end">
+              <div className="px-6 py-6 flex justify-end">
                 <a
                   href="https://www.schramms-kaffee.de/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xs font-black uppercase tracking-widest text-gray-500 hover:text-white transition-colors"
+                  className="text-xs font-black uppercase tracking-widest text-gray-600 hover:text-white transition-colors"
                   style={{ fontFamily: 'Courier New, monospace', letterSpacing: '0.2em' }}
                 >
                   schramms-kaffee.de →
