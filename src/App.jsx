@@ -275,6 +275,16 @@ const ArtUPWebsite = () => {
                     minHeight: '380px'
                   }}
                 >
+                  {/* Background image if available */}
+                  {event.image && (
+                    <img
+                      src={event.image}
+                      alt=""
+                      className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105"
+                      style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.35 }}
+                    />
+                  )}
+
                   {/* Card content */}
                   <div className="absolute inset-0 flex flex-col justify-between p-6">
                     {/* Top right: date block */}
@@ -886,7 +896,7 @@ const ArtUPWebsite = () => {
             {/* Background image if available */}
             {event.image && (
               <>
-                <div className="absolute inset-0" style={{ backgroundImage: `url(${event.image})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 0.2 }} />
+                <div className="absolute inset-0" style={{ backgroundImage: `url(${event.image})`, backgroundSize: 'contain', backgroundPosition: 'center', backgroundRepeat: 'no-repeat', opacity: 0.35 }} />
               </>
             )}
 

@@ -10,7 +10,7 @@
       "description_en": "The official opening night of artUP 2026. All artists of the first part will be present, drinks and music included. Come by, take in the works, and celebrate the start of the exhibition with us.",
       "instagram": "https://www.instagram.com/artupspeyer/",
       "website": "",
-      "image": ""
+      "image": "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064793/hanna_hero.png"
     },
     {
       "id": 2,
@@ -21,8 +21,8 @@
       "description_de": "Arthur Gepting spielt ein intimes Solo-Konzert in den Ausstellungsräumen. Sein Stil bewegt sich zwischen Singer-Songwriter und experimentellem Folk – perfekt als Soundtrack zur Ausstellung.",
       "description_en": "Arthur Gepting plays an intimate solo concert in the exhibition space. His style moves between singer-songwriter and experimental folk – a perfect soundtrack for the exhibition.",
       "instagram": "https://www.instagram.com/arthurgepting/",
-      "website": "",
-      "image": ""
+      "website": "https://www.arthurgepting.de/",
+      "image": "https://image.jimcdn.com/app/cms/image/transf/dimension=1920x400:format=jpg/path/sebe52571d04b8ee0/image/iac58408d6ba29149/version/1461997450/image.jpg"
     },
     {
       "id": 3,
@@ -32,9 +32,9 @@
       "title_en": "Tim Starratt & Gizmoh – Turntable",
       "description_de": "Tim Starratt und Gizmoh legen gemeinsam auf – eine Mischung aus elektronischer Musik, Jazz-Samples und atmosphärischen Beats. Der perfekte Einstieg ins lange Wochenende.",
       "description_en": "Tim Starratt and Gizmoh play back to back – a mix of electronic music, jazz samples and atmospheric beats. The perfect start to the long weekend.",
-      "instagram": "https://www.instagram.com/gizmoh_/",
+      "instagram": "",
       "website": "",
-      "image": ""
+      "image": "https://res.cloudinary.com/dsktnxayr/image/upload/v1776067400/tim_gizmoh_event.png"
     },
     {
       "id": 4,
@@ -153,7 +153,7 @@
       "description_de": "used spielen ein Konzert irgendwo zwischen Post-Rock und Ambient. Laut und leise, roh und präzise.",
       "description_en": "used play a concert somewhere between post-rock and ambient. Loud and quiet, raw and precise.",
       "instagram": "",
-      "website": "",
+      "website": "https://www.youtube.com/watch?v=fUt4s-BelWU",
       "image": ""
     },
     {
