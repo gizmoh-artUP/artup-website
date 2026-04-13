@@ -150,11 +150,11 @@
       "textKey": "joachim",
       "color": "#FF1461",
       "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771526116/joachim_art_1_oiu8hm.jpg",
-      "portraitImage": "https://image.jimcdn.com/cdn-cgi/image/width=622%2Cheight=10000%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/i6303a156b56f0775/version/1757598707/image.jpg",
+      "portraitImage": "https://image.jimcdn.com/app/cms/image/transf/dimension=622x10000:format=jpg/path/s0fe1cefcb29beaef/image/i6303a156b56f0775/version/1757598707/image.jpg",
       "videoThumbnail": "YUKI_VIDEO_THUMBNAIL_URL",
       "videoUrl": null,
       "artworks": [
-        "https://image.jimcdn.com/cdn-cgi/image/width=2048%2Cheight=2048%2Cfit=contain%2Cformat=jpg%2C/app/cms/storage/image/path/s0fe1cefcb29beaef/image/i8fd299b139a20e3d/version/1731263524/image.jpg",
+        "https://image.jimcdn.com/app/cms/image/transf/dimension=4096x4096:format=jpg/path/s0fe1cefcb29beaef/image/ie9389d500cba50e3/version/1731263790/image.jpg",
         "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132970/Linet_t57qkl.jpg",
         "https://res.cloudinary.com/dsktnxayr/image/upload/v1773132967/Who_does_she_hope_to_be_uqdcti.jpg"
       ],
