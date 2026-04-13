@@ -41,16 +41,16 @@
       "name": "Timothy Starratt",
       "textKey": "timothy",
       "color": "#FF1461",
-      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_2_andnyv.jpg",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064840/tim_hero.png",
       "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1771445770/tim_4_5_90_u2bimk.jpg",
       "videoThumbnail": "TIMOTHY_VIDEO_THUMBNAIL_URL",
       "videoUrl": "https://www.youtube.com/watch?v=PF5Szq9TZCg",
       "artworks": [
-        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_1_rlldju.jpg",
-        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_4_c93uaq.jpg",
-        "https://res.cloudinary.com/dsktnxayr/image/upload/v1771498885/tim_abstract_3_pmnk0v.jpg"
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064837/tim_art_1.png",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064836/tim_art_2.png",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064835/tim_art_3.png"
       ],
-      "website": "https://www.starratt.net/",
+      "website": "https://www.starratt.net/art",
       "instagram": "https://www.instagram.com/timothystarratt",
       "facebook": "https://www.facebook.com/timothystarratt"
     },
@@ -236,17 +236,17 @@
     },
     {
       "id": 14,
-      "name": "Hannah Neuhaus",
+      "name": "Hanna Neuhaus",
       "textKey": "hannah",
       "color": "#FFC500",
-      "slideImage": "https://speyerer-brezelfest.de/images/kuenstlerbilder/Brezelfestbild_2025-web.jpg",
-      "portraitImage": "https://www.rheinpfalz.de/cms_media/module_img/10657/5328700_1_org_hanna_neuhaus_12_.webp",
-      "videoThumbnail": "DAVID_VIDEO_THUMBNAIL_URL",
+      "slideImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064793/hanna_hero.png",
+      "portraitImage": "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064795/hanna_portrait.png",
+      "videoThumbnail": null,
       "videoUrl": null,
       "artworks": [
-        "DAVID_ARTWORK_1_URL",
-        "DAVID_ARTWORK_2_URL",
-        "DAVID_ARTWORK_3_URL"
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064795/hanna_art_3.png",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064796/hanna_art_2.png",
+        "https://res.cloudinary.com/dsktnxayr/image/upload/v1776064796/hanna_art_4.png"
       ],
       "website": null,
       "instagram": null,
