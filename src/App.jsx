@@ -1143,7 +1143,7 @@ const ArtUPWebsite = () => {
                   language === 'de' ? 'AB 15:00 UHR' : 'FROM 3:00 PM',
                   language === 'de' ? 'MI – SO' : 'WED – SUN',
                   language === 'de' ? 'EINTRITT FREI' : 'FREE ENTRY',
-                  '18 ' + (language === 'de' ? 'KÜNSTLER·INNEN' : 'ARTISTS'),
+                  '18 ' + (language === 'de' ? 'KÜNSTLER' : 'ARTISTS'),
                 ].map((fact, i) => (
                   <React.Fragment key={i}>
                     {i > 0 && <span style={{ color: '#FF1461', fontFamily: 'Courier New, monospace', fontSize: '10px' }}>◆</span>}
