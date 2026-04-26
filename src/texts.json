@@ -11,12 +11,12 @@
       "events": "Events"
     },
     "countdown": {
-      "header": "Ausstellung öffnet in",
+      "header": "Ausstellung läuft noch",
       "days": "Tage",
       "hours": "Stunden",
       "minutes": "Minuten",
       "seconds": "Sekunden",
-      "date": "24. April 2026"
+      "date": "bis 17. Mai 2026"
     },
     "about_teaser": {
       "title": "Über artUP",
@@ -141,7 +141,7 @@
       "hannah": {
         "style": "Malerei",
         "shortBio": "Alte Techniken, zeitgenössische Vision.",
-        "fullBio": "Hanna belebt traditionelle Malverfahren neu und schafft Werke, die das Handwerk ehren und gleichzeitig mit aktuellem künstlerischem Diskurs in Dialog treten.",
+        "fullBio": "Hannah belebt traditionelle Malverfahren neu und schafft Werke, die das Handwerk ehren und gleichzeitig mit aktuellem künstlerischem Diskurs in Dialog treten.",
         "description": "Alte Techniken, zeitgenössische Vision."
       },
       "pete": {
@@ -232,12 +232,12 @@
       "events": "Events"
     },
     "countdown": {
-      "header": "Exhibition Opens In",
+      "header": "Exhibition runs until",
       "days": "Days",
       "hours": "Hours",
       "minutes": "Minutes",
       "seconds": "Seconds",
-      "date": "April 24, 2026"
+      "date": "May 17, 2026"
     },
     "about_teaser": {
       "title": "About artUP",
@@ -362,7 +362,7 @@
       "hannah": {
         "style": "Painting",
         "shortBio": "Ancient techniques, contemporary vision.",
-        "fullBio": "Hanna revitalizes traditional painting methods, creating works that honor craft while engaging with current artistic discourse.",
+        "fullBio": "Hannah revitalizes traditional painting methods, creating works that honor craft while engaging with current artistic discourse.",
         "description": "Ancient techniques, contemporary vision."
       },
       "pete": {

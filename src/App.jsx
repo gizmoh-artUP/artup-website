@@ -146,7 +146,7 @@ const ArtUPWebsite = () => {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
     useEffect(() => {
       const calc = () => {
-        const dist = new Date('2026-04-24T19:00:00').getTime() - Date.now();
+        const dist = new Date('2026-05-17T21:00:00').getTime() - Date.now();
         if (dist > 0) setTimeLeft({
           days: Math.floor(dist / 86400000),
           hours: Math.floor((dist / 3600000) % 24),
@@ -772,8 +772,8 @@ const ArtUPWebsite = () => {
 
       return (
         <div
-          onClick={() => !isPast && navigateTo('event-detail', event)}
-          className={`border-4 border-black group transition-all ${isPast ? 'opacity-50 cursor-default' : 'cursor-pointer hover:shadow-xl'}`}
+          onClick={() => navigateTo('event-detail', event)}
+          className={`border-4 border-black group transition-all cursor-pointer ${isPast ? 'opacity-50 hover:opacity-70' : 'hover:shadow-xl'}`}
           style={{ backgroundColor: isPast ? '#f5f5f5' : '#fff' }}
         >
           {/* Color bar top */}
@@ -804,11 +804,9 @@ const ArtUPWebsite = () => {
             </div>
 
             {/* Arrow */}
-            {!isPast && (
-              <div className="opacity-0 group-hover:opacity-100 transition-opacity">
-                <span className="text-2xl font-black" style={{ fontFamily: 'Courier New, monospace' }}>→</span>
-              </div>
-            )}
+            <div className="opacity-0 group-hover:opacity-100 transition-opacity">
+              <span className="text-2xl font-black" style={{ fontFamily: 'Courier New, monospace', color: isPast ? '#999' : '#FF1461' }}>→</span>
+            </div>
           </div>
         </div>
       );
@@ -1145,7 +1143,7 @@ const ArtUPWebsite = () => {
                   language === 'de' ? 'AB 15:00 UHR' : 'FROM 3:00 PM',
                   language === 'de' ? 'MI – SO' : 'WED – SUN',
                   language === 'de' ? 'EINTRITT FREI' : 'FREE ENTRY',
-                  '18 ' + (language === 'de' ? 'KÜNSTLER' : 'ARTISTS'),
+                  '18 ' + (language === 'de' ? 'KÜNSTLER·INNEN' : 'ARTISTS'),
                 ].map((fact, i) => (
                   <React.Fragment key={i}>
                     {i > 0 && <span style={{ color: '#FF1461', fontFamily: 'Courier New, monospace', fontSize: '10px' }}>◆</span>}
