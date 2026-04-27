@@ -28,10 +28,10 @@
       "id": 3,
       "date": "2026-04-30",
       "time": "20:00",
-      "title_de": "Tim Starratt & Gizmoh – Turntable",
-      "title_en": "Tim Starratt & Gizmoh – Turntable",
-      "description_de": "Tim Starratt und Gizmoh legen gemeinsam auf – eine Mischung aus elektronischer Musik, Jazz-Samples und atmosphärischen Beats. Der perfekte Einstieg ins lange Wochenende.",
-      "description_en": "Tim Starratt and Gizmoh play back to back – a mix of electronic music, jazz samples and atmospheric beats. The perfect start to the long weekend.",
+      "title_de": "Tim Starratt & PeteBeat & Gizmoh – Turntable",
+      "title_en": "Tim Starratt & PeteBeat & Gizmoh – Turntable",
+      "description_de": "Tim Starratt, PeteBeat und Gizmoh legen gemeinsam auf – eine Mischung aus elektronischer Musik, Jazz-Samples und atmosphärischen Beats. Der perfekte Einstieg ins lange Wochenende.",
+      "description_en": "Tim Starratt, PeteBeat and Gizmoh play back to back – a mix of electronic music, jazz samples and atmospheric beats. The perfect start to the long weekend.",
       "instagram": "",
       "website": "",
       "image": "https://res.cloudinary.com/dsktnxayr/image/upload/v1776067400/tim_gizmoh_event.png"
@@ -47,6 +47,18 @@
       "instagram": "",
       "website": "https://www.udosailer.de/",
       "image": "https://www.rheinpfalz.de/cms_media/module_img/10420/5210403_1_articledetail_80_udo_sailer_-_klaus_landry.webp"
+    },
+    {
+      "id": 17,
+      "date": "2026-05-01",
+      "time": "21:00",
+      "title_de": "Arthur Gepting – Konzert",
+      "title_en": "Arthur Gepting – Concert",
+      "description_de": "Arthur Gepting kehrt zurück. Zweiter Auftritt. Keine Gnade. Nach einer Lesung über Verbrechen folgt die Musik, die ins Mark geht. Düster. Intensiv. Gut. Wer nach dem Krimi noch gerade sitzen kann, wird ab 21:00 wieder zusammenzucken.",
+      "description_en": "Arthur Gepting is back. Second round. No mercy. Following a crime reading, music that pierces the soul. Dark. Intense. Haunting. Survived the thriller? Brace yourself from 21:00.",
+      "instagram": "https://www.instagram.com/arthurgepting/",
+      "website": "https://www.youtube.com/arthurgepting",
+      "image": "https://res.cloudinary.com/dsktnxayr/image/upload/v1777275363/arthur_event_qwmmjj.jpg"
     },
     {
       "id": 5,
