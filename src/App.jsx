@@ -263,6 +263,7 @@ const ArtUPWebsite = () => {
               const month = getEventMonthName(event.date);
               const dayName = getEventDayName(event.date);
               const bg = bgColors[idx];
+              const isCancelled = event.cancelled === true;
 
               return (
                 <div
@@ -270,7 +271,7 @@ const ArtUPWebsite = () => {
                   onClick={() => navigateTo('event-detail', event)}
                   className="cursor-pointer relative overflow-hidden group transition-all"
                   style={{
-                    backgroundColor: bg,
+                    backgroundColor: isCancelled ? '#222' : bg,
                     borderRight: idx < 2 ? '4px solid #000' : 'none',
                     minHeight: '380px'
                   }}
@@ -281,12 +282,31 @@ const ArtUPWebsite = () => {
                       src={event.image}
                       alt=""
                       className="absolute inset-0 w-full h-full transition-transform duration-700 group-hover:scale-105"
-                      style={{ objectFit: 'cover', objectPosition: 'center', opacity: 0.35 }}
+                      style={{ objectFit: 'cover', objectPosition: 'center', opacity: isCancelled ? 0.15 : 0.35 }}
                     />
                   )}
 
+                  {/* Cancelled diagonal banner */}
+                  {isCancelled && (
+                    <div className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ zIndex: 5 }}>
+                      <div
+                        className="px-4 py-2 font-black uppercase tracking-widest text-white text-sm"
+                        style={{
+                          fontFamily: 'Courier New, monospace',
+                          backgroundColor: '#FF1461',
+                          transform: 'rotate(-15deg)',
+                          letterSpacing: '0.2em',
+                          whiteSpace: 'nowrap',
+                          boxShadow: '0 0 0 4px #FF1461'
+                        }}
+                      >
+                        {language === 'de' ? 'Abgesagt' : 'Cancelled'}
+                      </div>
+                    </div>
+                  )}
+
                   {/* Card content */}
-                  <div className="absolute inset-0 flex flex-col justify-between p-6">
+                  <div className="absolute inset-0 flex flex-col justify-between p-6" style={{ zIndex: 10 }}>
                     {/* Top right: date block */}
                     <div className="flex justify-end">
                       <div className="text-right">
@@ -307,15 +327,22 @@ const ArtUPWebsite = () => {
 
                     {/* Bottom: Event title */}
                     <div>
-                      <h3 className="text-xl md:text-2xl font-black leading-tight" style={{ fontFamily: 'Courier New, monospace', color: '#fff' }}>
+                      <h3
+                        className="text-xl md:text-2xl font-black leading-tight"
+                        style={{
+                          fontFamily: 'Courier New, monospace',
+                          color: '#fff',
+                          textDecoration: isCancelled ? 'line-through' : 'none'
+                        }}
+                      >
                         {getEventTitle(event)}
                       </h3>
                     </div>
                   </div>
 
                   {/* Hover overlay */}
-                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity" />
-                  <div className="absolute top-5 left-5 opacity-0 group-hover:opacity-100 transition-opacity">
+                  <div className="absolute inset-0 bg-white opacity-0 group-hover:opacity-10 transition-opacity" style={{ zIndex: 8 }} />
+                  <div className="absolute top-5 left-5 opacity-0 group-hover:opacity-100 transition-opacity" style={{ zIndex: 11 }}>
                     <span className="text-white font-black text-lg" style={{ fontFamily: 'Courier New, monospace' }}>→</span>
                   </div>
                 </div>
@@ -336,6 +363,7 @@ const ArtUPWebsite = () => {
                 const month = getEventMonthName(event.date);
                 const dayName = getEventDayName(event.date);
                 const isLast = idx === listEvents.length - 1;
+                const isCancelled = event.cancelled === true;
 
                 return (
                   <div
@@ -349,7 +377,7 @@ const ArtUPWebsite = () => {
                       <p className="text-xl font-black leading-none" style={{ fontFamily: 'Courier New, monospace' }}>
                         {String(day).padStart(2, '0')}
                       </p>
-                      <p className="text-xs font-black uppercase" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}>
+                      <p className="text-xs font-black uppercase" style={{ fontFamily: 'Courier New, monospace', color: isCancelled ? '#999' : '#FF1461' }}>
                         {month.slice(0, 3)}
                       </p>
                     </div>
@@ -362,9 +390,14 @@ const ArtUPWebsite = () => {
                       <span className="text-xs font-black uppercase tracking-wider text-gray-400 mr-2" style={{ fontFamily: 'Courier New, monospace' }}>
                         {dayName}
                       </span>
-                      <span className="text-sm font-black" style={{ fontFamily: 'Courier New, monospace' }}>
+                      <span className="text-sm font-black" style={{ fontFamily: 'Courier New, monospace', textDecoration: isCancelled ? 'line-through' : 'none' }}>
                         {getEventTitle(event)}
                       </span>
+                      {isCancelled && (
+                        <span className="ml-2 text-xs font-black uppercase border border-black px-1" style={{ fontFamily: 'Courier New, monospace' }}>
+                          {language === 'de' ? 'Abgesagt' : 'Cancelled'}
+                        </span>
+                      )}
                     </div>
 
                     {/* Time */}
@@ -375,9 +408,11 @@ const ArtUPWebsite = () => {
                     </div>
 
                     {/* Arrow */}
-                    <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
-                      <span className="text-sm font-black" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}>→</span>
-                    </div>
+                    {!isCancelled && (
+                      <div className="flex-shrink-0 opacity-0 group-hover:opacity-100 transition-opacity">
+                        <span className="text-sm font-black" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461' }}>→</span>
+                      </div>
+                    )}
                   </div>
                 );
               })}
@@ -769,15 +804,16 @@ const ArtUPWebsite = () => {
       const day = d.getDate();
       const month = getEventMonthName(event.date);
       const dayName = getEventDayName(event.date);
+      const isCancelled = event.cancelled === true;
 
       return (
         <div
           onClick={() => navigateTo('event-detail', event)}
-          className={`border-4 border-black group transition-all cursor-pointer ${isPast ? 'opacity-50 hover:opacity-70' : 'hover:shadow-xl'}`}
-          style={{ backgroundColor: isPast ? '#f5f5f5' : '#fff' }}
+          className={`border-4 border-black group transition-all cursor-pointer relative overflow-hidden ${isPast || isCancelled ? 'opacity-50 hover:opacity-70' : 'hover:shadow-xl'}`}
+          style={{ backgroundColor: isPast || isCancelled ? '#f5f5f5' : '#fff' }}
         >
           {/* Color bar top */}
-          <div className="h-2" style={{ backgroundColor: isPast ? '#ccc' : '#FF1461' }} />
+          <div className="h-2" style={{ backgroundColor: isCancelled ? '#000' : isPast ? '#ccc' : '#FF1461' }} />
 
           <div className="p-6 flex gap-6 items-center">
             {/* Date block */}
@@ -792,10 +828,10 @@ const ArtUPWebsite = () => {
 
             {/* Info */}
             <div className="flex-1">
-              <p className="text-xs font-black uppercase tracking-widest mb-1" style={{ fontFamily: 'Courier New, monospace', color: '#FF1461', opacity: isPast ? 0.5 : 1 }}>
+              <p className="text-xs font-black uppercase tracking-widest mb-1" style={{ fontFamily: 'Courier New, monospace', color: isCancelled ? '#999' : '#FF1461', opacity: isPast ? 0.5 : 1 }}>
                 {dayName}
               </p>
-              <h3 className="text-xl font-black tracking-tight mb-1" style={{ fontFamily: 'Courier New, monospace' }}>
+              <h3 className="text-xl font-black tracking-tight mb-1" style={{ fontFamily: 'Courier New, monospace', textDecoration: isCancelled ? 'line-through' : 'none' }}>
                 {getEventTitle(event)}
               </h3>
               <p className="text-sm font-medium text-gray-600" style={{ fontFamily: 'Courier New, monospace' }}>
@@ -803,10 +839,18 @@ const ArtUPWebsite = () => {
               </p>
             </div>
 
-            {/* Arrow */}
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity">
-              <span className="text-2xl font-black" style={{ fontFamily: 'Courier New, monospace', color: isPast ? '#999' : '#FF1461' }}>→</span>
-            </div>
+            {/* Cancelled badge or Arrow */}
+            {isCancelled ? (
+              <div className="flex-shrink-0 px-3 py-1 border-2 border-black">
+                <span className="text-xs font-black uppercase tracking-widest" style={{ fontFamily: 'Courier New, monospace' }}>
+                  {language === 'de' ? 'Abgesagt' : 'Cancelled'}
+                </span>
+              </div>
+            ) : (
+              <div className="opacity-0 group-hover:opacity-100 transition-opacity">
+                <span className="text-2xl font-black" style={{ fontFamily: 'Courier New, monospace', color: isPast ? '#999' : '#FF1461' }}>→</span>
+              </div>
+            )}
           </div>
         </div>
       );
@@ -881,8 +925,8 @@ const ArtUPWebsite = () => {
     const eventTitle = getEventTitle(event);
 
     // Alternate colors per event id
-    const heroBg = event.id % 2 === 0 ? '#000000' : '#FF1461';
-    const accentCol = event.id % 2 === 0 ? '#FF1461' : '#FFC500';
+    const heroBg = event.cancelled ? '#111' : (event.id % 2 === 0 ? '#000000' : '#FF1461');
+    const accentCol = event.cancelled ? '#FF1461' : (event.id % 2 === 0 ? '#FF1461' : '#FFC500');
 
     return (
       <>
@@ -926,6 +970,15 @@ const ArtUPWebsite = () => {
                 ← {t('events.back_to_events')}
               </button>
 
+              {/* Cancelled banner */}
+              {event.cancelled && (
+                <div className="absolute top-0 left-0 right-0 py-3 px-6 flex items-center justify-center gap-3 z-20" style={{ backgroundColor: '#FF1461', marginTop: '80px' }}>
+                  <span className="text-white font-black uppercase tracking-widest text-sm" style={{ fontFamily: 'Courier New, monospace' }}>
+                    ✕ {language === 'de' ? 'Diese Veranstaltung wurde abgesagt' : 'This event has been cancelled'}
+                  </span>
+                </div>
+              )}
+
               {/* Label */}
               <p className="text-xs font-black uppercase tracking-widest mb-4" style={{ fontFamily: 'Courier New, monospace', color: accentCol }}>
                 artUP · Speyer
@@ -937,7 +990,8 @@ const ArtUPWebsite = () => {
                 style={{
                   fontFamily: 'Courier New, monospace',
                   fontSize: 'clamp(40px, 8vw, 90px)',
-                  maxWidth: '80%'
+                  maxWidth: '80%',
+                  textDecoration: event.cancelled ? 'line-through' : 'none'
                 }}
               >
                 {eventTitle}
@@ -1143,7 +1197,7 @@ const ArtUPWebsite = () => {
                   language === 'de' ? 'AB 15:00 UHR' : 'FROM 3:00 PM',
                   language === 'de' ? 'MI – SO' : 'WED – SUN',
                   language === 'de' ? 'EINTRITT FREI' : 'FREE ENTRY',
-                  '18 ' + (language === 'de' ? 'KÜNSTLER' : 'ARTISTS'),
+                  '18 ' + (language === 'de' ? 'KÜNSTLER·INNEN' : 'ARTISTS'),
                 ].map((fact, i) => (
                   <React.Fragment key={i}>
                     {i > 0 && <span style={{ color: '#FF1461', fontFamily: 'Courier New, monospace', fontSize: '10px' }}>◆</span>}
